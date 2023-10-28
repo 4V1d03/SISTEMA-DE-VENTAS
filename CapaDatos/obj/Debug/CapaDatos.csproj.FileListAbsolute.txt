@@ -1,0 +1,9 @@
+C:\Users\aguil\Desktop\SISTEMA_VENTAS\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\aguil\Desktop\SISTEMA_VENTAS\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\aguil\Desktop\SISTEMA_VENTAS\CapaDatos\bin\Debug\CapaEntidad.dll
+C:\Users\aguil\Desktop\SISTEMA_VENTAS\CapaDatos\bin\Debug\CapaEntidad.pdb
+C:\Users\aguil\Desktop\SISTEMA_VENTAS\CapaDatos\obj\Debug\CapaDatos.csproj.AssemblyReference.cache
+C:\Users\aguil\Desktop\SISTEMA_VENTAS\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
+C:\Users\aguil\Desktop\SISTEMA_VENTAS\CapaDatos\obj\Debug\CapaDatos.csproj.CopyComplete
+C:\Users\aguil\Desktop\SISTEMA_VENTAS\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\aguil\Desktop\SISTEMA_VENTAS\CapaDatos\obj\Debug\CapaDatos.pdb
