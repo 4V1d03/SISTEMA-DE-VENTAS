@@ -19,9 +19,18 @@ namespace CapaPresentacion
         private static IconMenuItem MenuActivo = null;
         private static Form FormularioActivo = null;
 
+        private static Size contenedorOriginalSize;
+
         public Inicio(Usuario objusuario = null)
         {
-            usuarioActual = objusuario;
+            //para no estar logeando en cada momento
+            if (objusuario == null) 
+                usuarioActual = new Usuario() { NombreCompleto = "ADMIN PREDEFINIDO", IdUsuario = 1 }; //usuario manual
+            
+            else 
+                usuarioActual = objusuario;
+
+
 
             InitializeComponent();
         }
@@ -61,16 +70,23 @@ namespace CapaPresentacion
             }
 
             //configuracion del formulario a abrir
-            FormularioActivo = formulario; 
+            FormularioActivo = formulario;
+
             formulario.TopLevel = false;
             formulario.FormBorderStyle = FormBorderStyle.None;
-            formulario.Dock = DockStyle.Fill;
-            formulario.BackColor = Color.SteelBlue;
+            formulario.Dock = DockStyle.Fill;//
+            Size originalSize = formulario.Size;//nuevo
+            formulario.Size = contenedor.Size;//nuevo
+            formulario.BackColor = Color.Orange;
 
             //añade la configuracion al fomrulario
             contenedor.Controls.Add(formulario);
             formulario.Show();
 
+            formulario.FormClosed += (sender, e) =>
+            {
+                formulario.Size = originalSize;
+            };
 
         }
 
@@ -124,5 +140,12 @@ namespace CapaPresentacion
         {
             AbrirFormulario((IconMenuItem)sender, new frmReportes());
         }
+
+
+
+
+
+
+
     }
 }

@@ -46,3 +46,4 @@ C:\Users\aguil\Documents\GITHUB\SISTEMA-DE-VENTAS\CapaPresentacion\obj\Debug\Cap
 C:\Users\aguil\Documents\GITHUB\SISTEMA-DE-VENTAS\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CopyComplete
 C:\Users\aguil\Documents\GITHUB\SISTEMA-DE-VENTAS\CapaPresentacion\obj\Debug\CapaPresentacion.exe
 C:\Users\aguil\Documents\GITHUB\SISTEMA-DE-VENTAS\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+C:\Users\aguil\Documents\GITHUB\SISTEMA-DE-VENTAS\CapaPresentacion\obj\Debug\CapaPresentacion.prueba.resources

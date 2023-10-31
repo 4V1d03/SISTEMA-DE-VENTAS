@@ -64,9 +64,10 @@
             this.menuproveedores,
             this.menureportes,
             this.menuacercade});
-            this.menu.Location = new System.Drawing.Point(0, 73);
+            this.menu.Location = new System.Drawing.Point(0, 59);
             this.menu.Name = "menu";
-            this.menu.Size = new System.Drawing.Size(1437, 58);
+            this.menu.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.menu.Size = new System.Drawing.Size(1220, 58);
             this.menu.TabIndex = 0;
             this.menu.Text = "menuStrip1";
             // 
@@ -246,8 +247,9 @@
             this.menutitulo.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menutitulo.Location = new System.Drawing.Point(0, 0);
             this.menutitulo.Name = "menutitulo";
+            this.menutitulo.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
             this.menutitulo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.menutitulo.Size = new System.Drawing.Size(1437, 73);
+            this.menutitulo.Size = new System.Drawing.Size(1220, 59);
             this.menutitulo.TabIndex = 1;
             this.menutitulo.Text = "menuStrip2";
             // 
@@ -256,7 +258,8 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Orange;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.label1.Location = new System.Drawing.Point(12, 18);
+            this.label1.Location = new System.Drawing.Point(9, 15);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(291, 36);
             this.label1.TabIndex = 2;
@@ -265,9 +268,10 @@
             // contenedor
             // 
             this.contenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.contenedor.Location = new System.Drawing.Point(0, 131);
+            this.contenedor.Location = new System.Drawing.Point(0, 117);
+            this.contenedor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.contenedor.Name = "contenedor";
-            this.contenedor.Size = new System.Drawing.Size(1437, 611);
+            this.contenedor.Size = new System.Drawing.Size(1220, 622);
             this.contenedor.TabIndex = 3;
             // 
             // label2
@@ -275,7 +279,8 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Orange;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.label2.Location = new System.Drawing.Point(1202, 23);
+            this.label2.Location = new System.Drawing.Point(702, 15);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(85, 25);
             this.label2.TabIndex = 4;
@@ -286,7 +291,8 @@
             this.lblusuario.AutoSize = true;
             this.lblusuario.BackColor = System.Drawing.Color.Orange;
             this.lblusuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.lblusuario.Location = new System.Drawing.Point(1281, 23);
+            this.lblusuario.Location = new System.Drawing.Point(780, 15);
+            this.lblusuario.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblusuario.Name = "lblusuario";
             this.lblusuario.Size = new System.Drawing.Size(95, 25);
             this.lblusuario.TabIndex = 5;
@@ -294,9 +300,9 @@
             // 
             // Inicio
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1437, 742);
+            this.ClientSize = new System.Drawing.Size(1220, 739);
             this.Controls.Add(this.lblusuario);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.contenedor);
@@ -304,7 +310,9 @@
             this.Controls.Add(this.menu);
             this.Controls.Add(this.menutitulo);
             this.MainMenuStrip = this.menu;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Inicio";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Inicio_Load);
             this.menu.ResumeLayout(false);
