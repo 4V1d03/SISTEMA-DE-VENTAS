@@ -13,5 +13,5 @@ where u.IdUsuario = 1
 select u.IdUsuario, u.Documento, u.NombreCompleto, u.Correo, u.Clave, u.Estado, r.IdRol, r.Descripcion from USUARIO u
 join ROL r on r.IdRol = u.IdRol
 
-update 
+
 
