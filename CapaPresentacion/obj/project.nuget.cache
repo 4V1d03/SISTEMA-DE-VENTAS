@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "a+SnfsurexpvZsabPOuTeqOA/AZDVx50QCXqa6qd9WBP400ndi39TOgzAPIGEbFkzMi3n/DW1tiV4gqNQDLKzw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\DELL\\source\\repos\\Nueva carpeta\\SistemaVenta\\CapaPresentacion\\CapaPresentacion.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\DELL\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\fontawesome.sharp\\5.15.3\\fontawesome.sharp.5.15.3.nupkg.sha512"
+  ],
+  "logs": []
+}

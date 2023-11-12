@@ -76,11 +76,6 @@ namespace CapaPresentacion
         }
 
 
-
-
-
-
-
         private void btnguardar_Click(object sender, EventArgs e)
         {
             string mensaje = string.Empty;
@@ -286,6 +281,7 @@ namespace CapaPresentacion
 
         private void btnlimpiarbuscador_Click(object sender, EventArgs e)
         {
+            Limpiar();
             txtbusqueda.Text = "";
             foreach (DataGridViewRow row in dgvdata.Rows)
             {
@@ -293,9 +289,7 @@ namespace CapaPresentacion
             }
         }
 
-        private void btnlimpiar_Click(object sender, EventArgs e)
-        {
-            Limpiar();
-        }
+        
+        
     }
 }

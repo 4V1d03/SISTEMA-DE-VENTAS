@@ -4,12 +4,12 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{54F0E62B-8F7F-4069-9AE5-201D639352AE}</ProjectGuid>
+    <ProjectGuid>{92956C2C-B01B-45AD-8ED6-C4E6E916D2C1}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>CapaNegocio</RootNamespace>
     <AssemblyName>CapaNegocio</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CN_Negocio.cs" />
     <Compile Include="CN_Permiso.cs" />
     <Compile Include="CN_Rol.cs" />
     <Compile Include="CN_Usuario.cs" />
@@ -48,11 +49,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CapaDatos\CapaDatos.csproj">
-      <Project>{c70e7baa-8d60-44ff-b3ce-d3a527f1b7d5}</Project>
+      <Project>{3b0db33c-b120-4caf-bdaa-8ebd22b5125f}</Project>
       <Name>CapaDatos</Name>
     </ProjectReference>
     <ProjectReference Include="..\CapaEntidad\CapaEntidad.csproj">
-      <Project>{c0f99a89-aba6-4a96-a0e4-35d3471aa9af}</Project>
+      <Project>{459ee9bb-a3dc-4c6c-a931-fa846791d738}</Project>
       <Name>CapaEntidad</Name>
     </ProjectReference>
   </ItemGroup>

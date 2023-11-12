@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CapaPresentacion.Modales;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,14 @@ namespace CapaPresentacion
         public frmCompras()
         {
             InitializeComponent();
+        }
+
+        private void btnbuscar_Click(object sender, EventArgs e)
+        {
+            using (var modal = new mdProveedor())
+            {
+                var result = modal.ShowDialog();
+            }
         }
     }
 }

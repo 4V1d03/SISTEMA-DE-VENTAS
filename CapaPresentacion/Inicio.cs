@@ -1,5 +1,6 @@
 ﻿using CapaEntidad;
 using CapaNegocio;
+using CapaPresentacion.Modales;
 using FontAwesome.Sharp;
 using System;
 using System.Collections.Generic;
@@ -19,18 +20,16 @@ namespace CapaPresentacion
         private static IconMenuItem MenuActivo = null;
         private static Form FormularioActivo = null;
 
-        private static Size contenedorOriginalSize;
+        //private static Size contenedorOriginalSize;
 
-        public Inicio(Usuario objusuario = null)
+        public Inicio(Usuario objusuario=null)
         {
             //para no estar logeando en cada momento
-            if (objusuario == null) 
+            if (objusuario == null)
                 usuarioActual = new Usuario() { NombreCompleto = "ADMIN PREDEFINIDO", IdUsuario = 1 }; //usuario manual
-            
-            else 
+
+            else
                 usuarioActual = objusuario;
-
-
 
             InitializeComponent();
         }
@@ -59,10 +58,16 @@ namespace CapaPresentacion
             //configuracion del menu superior
             if (MenuActivo != null)
             {
-                MenuActivo.BackColor = Color.White;
+                MenuActivo.BackColor = Color.AliceBlue;
+                MenuActivo.ForeColor = Color.DarkSlateGray;
+                MenuActivo.IconColor = Color.DarkSlateGray;
+                
             }
-            menu.BackColor = Color.Silver;
+            
+            menu.ForeColor = Color.DodgerBlue;
+            menu.IconColor= Color.DodgerBlue;
             MenuActivo = menu;
+            pictureBox1.Visible = false;
 
             if (FormularioActivo != null)
             {
@@ -71,81 +76,113 @@ namespace CapaPresentacion
 
             //configuracion del formulario a abrir
             FormularioActivo = formulario;
-
             formulario.TopLevel = false;
             formulario.FormBorderStyle = FormBorderStyle.None;
-            formulario.Dock = DockStyle.Fill;//
-            Size originalSize = formulario.Size;//nuevo
-            formulario.Size = contenedor.Size;//nuevo
-            formulario.BackColor = Color.Orange;
-
+            formulario.Dock = DockStyle.Fill;
+            pictureBoxlogoinicio.Visible = true;
+            //formulario.BackColor = Color.Red;
             //añade la configuracion al fomrulario
             contenedor.Controls.Add(formulario);
             formulario.Show();
-
-            formulario.FormClosed += (sender, e) =>
-            {
-                formulario.Size = originalSize;
-            };
-
         }
 
-        private void menuusuarios_Click(object sender, EventArgs e)
+        
+        private void menuusuarios_Click_1(object sender, EventArgs e)
         {
             AbrirFormulario((IconMenuItem)sender, new frmUsuarios());
+            FormularioActivo.BackColor = Color.LightCyan;
+
         }
 
-        private void submenucategoria_Click(object sender, EventArgs e)
+        private void submenuapertura_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(menucajaregistradora, new frmAperturacaja(/*usuarioActual*/));
+            FormularioActivo.BackColor = Color.LightCyan;
+
+        }
+        
+        private void submenucierre_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(menucajaregistradora, new frmCierrecaja());
+            FormularioActivo.BackColor = Color.LightCyan;
+
+        }
+
+        private void submenucategoria_Click_1(object sender, EventArgs e)
         {
             AbrirFormulario(menumantenedor, new frmCategoria());
+            FormularioActivo.BackColor = Color.LightCyan;
         }
 
-        private void submenuproducto_Click(object sender, EventArgs e)
+        private void submenuproducto_Click_1(object sender, EventArgs e)
         {
             AbrirFormulario(menumantenedor, new frmProducto());
+            FormularioActivo.BackColor = Color.LightCyan;
         }
 
-        private void submenuregistrarventa_Click(object sender, EventArgs e)
+        private void submenunegocio_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(menumantenedor, new frmNegocio());
+            FormularioActivo.BackColor = Color.LightCyan;
+
+        }
+
+        private void submenuregistrarventa_Click_1(object sender, EventArgs e)
         {
             AbrirFormulario(menuventas, new frmVentas(/*usuarioActual*/));
+            FormularioActivo.BackColor = Color.LightCyan;
+
         }
 
         private void submenuverdetalleventa_Click(object sender, EventArgs e)
         {
             AbrirFormulario(menuventas, new frmDetalleVenta());
+            FormularioActivo.BackColor = Color.LightCyan;
+
         }
 
-        private void submenuregistrarcompra_Click(object sender, EventArgs e)
+        private void submenuregistrarcompra_Click_1(object sender, EventArgs e)
         {
             AbrirFormulario(menucompras, new frmCompras(/*usuarioActual*/));
+            FormularioActivo.BackColor = Color.LightBlue;
         }
 
-        private void submenuverdetallecompra_Click(object sender, EventArgs e)
+        private void submenuverdetallecompra_Click_1(object sender, EventArgs e)
         {
             AbrirFormulario(menucompras, new frmDetalleCompra());
-
+            FormularioActivo.BackColor = Color.LightCyan;
         }
 
-        private void menuclientes_Click(object sender, EventArgs e)
+        private void menuclientes_Click_1(object sender, EventArgs e)
         {
             AbrirFormulario((IconMenuItem)sender, new frmClientes());
+            FormularioActivo.BackColor = Color.LightCyan;
         }
 
-        private void menuproveedores_Click(object sender, EventArgs e)
+        private void menuproveedores_Click_1(object sender, EventArgs e)
         {
             AbrirFormulario((IconMenuItem)sender, new frmProveedores());
+            FormularioActivo.BackColor = Color.LightCyan;
         }
 
-        private void menureportes_Click(object sender, EventArgs e)
+        private void menureportes_Click_1(object sender, EventArgs e)
         {
             AbrirFormulario((IconMenuItem)sender, new frmReportes());
+            FormularioActivo.BackColor = Color.LightCyan;
         }
 
+        private void iconButtonExit_Click(object sender, EventArgs e)
+        {
+            if(MessageBox.Show("¿Desea salir del sistema?", "Mensaje", MessageBoxButtons.YesNo,MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                this.Close();
+            }
+        }
 
-
-
-
-
-
+        private void iconMenuItem1_Click(object sender, EventArgs e)
+        {
+            mdAcercade md = new mdAcercade();
+            md.ShowDialog();
+        }
     }
 }
