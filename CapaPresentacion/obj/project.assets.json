@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    ".NETFramework,Version=v4.8.1": {
+    ".NETFramework,Version=v4.8": {
       "EntityFramework/6.4.4": {
         "type": "package",
         "frameworkAssemblies": [
@@ -72,7 +72,7 @@
         }
       }
     },
-    ".NETFramework,Version=v4.8.1/win": {
+    ".NETFramework,Version=v4.8/win": {
       "EntityFramework/6.4.4": {
         "type": "package",
         "frameworkAssemblies": [
@@ -143,7 +143,7 @@
         }
       }
     },
-    ".NETFramework,Version=v4.8.1/win-arm64": {
+    ".NETFramework,Version=v4.8/win-arm64": {
       "EntityFramework/6.4.4": {
         "type": "package",
         "frameworkAssemblies": [
@@ -214,7 +214,7 @@
         }
       }
     },
-    ".NETFramework,Version=v4.8.1/win-x64": {
+    ".NETFramework,Version=v4.8/win-x64": {
       "EntityFramework/6.4.4": {
         "type": "package",
         "frameworkAssemblies": [
@@ -285,7 +285,7 @@
         }
       }
     },
-    ".NETFramework,Version=v4.8.1/win-x86": {
+    ".NETFramework,Version=v4.8/win-x86": {
       "EntityFramework/6.4.4": {
         "type": "package",
         "frameworkAssemblies": [
@@ -448,7 +448,7 @@
     }
   },
   "projectFileDependencyGroups": {
-    ".NETFramework,Version=v4.8.1": [
+    ".NETFramework,Version=v4.8": [
       "CapaEntidad >= 1.0.0",
       "CapaNegocio >= 1.0.0",
       "EntityFramework >= 6.4.4",
@@ -456,49 +456,44 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\DELL\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\aguil\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\DELL\\source\\repos\\Nueva carpeta\\SistemaVenta\\CapaPresentacion\\CapaPresentacion.csproj",
+      "projectUniqueName": "C:\\Users\\aguil\\Documents\\GITHUB\\SISTEMA-DE-VENTAS\\CapaPresentacion\\CapaPresentacion.csproj",
       "projectName": "CapaPresentacion",
-      "projectPath": "C:\\Users\\DELL\\source\\repos\\Nueva carpeta\\SistemaVenta\\CapaPresentacion\\CapaPresentacion.csproj",
-      "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\DELL\\source\\repos\\Nueva carpeta\\SistemaVenta\\CapaPresentacion\\obj\\",
+      "projectPath": "C:\\Users\\aguil\\Documents\\GITHUB\\SISTEMA-DE-VENTAS\\CapaPresentacion\\CapaPresentacion.csproj",
+      "packagesPath": "C:\\Users\\aguil\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\aguil\\Documents\\GITHUB\\SISTEMA-DE-VENTAS\\CapaPresentacion\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\aguil\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net481"
+        "net48"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net481": {
+        "net48": {
           "projectReferences": {
-            "C:\\Users\\DELL\\source\\repos\\Nueva carpeta\\SistemaVenta\\CapaEntidad\\CapaEntidad.csproj": {
-              "projectPath": "C:\\Users\\DELL\\source\\repos\\Nueva carpeta\\SistemaVenta\\CapaEntidad\\CapaEntidad.csproj"
+            "C:\\Users\\aguil\\Documents\\GITHUB\\SISTEMA-DE-VENTAS\\CapaEntidad\\CapaEntidad.csproj": {
+              "projectPath": "C:\\Users\\aguil\\Documents\\GITHUB\\SISTEMA-DE-VENTAS\\CapaEntidad\\CapaEntidad.csproj"
             },
-            "C:\\Users\\DELL\\source\\repos\\Nueva carpeta\\SistemaVenta\\CapaNegocio\\CapaNegocio.csproj": {
-              "projectPath": "C:\\Users\\DELL\\source\\repos\\Nueva carpeta\\SistemaVenta\\CapaNegocio\\CapaNegocio.csproj"
+            "C:\\Users\\aguil\\Documents\\GITHUB\\SISTEMA-DE-VENTAS\\CapaNegocio\\CapaNegocio.csproj": {
+              "projectPath": "C:\\Users\\aguil\\Documents\\GITHUB\\SISTEMA-DE-VENTAS\\CapaNegocio\\CapaNegocio.csproj"
             }
           }
         }
       }
     },
     "frameworks": {
-      "net481": {
+      "net48": {
         "dependencies": {
           "EntityFramework": {
             "target": "Package",
