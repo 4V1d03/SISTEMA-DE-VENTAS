@@ -10,3 +10,9 @@ C:\Users\aguil\Documents\GITHUB\SISTEMA-DE-VENTAS\CapaEntidad\obj\Debug\CapaEnti
 C:\Users\aguil\Documents\GITHUB\SISTEMA-DE-VENTAS\CapaEntidad\obj\Debug\CapaEntidad.csproj.CoreCompileInputs.cache
 C:\Users\aguil\Documents\GITHUB\SISTEMA-DE-VENTAS\CapaEntidad\obj\Debug\CapaEntidad.dll
 C:\Users\aguil\Documents\GITHUB\SISTEMA-DE-VENTAS\CapaEntidad\obj\Debug\CapaEntidad.pdb
+D:\Clases\github\SISTEMA-DE-VENTAS\CapaEntidad\bin\Debug\CapaEntidad.dll
+D:\Clases\github\SISTEMA-DE-VENTAS\CapaEntidad\bin\Debug\CapaEntidad.pdb
+D:\Clases\github\SISTEMA-DE-VENTAS\CapaEntidad\obj\Debug\CapaEntidad.csproj.AssemblyReference.cache
+D:\Clases\github\SISTEMA-DE-VENTAS\CapaEntidad\obj\Debug\CapaEntidad.csproj.CoreCompileInputs.cache
+D:\Clases\github\SISTEMA-DE-VENTAS\CapaEntidad\obj\Debug\CapaEntidad.dll
+D:\Clases\github\SISTEMA-DE-VENTAS\CapaEntidad\obj\Debug\CapaEntidad.pdb

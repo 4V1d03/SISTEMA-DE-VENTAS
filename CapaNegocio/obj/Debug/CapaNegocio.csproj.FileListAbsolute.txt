@@ -20,3 +20,14 @@ C:\Users\aguil\Documents\GITHUB\SISTEMA-DE-VENTAS\CapaNegocio\obj\Debug\CapaNego
 C:\Users\aguil\Documents\GITHUB\SISTEMA-DE-VENTAS\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
 C:\Users\aguil\Documents\GITHUB\SISTEMA-DE-VENTAS\CapaNegocio\obj\Debug\CapaNegocio.dll
 C:\Users\aguil\Documents\GITHUB\SISTEMA-DE-VENTAS\CapaNegocio\obj\Debug\CapaNegocio.pdb
+D:\Clases\github\SISTEMA-DE-VENTAS\CapaNegocio\bin\Debug\CapaNegocio.dll
+D:\Clases\github\SISTEMA-DE-VENTAS\CapaNegocio\bin\Debug\CapaNegocio.pdb
+D:\Clases\github\SISTEMA-DE-VENTAS\CapaNegocio\bin\Debug\CapaDatos.dll
+D:\Clases\github\SISTEMA-DE-VENTAS\CapaNegocio\bin\Debug\CapaEntidad.dll
+D:\Clases\github\SISTEMA-DE-VENTAS\CapaNegocio\bin\Debug\CapaDatos.pdb
+D:\Clases\github\SISTEMA-DE-VENTAS\CapaNegocio\bin\Debug\CapaEntidad.pdb
+D:\Clases\github\SISTEMA-DE-VENTAS\CapaNegocio\obj\Debug\CapaNegocio.csproj.AssemblyReference.cache
+D:\Clases\github\SISTEMA-DE-VENTAS\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
+D:\Clases\github\SISTEMA-DE-VENTAS\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
+D:\Clases\github\SISTEMA-DE-VENTAS\CapaNegocio\obj\Debug\CapaNegocio.dll
+D:\Clases\github\SISTEMA-DE-VENTAS\CapaNegocio\obj\Debug\CapaNegocio.pdb

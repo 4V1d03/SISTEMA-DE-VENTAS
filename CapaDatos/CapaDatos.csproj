@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CD_Categoria.cs" />
     <Compile Include="CD_Negocio.cs" />
     <Compile Include="CD_PERMISO.cs" />
     <Compile Include="CD_Rol.cs" />

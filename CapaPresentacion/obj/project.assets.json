@@ -143,77 +143,6 @@
         }
       }
     },
-    ".NETFramework,Version=v4.8/win-arm64": {
-      "EntityFramework/6.4.4": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System.ComponentModel.DataAnnotations"
-        ],
-        "compile": {
-          "lib/net45/EntityFramework.SqlServer.dll": {
-            "related": ".xml"
-          },
-          "lib/net45/EntityFramework.dll": {
-            "related": ".SqlServer.xml;.xml"
-          }
-        },
-        "runtime": {
-          "lib/net45/EntityFramework.SqlServer.dll": {
-            "related": ".xml"
-          },
-          "lib/net45/EntityFramework.dll": {
-            "related": ".SqlServer.xml;.xml"
-          }
-        },
-        "build": {
-          "buildTransitive/EntityFramework.props": {},
-          "buildTransitive/EntityFramework.targets": {}
-        }
-      },
-      "FontAwesome.Sharp/5.15.3": {
-        "type": "package",
-        "compile": {
-          "lib/net48/FontAwesome.Sharp.dll": {}
-        },
-        "runtime": {
-          "lib/net48/FontAwesome.Sharp.dll": {}
-        }
-      },
-      "CapaDatos/1.0.0": {
-        "type": "project",
-        "dependencies": {
-          "CapaEntidad": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/CapaDatos.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/CapaDatos.dll": {}
-        }
-      },
-      "CapaEntidad/1.0.0": {
-        "type": "project",
-        "compile": {
-          "bin/placeholder/CapaEntidad.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/CapaEntidad.dll": {}
-        }
-      },
-      "CapaNegocio/1.0.0": {
-        "type": "project",
-        "dependencies": {
-          "CapaDatos": "1.0.0",
-          "CapaEntidad": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/CapaNegocio.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/CapaNegocio.dll": {}
-        }
-      }
-    },
     ".NETFramework,Version=v4.8/win-x64": {
       "EntityFramework/6.4.4": {
         "type": "package",
@@ -456,20 +385,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\aguil\\.nuget\\packages\\": {}
+    "C:\\Users\\HP\\.nuget\\packages\\": {},
+    "D:\\cosas\\Visual Studio\\componentes\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\aguil\\Documents\\GITHUB\\SISTEMA-DE-VENTAS\\CapaPresentacion\\CapaPresentacion.csproj",
+      "projectUniqueName": "D:\\Clases\\github\\SISTEMA-DE-VENTAS\\CapaPresentacion\\CapaPresentacion.csproj",
       "projectName": "CapaPresentacion",
-      "projectPath": "C:\\Users\\aguil\\Documents\\GITHUB\\SISTEMA-DE-VENTAS\\CapaPresentacion\\CapaPresentacion.csproj",
-      "packagesPath": "C:\\Users\\aguil\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\aguil\\Documents\\GITHUB\\SISTEMA-DE-VENTAS\\CapaPresentacion\\obj\\",
+      "projectPath": "D:\\Clases\\github\\SISTEMA-DE-VENTAS\\CapaPresentacion\\CapaPresentacion.csproj",
+      "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+      "outputPath": "D:\\Clases\\github\\SISTEMA-DE-VENTAS\\CapaPresentacion\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
+      "fallbackFolders": [
+        "D:\\cosas\\Visual Studio\\componentes\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\aguil\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -482,11 +416,11 @@
       "frameworks": {
         "net48": {
           "projectReferences": {
-            "C:\\Users\\aguil\\Documents\\GITHUB\\SISTEMA-DE-VENTAS\\CapaEntidad\\CapaEntidad.csproj": {
-              "projectPath": "C:\\Users\\aguil\\Documents\\GITHUB\\SISTEMA-DE-VENTAS\\CapaEntidad\\CapaEntidad.csproj"
+            "D:\\Clases\\github\\SISTEMA-DE-VENTAS\\CapaEntidad\\CapaEntidad.csproj": {
+              "projectPath": "D:\\Clases\\github\\SISTEMA-DE-VENTAS\\CapaEntidad\\CapaEntidad.csproj"
             },
-            "C:\\Users\\aguil\\Documents\\GITHUB\\SISTEMA-DE-VENTAS\\CapaNegocio\\CapaNegocio.csproj": {
-              "projectPath": "C:\\Users\\aguil\\Documents\\GITHUB\\SISTEMA-DE-VENTAS\\CapaNegocio\\CapaNegocio.csproj"
+            "D:\\Clases\\github\\SISTEMA-DE-VENTAS\\CapaNegocio\\CapaNegocio.csproj": {
+              "projectPath": "D:\\Clases\\github\\SISTEMA-DE-VENTAS\\CapaNegocio\\CapaNegocio.csproj"
             }
           }
         }
@@ -508,9 +442,6 @@
     },
     "runtimes": {
       "win": {
-        "#import": []
-      },
-      "win-arm64": {
         "#import": []
       },
       "win-x64": {
