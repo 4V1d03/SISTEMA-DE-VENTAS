@@ -42,3 +42,14 @@ C:\Users\Usuario\OneDrive\Documentos\git\SISTEMA-DE-VENTAS\CapaNegocio\obj\Debug
 C:\Users\Usuario\OneDrive\Documentos\git\SISTEMA-DE-VENTAS\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
 C:\Users\Usuario\OneDrive\Documentos\git\SISTEMA-DE-VENTAS\CapaNegocio\obj\Debug\CapaNegocio.dll
 C:\Users\Usuario\OneDrive\Documentos\git\SISTEMA-DE-VENTAS\CapaNegocio\obj\Debug\CapaNegocio.pdb
+C:\Users\aguil\Downloads\SISTEMA-DE-VENTAS-main (1)\SISTEMA-DE-VENTAS-main\CapaNegocio\bin\Debug\CapaNegocio.dll
+C:\Users\aguil\Downloads\SISTEMA-DE-VENTAS-main (1)\SISTEMA-DE-VENTAS-main\CapaNegocio\bin\Debug\CapaNegocio.pdb
+C:\Users\aguil\Downloads\SISTEMA-DE-VENTAS-main (1)\SISTEMA-DE-VENTAS-main\CapaNegocio\bin\Debug\CapaDatos.dll
+C:\Users\aguil\Downloads\SISTEMA-DE-VENTAS-main (1)\SISTEMA-DE-VENTAS-main\CapaNegocio\bin\Debug\CapaEntidad.dll
+C:\Users\aguil\Downloads\SISTEMA-DE-VENTAS-main (1)\SISTEMA-DE-VENTAS-main\CapaNegocio\bin\Debug\CapaDatos.pdb
+C:\Users\aguil\Downloads\SISTEMA-DE-VENTAS-main (1)\SISTEMA-DE-VENTAS-main\CapaNegocio\bin\Debug\CapaEntidad.pdb
+C:\Users\aguil\Downloads\SISTEMA-DE-VENTAS-main (1)\SISTEMA-DE-VENTAS-main\CapaNegocio\obj\Debug\CapaNegocio.csproj.AssemblyReference.cache
+C:\Users\aguil\Downloads\SISTEMA-DE-VENTAS-main (1)\SISTEMA-DE-VENTAS-main\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
+C:\Users\aguil\Downloads\SISTEMA-DE-VENTAS-main (1)\SISTEMA-DE-VENTAS-main\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
+C:\Users\aguil\Downloads\SISTEMA-DE-VENTAS-main (1)\SISTEMA-DE-VENTAS-main\CapaNegocio\obj\Debug\CapaNegocio.dll
+C:\Users\aguil\Downloads\SISTEMA-DE-VENTAS-main (1)\SISTEMA-DE-VENTAS-main\CapaNegocio\obj\Debug\CapaNegocio.pdb

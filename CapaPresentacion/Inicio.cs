@@ -26,8 +26,7 @@ namespace CapaPresentacion
         {
             //para no estar logeando en cada momento
             if (objusuario == null)
-                usuarioActual = new Usuario() { NombreCompleto = "ADMIN PREDEFINIDO", IdUsuario = 1 }; //usuario manual
-
+                usuarioActual = new Usuario() { NombreCompleto = "ADMIN PREDEFINIDO", IdUsuario = 1 };
             else
                 usuarioActual = objusuario;
 
@@ -36,12 +35,12 @@ namespace CapaPresentacion
 
         private void Inicio_Load(object sender, EventArgs e)
         {
-            List<Permiso> ListaPermisos = new CN_Permiso().Listar(usuarioActual.IdUsuario);//el usuario logeado comparte su id para mostrara sus permisos
+            List<Permiso> ListaPermisos = new CN_Permiso().Listar(usuarioActual.IdUsuario);
 
-            //restringe la vista de los menus al usuario en funcion a sus permisos
             foreach (IconMenuItem iconmenu in menu.Items)
             {
-                bool encontrado = ListaPermisos.Any(m => m.NombreMenu == iconmenu.Name);//determina si una lista contiene elementos
+
+                bool encontrado = ListaPermisos.Any(m => m.NombreMenu == iconmenu.Name);
 
                 if (encontrado == false)
                 {
@@ -49,8 +48,8 @@ namespace CapaPresentacion
                 }
 
             }
-
-            lblusuario.Text = usuarioActual.NombreCompleto;//asigna el nombre de usuario a label
+    
+            lblusuario.Text = usuarioActual.NombreCompleto;
         }
 
         private void AbrirFormulario(IconMenuItem menu, Form formulario) //abre los formularios en el panel y pinta los menu seleccionados

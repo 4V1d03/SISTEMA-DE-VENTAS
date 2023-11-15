@@ -144,3 +144,40 @@ C:\Users\Usuario\OneDrive\Documentos\git\SISTEMA-DE-VENTAS\CapaPresentacion\obj\
 C:\Users\Usuario\OneDrive\Documentos\git\SISTEMA-DE-VENTAS\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CopyComplete
 C:\Users\Usuario\OneDrive\Documentos\git\SISTEMA-DE-VENTAS\CapaPresentacion\obj\Debug\CapaPresentacion.exe
 C:\Users\Usuario\OneDrive\Documentos\git\SISTEMA-DE-VENTAS\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+C:\Users\aguil\Downloads\SISTEMA-DE-VENTAS-main (1)\SISTEMA-DE-VENTAS-main\CapaPresentacion\bin\Debug\CapaPresentacion.exe.config
+C:\Users\aguil\Downloads\SISTEMA-DE-VENTAS-main (1)\SISTEMA-DE-VENTAS-main\CapaPresentacion\bin\Debug\CapaPresentacion.exe
+C:\Users\aguil\Downloads\SISTEMA-DE-VENTAS-main (1)\SISTEMA-DE-VENTAS-main\CapaPresentacion\bin\Debug\CapaPresentacion.pdb
+C:\Users\aguil\Downloads\SISTEMA-DE-VENTAS-main (1)\SISTEMA-DE-VENTAS-main\CapaPresentacion\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\aguil\Downloads\SISTEMA-DE-VENTAS-main (1)\SISTEMA-DE-VENTAS-main\CapaPresentacion\bin\Debug\EntityFramework.dll
+C:\Users\aguil\Downloads\SISTEMA-DE-VENTAS-main (1)\SISTEMA-DE-VENTAS-main\CapaPresentacion\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\aguil\Downloads\SISTEMA-DE-VENTAS-main (1)\SISTEMA-DE-VENTAS-main\CapaPresentacion\bin\Debug\CapaEntidad.dll
+C:\Users\aguil\Downloads\SISTEMA-DE-VENTAS-main (1)\SISTEMA-DE-VENTAS-main\CapaPresentacion\bin\Debug\CapaNegocio.dll
+C:\Users\aguil\Downloads\SISTEMA-DE-VENTAS-main (1)\SISTEMA-DE-VENTAS-main\CapaPresentacion\bin\Debug\CapaDatos.dll
+C:\Users\aguil\Downloads\SISTEMA-DE-VENTAS-main (1)\SISTEMA-DE-VENTAS-main\CapaPresentacion\bin\Debug\CapaEntidad.pdb
+C:\Users\aguil\Downloads\SISTEMA-DE-VENTAS-main (1)\SISTEMA-DE-VENTAS-main\CapaPresentacion\bin\Debug\CapaNegocio.pdb
+C:\Users\aguil\Downloads\SISTEMA-DE-VENTAS-main (1)\SISTEMA-DE-VENTAS-main\CapaPresentacion\bin\Debug\CapaDatos.pdb
+C:\Users\aguil\Downloads\SISTEMA-DE-VENTAS-main (1)\SISTEMA-DE-VENTAS-main\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.AssemblyReference.cache
+C:\Users\aguil\Downloads\SISTEMA-DE-VENTAS-main (1)\SISTEMA-DE-VENTAS-main\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.SuggestedBindingRedirects.cache
+C:\Users\aguil\Downloads\SISTEMA-DE-VENTAS-main (1)\SISTEMA-DE-VENTAS-main\CapaPresentacion\obj\Debug\CapaPresentacion.frmAperturacaja.resources
+C:\Users\aguil\Downloads\SISTEMA-DE-VENTAS-main (1)\SISTEMA-DE-VENTAS-main\CapaPresentacion\obj\Debug\CapaPresentacion.frmCategoria.resources
+C:\Users\aguil\Downloads\SISTEMA-DE-VENTAS-main (1)\SISTEMA-DE-VENTAS-main\CapaPresentacion\obj\Debug\CapaPresentacion.frmCierrecaja.resources
+C:\Users\aguil\Downloads\SISTEMA-DE-VENTAS-main (1)\SISTEMA-DE-VENTAS-main\CapaPresentacion\obj\Debug\CapaPresentacion.frmClientes.resources
+C:\Users\aguil\Downloads\SISTEMA-DE-VENTAS-main (1)\SISTEMA-DE-VENTAS-main\CapaPresentacion\obj\Debug\CapaPresentacion.frmCompras.resources
+C:\Users\aguil\Downloads\SISTEMA-DE-VENTAS-main (1)\SISTEMA-DE-VENTAS-main\CapaPresentacion\obj\Debug\CapaPresentacion.frmDetalleCompra.resources
+C:\Users\aguil\Downloads\SISTEMA-DE-VENTAS-main (1)\SISTEMA-DE-VENTAS-main\CapaPresentacion\obj\Debug\CapaPresentacion.frmDetalleVenta.resources
+C:\Users\aguil\Downloads\SISTEMA-DE-VENTAS-main (1)\SISTEMA-DE-VENTAS-main\CapaPresentacion\obj\Debug\CapaPresentacion.frmNegocio.resources
+C:\Users\aguil\Downloads\SISTEMA-DE-VENTAS-main (1)\SISTEMA-DE-VENTAS-main\CapaPresentacion\obj\Debug\CapaPresentacion.frmProducto.resources
+C:\Users\aguil\Downloads\SISTEMA-DE-VENTAS-main (1)\SISTEMA-DE-VENTAS-main\CapaPresentacion\obj\Debug\CapaPresentacion.frmProveedores.resources
+C:\Users\aguil\Downloads\SISTEMA-DE-VENTAS-main (1)\SISTEMA-DE-VENTAS-main\CapaPresentacion\obj\Debug\CapaPresentacion.frmReportes.resources
+C:\Users\aguil\Downloads\SISTEMA-DE-VENTAS-main (1)\SISTEMA-DE-VENTAS-main\CapaPresentacion\obj\Debug\CapaPresentacion.frmUsuarios.resources
+C:\Users\aguil\Downloads\SISTEMA-DE-VENTAS-main (1)\SISTEMA-DE-VENTAS-main\CapaPresentacion\obj\Debug\CapaPresentacion.frmVentas.resources
+C:\Users\aguil\Downloads\SISTEMA-DE-VENTAS-main (1)\SISTEMA-DE-VENTAS-main\CapaPresentacion\obj\Debug\CapaPresentacion.Inicio.resources
+C:\Users\aguil\Downloads\SISTEMA-DE-VENTAS-main (1)\SISTEMA-DE-VENTAS-main\CapaPresentacion\obj\Debug\CapaPresentacion.Login.resources
+C:\Users\aguil\Downloads\SISTEMA-DE-VENTAS-main (1)\SISTEMA-DE-VENTAS-main\CapaPresentacion\obj\Debug\CapaPresentacion.Modales.mdAcercade.resources
+C:\Users\aguil\Downloads\SISTEMA-DE-VENTAS-main (1)\SISTEMA-DE-VENTAS-main\CapaPresentacion\obj\Debug\CapaPresentacion.Modales.mdProveedor.resources
+C:\Users\aguil\Downloads\SISTEMA-DE-VENTAS-main (1)\SISTEMA-DE-VENTAS-main\CapaPresentacion\obj\Debug\CapaPresentacion.Properties.Resources.resources
+C:\Users\aguil\Downloads\SISTEMA-DE-VENTAS-main (1)\SISTEMA-DE-VENTAS-main\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.cache
+C:\Users\aguil\Downloads\SISTEMA-DE-VENTAS-main (1)\SISTEMA-DE-VENTAS-main\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CoreCompileInputs.cache
+C:\Users\aguil\Downloads\SISTEMA-DE-VENTAS-main (1)\SISTEMA-DE-VENTAS-main\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CopyComplete
+C:\Users\aguil\Downloads\SISTEMA-DE-VENTAS-main (1)\SISTEMA-DE-VENTAS-main\CapaPresentacion\obj\Debug\CapaPresentacion.exe
+C:\Users\aguil\Downloads\SISTEMA-DE-VENTAS-main (1)\SISTEMA-DE-VENTAS-main\CapaPresentacion\obj\Debug\CapaPresentacion.pdb

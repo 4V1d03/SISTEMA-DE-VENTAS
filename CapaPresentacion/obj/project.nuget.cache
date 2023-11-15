@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "MKnWxqU2dYuMOkLwOFe0gpJ+bVtCDptex+gfJTNoeJo7ImVPuRmt9T5jIk6z17ICldZdzyrYcVKzhvI2F7G8qQ==",
+  "dgSpecHash": "2Tesy3pNn/pPtoroh7LIkucbIMw5+ZTF3XDKCtuj1PGdK5rkDr7YDR8fq2Fna6Vko8BgyKtesDbhlw/Wji70sA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Usuario\\OneDrive\\Documentos\\git\\SISTEMA-DE-VENTAS\\CapaPresentacion\\CapaPresentacion.csproj",
+  "projectFilePath": "C:\\Users\\aguil\\Downloads\\SISTEMA-DE-VENTAS-main (1)\\SISTEMA-DE-VENTAS-main\\CapaPresentacion\\CapaPresentacion.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Usuario\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
-    "C:\\Users\\Usuario\\.nuget\\packages\\fontawesome.sharp\\5.15.3\\fontawesome.sharp.5.15.3.nupkg.sha512"
+    "C:\\Users\\aguil\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
+    "C:\\Users\\aguil\\.nuget\\packages\\fontawesome.sharp\\5.15.3\\fontawesome.sharp.5.15.3.nupkg.sha512"
   ],
   "logs": []
 }

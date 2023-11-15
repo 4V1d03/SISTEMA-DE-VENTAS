@@ -456,20 +456,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Usuario\\.nuget\\packages\\": {}
+    "C:\\Users\\aguil\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuario\\OneDrive\\Documentos\\git\\SISTEMA-DE-VENTAS\\CapaPresentacion\\CapaPresentacion.csproj",
+      "projectUniqueName": "C:\\Users\\aguil\\Downloads\\SISTEMA-DE-VENTAS-main (1)\\SISTEMA-DE-VENTAS-main\\CapaPresentacion\\CapaPresentacion.csproj",
       "projectName": "CapaPresentacion",
-      "projectPath": "C:\\Users\\Usuario\\OneDrive\\Documentos\\git\\SISTEMA-DE-VENTAS\\CapaPresentacion\\CapaPresentacion.csproj",
-      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario\\OneDrive\\Documentos\\git\\SISTEMA-DE-VENTAS\\CapaPresentacion\\obj\\",
+      "projectPath": "C:\\Users\\aguil\\Downloads\\SISTEMA-DE-VENTAS-main (1)\\SISTEMA-DE-VENTAS-main\\CapaPresentacion\\CapaPresentacion.csproj",
+      "packagesPath": "C:\\Users\\aguil\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\aguil\\Downloads\\SISTEMA-DE-VENTAS-main (1)\\SISTEMA-DE-VENTAS-main\\CapaPresentacion\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\aguil\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -482,11 +482,11 @@
       "frameworks": {
         "net48": {
           "projectReferences": {
-            "C:\\Users\\Usuario\\OneDrive\\Documentos\\git\\SISTEMA-DE-VENTAS\\CapaEntidad\\CapaEntidad.csproj": {
-              "projectPath": "C:\\Users\\Usuario\\OneDrive\\Documentos\\git\\SISTEMA-DE-VENTAS\\CapaEntidad\\CapaEntidad.csproj"
+            "C:\\Users\\aguil\\Downloads\\SISTEMA-DE-VENTAS-main (1)\\SISTEMA-DE-VENTAS-main\\CapaEntidad\\CapaEntidad.csproj": {
+              "projectPath": "C:\\Users\\aguil\\Downloads\\SISTEMA-DE-VENTAS-main (1)\\SISTEMA-DE-VENTAS-main\\CapaEntidad\\CapaEntidad.csproj"
             },
-            "C:\\Users\\Usuario\\OneDrive\\Documentos\\git\\SISTEMA-DE-VENTAS\\CapaNegocio\\CapaNegocio.csproj": {
-              "projectPath": "C:\\Users\\Usuario\\OneDrive\\Documentos\\git\\SISTEMA-DE-VENTAS\\CapaNegocio\\CapaNegocio.csproj"
+            "C:\\Users\\aguil\\Downloads\\SISTEMA-DE-VENTAS-main (1)\\SISTEMA-DE-VENTAS-main\\CapaNegocio\\CapaNegocio.csproj": {
+              "projectPath": "C:\\Users\\aguil\\Downloads\\SISTEMA-DE-VENTAS-main (1)\\SISTEMA-DE-VENTAS-main\\CapaNegocio\\CapaNegocio.csproj"
             }
           }
         }

@@ -1,30 +1,33 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.SqlClient;
-using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using System.Data;
+using System.Data.SqlClient;
 using CapaEntidad;
 
 namespace CapaDatos
 {
     public class CD_Usuario
-    {   
-        //metodo listar
+    {
+
         public List<Usuario> Listar()
         {
             List<Usuario> lista = new List<Usuario>();
 
-            using (SqlConnection oconexion = new SqlConnection(Conexion.cadena)) //CONEXION CON BD
+            using (SqlConnection oconexion = new SqlConnection(Conexion.cadena))
             {
+
                 try
                 {
+
                     StringBuilder query = new StringBuilder();
-                    query.AppendLine("select u.IdUsuario,u.Documento,u.NombreCompleto,u.Correo,u.Clave,u.Estado,r.IdRol,r.Descripcion from USUARIO u"); //Appendpermite dar salto de linea
+                    query.AppendLine("select u.IdUsuario,u.Documento,u.NombreCompleto,u.Correo,u.Clave,u.Estado,r.IdRol,r.Descripcion from usuario u");
                     query.AppendLine("inner join rol r on r.IdRol = u.IdRol");
-                    //string query = "select IdUsuario,Documento,NombreCompleto,Correo,Clave,Estado from USUARIO";
+
+
                     SqlCommand cmd = new SqlCommand(query.ToString(), oconexion);
                     cmd.CommandType = CommandType.Text;
 
@@ -32,8 +35,10 @@ namespace CapaDatos
 
                     using (SqlDataReader dr = cmd.ExecuteReader())
                     {
+
                         while (dr.Read())
                         {
+
                             lista.Add(new Usuario()
                             {
                                 IdUsuario = Convert.ToInt32(dr["IdUsuario"]),
@@ -44,7 +49,9 @@ namespace CapaDatos
                                 Estado = Convert.ToBoolean(dr["Estado"]),
                                 oRol = new Rol() { IdRol = Convert.ToInt32(dr["IdRol"]), Descripcion = dr["Descripcion"].ToString() }
                             });
+
                         }
+
                     }
 
 
@@ -60,16 +67,21 @@ namespace CapaDatos
 
         }
 
-        //guardar USUARIO
-        public int Registrar(Usuario obj, out string Mensaje)//obj = parametro de entrada Mensaje = parametro de salida
+
+
+
+        public int Registrar(Usuario obj, out string Mensaje)
         {
-            int idusuariogenerado = 0;//guarda el id generado
-            Mensaje = string.Empty; //valor de la variable mensaje
+            int idusuariogenerado = 0;
+            Mensaje = string.Empty;
+
 
             try
             {
+
                 using (SqlConnection oconexion = new SqlConnection(Conexion.cadena))
                 {
+
                     SqlCommand cmd = new SqlCommand("SP_REGISTRARUSUARIO", oconexion);
                     cmd.Parameters.AddWithValue("Documento", obj.Documento);
                     cmd.Parameters.AddWithValue("NombreCompleto", obj.NombreCompleto);
@@ -85,7 +97,6 @@ namespace CapaDatos
 
                     cmd.ExecuteNonQuery();
 
-                    //parametros de salida, toman valor
                     idusuariogenerado = Convert.ToInt32(cmd.Parameters["IdUsuarioResultado"].Value);
                     Mensaje = cmd.Parameters["Mensaje"].Value.ToString();
 
@@ -98,19 +109,25 @@ namespace CapaDatos
                 Mensaje = ex.Message;
             }
 
+
+
             return idusuariogenerado;
         }
 
-        //ETIDAR USUARIO
+
+
         public bool Editar(Usuario obj, out string Mensaje)
         {
             bool respuesta = false;
             Mensaje = string.Empty;
 
+
             try
             {
+
                 using (SqlConnection oconexion = new SqlConnection(Conexion.cadena))
                 {
+
                     SqlCommand cmd = new SqlCommand("SP_EDITARUSUARIO", oconexion);
                     cmd.Parameters.AddWithValue("IdUsuario", obj.IdUsuario);
                     cmd.Parameters.AddWithValue("Documento", obj.Documento);
@@ -139,20 +156,24 @@ namespace CapaDatos
                 Mensaje = ex.Message;
             }
 
+
+
             return respuesta;
         }
 
 
-        //ELIMINAr USUARIO
         public bool Eliminar(Usuario obj, out string Mensaje)
         {
             bool respuesta = false;
             Mensaje = string.Empty;
 
+
             try
             {
+
                 using (SqlConnection oconexion = new SqlConnection(Conexion.cadena))
                 {
+
 
                     SqlCommand cmd = new SqlCommand("SP_ELIMINARUSUARIO", oconexion);
                     cmd.Parameters.AddWithValue("IdUsuario", obj.IdUsuario);
@@ -178,18 +199,6 @@ namespace CapaDatos
 
             return respuesta;
         }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     }

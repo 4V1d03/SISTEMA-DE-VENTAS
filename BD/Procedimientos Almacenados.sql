@@ -221,7 +221,7 @@ end
 GO
 
 /*----------- PROCEDIMIENTO PARA ACTUALIZAR PRODUCTO ------------*/
-create procedure sp_ModificarProducto(
+alter procedure sp_ModificarProducto(
 @IdProducto int,
 @Codigo varchar(20),
 @Nombre varchar(30),
@@ -231,24 +231,25 @@ create procedure sp_ModificarProducto(
 @Resultado bit output,
 @Mensaje varchar(500) output
 )
-as 
-begin 
-    SET @Resultado = 1
-	IF NOT EXISTS(SELECT * FROM PRODUCTO WHERE Codigo = @Codigo and IdProducto != @IdProducto)
-
-	    update PRODUCTO set
-		Codigo = @Codigo,
+as
+begin
+	SET @Resultado = 1
+	IF NOT EXISTS (SELECT * FROM PRODUCTO WHERE codigo = @Codigo and IdProducto != @IdProducto)
+		
+		update PRODUCTO set
+		codigo = @Codigo,
 		Nombre = @Nombre,
 		Descripcion = @Descripcion,
 		IdCategoria = @IdCategoria,
 		Estado = @Estado
-		where IdProducto =@IdProducto
-    ELSE
+		where IdProducto = @IdProducto
+	ELSE
 	begin
-	    SET @Resultado = 0
-		SET @Mensaje = 'Ya existe un producto con el mismo codigo'
+		SET @Resultado = 0
+		SET @Mensaje = 'Ya existe un producto con el mismo codigo' 
 	end
 end
+
 
 go
 

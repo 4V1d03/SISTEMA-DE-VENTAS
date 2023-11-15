@@ -16,3 +16,9 @@ D:\Clases\github\SISTEMA-DE-VENTAS\CapaEntidad\obj\Debug\CapaEntidad.csproj.Asse
 D:\Clases\github\SISTEMA-DE-VENTAS\CapaEntidad\obj\Debug\CapaEntidad.csproj.CoreCompileInputs.cache
 D:\Clases\github\SISTEMA-DE-VENTAS\CapaEntidad\obj\Debug\CapaEntidad.dll
 D:\Clases\github\SISTEMA-DE-VENTAS\CapaEntidad\obj\Debug\CapaEntidad.pdb
+C:\Users\aguil\Downloads\SISTEMA-DE-VENTAS-main (1)\SISTEMA-DE-VENTAS-main\CapaEntidad\bin\Debug\CapaEntidad.dll
+C:\Users\aguil\Downloads\SISTEMA-DE-VENTAS-main (1)\SISTEMA-DE-VENTAS-main\CapaEntidad\bin\Debug\CapaEntidad.pdb
+C:\Users\aguil\Downloads\SISTEMA-DE-VENTAS-main (1)\SISTEMA-DE-VENTAS-main\CapaEntidad\obj\Debug\CapaEntidad.csproj.AssemblyReference.cache
+C:\Users\aguil\Downloads\SISTEMA-DE-VENTAS-main (1)\SISTEMA-DE-VENTAS-main\CapaEntidad\obj\Debug\CapaEntidad.csproj.CoreCompileInputs.cache
+C:\Users\aguil\Downloads\SISTEMA-DE-VENTAS-main (1)\SISTEMA-DE-VENTAS-main\CapaEntidad\obj\Debug\CapaEntidad.dll
+C:\Users\aguil\Downloads\SISTEMA-DE-VENTAS-main (1)\SISTEMA-DE-VENTAS-main\CapaEntidad\obj\Debug\CapaEntidad.pdb
