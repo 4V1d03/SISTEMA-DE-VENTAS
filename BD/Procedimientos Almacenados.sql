@@ -192,7 +192,7 @@ Insert into CATEGORIA(Descripcion,Estado)VALUES('Platos',1)
 Insert into CATEGORIA(Descripcion,Estado)VALUES('Vasos',1)
 Insert into CATEGORIA(Descripcion,Estado)VALUES('Utensilios de cocina',1)
 update CATEGORIA set Estado = 1
-
+go
 
 /*---------- PROCEDIMIENTO PARA PRODUCTO -------------*/
 --PROCEDIMIENTO PARA GUARDAR PRODUCTO
