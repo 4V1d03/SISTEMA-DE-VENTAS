@@ -64,3 +64,14 @@ C:\Users\AstridGonzalez\Documents\GitHub\SISTEMA-DE-VENTAS\CapaNegocio\obj\Debug
 C:\Users\AstridGonzalez\Documents\GitHub\SISTEMA-DE-VENTAS\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
 C:\Users\AstridGonzalez\Documents\GitHub\SISTEMA-DE-VENTAS\CapaNegocio\obj\Debug\CapaNegocio.dll
 C:\Users\AstridGonzalez\Documents\GitHub\SISTEMA-DE-VENTAS\CapaNegocio\obj\Debug\CapaNegocio.pdb
+C:\Users\ASUS\Documents\github\SISTEMA-DE-VENTAS\CapaNegocio\bin\Debug\CapaNegocio.dll
+C:\Users\ASUS\Documents\github\SISTEMA-DE-VENTAS\CapaNegocio\bin\Debug\CapaNegocio.pdb
+C:\Users\ASUS\Documents\github\SISTEMA-DE-VENTAS\CapaNegocio\bin\Debug\CapaDatos.dll
+C:\Users\ASUS\Documents\github\SISTEMA-DE-VENTAS\CapaNegocio\bin\Debug\CapaEntidad.dll
+C:\Users\ASUS\Documents\github\SISTEMA-DE-VENTAS\CapaNegocio\bin\Debug\CapaDatos.pdb
+C:\Users\ASUS\Documents\github\SISTEMA-DE-VENTAS\CapaNegocio\bin\Debug\CapaEntidad.pdb
+C:\Users\ASUS\Documents\github\SISTEMA-DE-VENTAS\CapaNegocio\obj\Debug\CapaNegocio.csprojAssemblyReference.cache
+C:\Users\ASUS\Documents\github\SISTEMA-DE-VENTAS\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Documents\github\SISTEMA-DE-VENTAS\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
+C:\Users\ASUS\Documents\github\SISTEMA-DE-VENTAS\CapaNegocio\obj\Debug\CapaNegocio.dll
+C:\Users\ASUS\Documents\github\SISTEMA-DE-VENTAS\CapaNegocio\obj\Debug\CapaNegocio.pdb

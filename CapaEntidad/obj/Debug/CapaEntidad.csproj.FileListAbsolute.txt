@@ -22,3 +22,9 @@ C:\Users\aguil\Downloads\SISTEMA-DE-VENTAS-main (1)\SISTEMA-DE-VENTAS-main\CapaE
 C:\Users\aguil\Downloads\SISTEMA-DE-VENTAS-main (1)\SISTEMA-DE-VENTAS-main\CapaEntidad\obj\Debug\CapaEntidad.csproj.CoreCompileInputs.cache
 C:\Users\aguil\Downloads\SISTEMA-DE-VENTAS-main (1)\SISTEMA-DE-VENTAS-main\CapaEntidad\obj\Debug\CapaEntidad.dll
 C:\Users\aguil\Downloads\SISTEMA-DE-VENTAS-main (1)\SISTEMA-DE-VENTAS-main\CapaEntidad\obj\Debug\CapaEntidad.pdb
+C:\Users\ASUS\Documents\github\SISTEMA-DE-VENTAS\CapaEntidad\bin\Debug\CapaEntidad.dll
+C:\Users\ASUS\Documents\github\SISTEMA-DE-VENTAS\CapaEntidad\bin\Debug\CapaEntidad.pdb
+C:\Users\ASUS\Documents\github\SISTEMA-DE-VENTAS\CapaEntidad\obj\Debug\CapaEntidad.csprojAssemblyReference.cache
+C:\Users\ASUS\Documents\github\SISTEMA-DE-VENTAS\CapaEntidad\obj\Debug\CapaEntidad.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Documents\github\SISTEMA-DE-VENTAS\CapaEntidad\obj\Debug\CapaEntidad.dll
+C:\Users\ASUS\Documents\github\SISTEMA-DE-VENTAS\CapaEntidad\obj\Debug\CapaEntidad.pdb
