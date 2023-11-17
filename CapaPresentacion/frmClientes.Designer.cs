@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txtindice = new System.Windows.Forms.TextBox();
             this.txtbusqueda = new System.Windows.Forms.TextBox();
             this.cbobusqueda = new System.Windows.Forms.ComboBox();
@@ -63,6 +63,7 @@
             this.btnbuscar = new FontAwesome.Sharp.IconButton();
             this.btnguardar = new FontAwesome.Sharp.IconButton();
             this.btneliminar = new FontAwesome.Sharp.IconButton();
+            this.btnlimpiar = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgvdata)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -70,10 +71,9 @@
             // 
             // txtindice
             // 
-            this.txtindice.Location = new System.Drawing.Point(260, 215);
-            this.txtindice.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtindice.Location = new System.Drawing.Point(195, 175);
             this.txtindice.Name = "txtindice";
-            this.txtindice.Size = new System.Drawing.Size(47, 22);
+            this.txtindice.Size = new System.Drawing.Size(36, 20);
             this.txtindice.TabIndex = 58;
             this.txtindice.Text = "-1";
             this.txtindice.Visible = false;
@@ -82,10 +82,9 @@
             // 
             this.txtbusqueda.BackColor = System.Drawing.Color.GhostWhite;
             this.txtbusqueda.Font = new System.Drawing.Font("Candara", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbusqueda.Location = new System.Drawing.Point(776, 134);
-            this.txtbusqueda.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtbusqueda.Location = new System.Drawing.Point(582, 109);
             this.txtbusqueda.Name = "txtbusqueda";
-            this.txtbusqueda.Size = new System.Drawing.Size(244, 30);
+            this.txtbusqueda.Size = new System.Drawing.Size(184, 26);
             this.txtbusqueda.TabIndex = 55;
             // 
             // cbobusqueda
@@ -94,10 +93,9 @@
             this.cbobusqueda.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbobusqueda.Font = new System.Drawing.Font("Candara", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbobusqueda.FormattingEnabled = true;
-            this.cbobusqueda.Location = new System.Drawing.Point(597, 134);
-            this.cbobusqueda.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbobusqueda.Location = new System.Drawing.Point(448, 109);
             this.cbobusqueda.Name = "cbobusqueda";
-            this.cbobusqueda.Size = new System.Drawing.Size(169, 31);
+            this.cbobusqueda.Size = new System.Drawing.Size(128, 26);
             this.cbobusqueda.TabIndex = 54;
             // 
             // label11
@@ -106,19 +104,17 @@
             this.label11.BackColor = System.Drawing.Color.LightCyan;
             this.label11.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.Teal;
-            this.label11.Location = new System.Drawing.Point(435, 137);
-            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.Location = new System.Drawing.Point(326, 111);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(128, 24);
+            this.label11.Size = new System.Drawing.Size(105, 19);
             this.label11.TabIndex = 53;
             this.label11.Text = "Buscar según:";
             // 
             // txtid
             // 
-            this.txtid.Location = new System.Drawing.Point(316, 215);
-            this.txtid.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtid.Location = new System.Drawing.Point(237, 175);
             this.txtid.Name = "txtid";
-            this.txtid.Size = new System.Drawing.Size(47, 22);
+            this.txtid.Size = new System.Drawing.Size(36, 20);
             this.txtid.TabIndex = 52;
             this.txtid.Text = "0";
             this.txtid.Visible = false;
@@ -128,10 +124,9 @@
             this.label10.BackColor = System.Drawing.Color.LightCyan;
             this.label10.Font = new System.Drawing.Font("Agency FB", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Teal;
-            this.label10.Location = new System.Drawing.Point(901, 14);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Location = new System.Drawing.Point(676, 11);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(233, 94);
+            this.label10.Size = new System.Drawing.Size(175, 76);
             this.label10.TabIndex = 51;
             this.label10.Text = "Clientes Registrados";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -140,15 +135,15 @@
             // 
             this.dgvdata.AllowUserToAddRows = false;
             this.dgvdata.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle9.Padding = new System.Windows.Forms.Padding(2);
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvdata.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvdata.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvdata.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvdata.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.btnseleccionar,
@@ -159,17 +154,16 @@
             this.Telefono,
             this.EstadoValor,
             this.Estado});
-            this.dgvdata.Location = new System.Drawing.Point(436, 177);
-            this.dgvdata.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvdata.Location = new System.Drawing.Point(327, 144);
             this.dgvdata.MultiSelect = false;
             this.dgvdata.Name = "dgvdata";
             this.dgvdata.ReadOnly = true;
             this.dgvdata.RowHeadersWidth = 51;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.Black;
-            this.dgvdata.RowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvdata.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvdata.RowTemplate.Height = 25;
-            this.dgvdata.Size = new System.Drawing.Size(1007, 457);
+            this.dgvdata.Size = new System.Drawing.Size(755, 371);
             this.dgvdata.TabIndex = 50;
             this.dgvdata.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvdata_CellContentClick);
             this.dgvdata.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.dgvdata_CellPainting);
@@ -246,10 +240,9 @@
             this.label7.BackColor = System.Drawing.Color.Honeydew;
             this.label7.Font = new System.Drawing.Font("Agency FB", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Teal;
-            this.label7.Location = new System.Drawing.Point(65, 149);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Location = new System.Drawing.Point(49, 121);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(226, 36);
+            this.label7.Size = new System.Drawing.Size(187, 31);
             this.label7.TabIndex = 49;
             this.label7.Text = "Descripción del Cliente";
             // 
@@ -260,10 +253,9 @@
             this.cboestado.Font = new System.Drawing.Font("Candara", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboestado.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.cboestado.FormattingEnabled = true;
-            this.cboestado.Location = new System.Drawing.Point(37, 519);
-            this.cboestado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboestado.Location = new System.Drawing.Point(28, 422);
             this.cboestado.Name = "cboestado";
-            this.cboestado.Size = new System.Drawing.Size(324, 31);
+            this.cboestado.Size = new System.Drawing.Size(244, 26);
             this.cboestado.TabIndex = 46;
             // 
             // label9
@@ -272,10 +264,9 @@
             this.label9.BackColor = System.Drawing.Color.Honeydew;
             this.label9.Font = new System.Drawing.Font("Candara", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Teal;
-            this.label9.Location = new System.Drawing.Point(35, 491);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Location = new System.Drawing.Point(26, 399);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(70, 23);
+            this.label9.Size = new System.Drawing.Size(54, 18);
             this.label9.TabIndex = 45;
             this.label9.Text = "Estado:";
             // 
@@ -284,10 +275,9 @@
             this.txttelefono.BackColor = System.Drawing.Color.White;
             this.txttelefono.Font = new System.Drawing.Font("Candara", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txttelefono.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.txttelefono.Location = new System.Drawing.Point(37, 454);
-            this.txttelefono.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txttelefono.Location = new System.Drawing.Point(28, 369);
             this.txttelefono.Name = "txttelefono";
-            this.txttelefono.Size = new System.Drawing.Size(324, 30);
+            this.txttelefono.Size = new System.Drawing.Size(244, 26);
             this.txttelefono.TabIndex = 40;
             // 
             // txtcorreo
@@ -295,10 +285,9 @@
             this.txtcorreo.BackColor = System.Drawing.Color.White;
             this.txtcorreo.Font = new System.Drawing.Font("Candara", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtcorreo.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.txtcorreo.Location = new System.Drawing.Point(37, 384);
-            this.txtcorreo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtcorreo.Location = new System.Drawing.Point(28, 312);
             this.txtcorreo.Name = "txtcorreo";
-            this.txtcorreo.Size = new System.Drawing.Size(324, 30);
+            this.txtcorreo.Size = new System.Drawing.Size(244, 26);
             this.txtcorreo.TabIndex = 39;
             // 
             // txtnombrecompleto
@@ -306,10 +295,9 @@
             this.txtnombrecompleto.BackColor = System.Drawing.Color.White;
             this.txtnombrecompleto.Font = new System.Drawing.Font("Candara", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtnombrecompleto.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.txtnombrecompleto.Location = new System.Drawing.Point(36, 316);
-            this.txtnombrecompleto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtnombrecompleto.Location = new System.Drawing.Point(27, 257);
             this.txtnombrecompleto.Name = "txtnombrecompleto";
-            this.txtnombrecompleto.Size = new System.Drawing.Size(324, 30);
+            this.txtnombrecompleto.Size = new System.Drawing.Size(244, 26);
             this.txtnombrecompleto.TabIndex = 38;
             // 
             // txtdocumento
@@ -317,10 +305,9 @@
             this.txtdocumento.BackColor = System.Drawing.Color.White;
             this.txtdocumento.Font = new System.Drawing.Font("Tw Cen MT", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtdocumento.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.txtdocumento.Location = new System.Drawing.Point(39, 245);
-            this.txtdocumento.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtdocumento.Location = new System.Drawing.Point(29, 199);
             this.txtdocumento.Name = "txtdocumento";
-            this.txtdocumento.Size = new System.Drawing.Size(324, 28);
+            this.txtdocumento.Size = new System.Drawing.Size(244, 24);
             this.txtdocumento.TabIndex = 37;
             // 
             // label5
@@ -329,10 +316,9 @@
             this.label5.BackColor = System.Drawing.Color.Honeydew;
             this.label5.Font = new System.Drawing.Font("Candara", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Teal;
-            this.label5.Location = new System.Drawing.Point(35, 423);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(26, 344);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(88, 23);
+            this.label5.Size = new System.Drawing.Size(68, 18);
             this.label5.TabIndex = 36;
             this.label5.Text = "Teléfono:";
             // 
@@ -342,10 +328,9 @@
             this.label4.BackColor = System.Drawing.Color.Honeydew;
             this.label4.Font = new System.Drawing.Font("Candara", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Teal;
-            this.label4.Location = new System.Drawing.Point(35, 356);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(26, 289);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(72, 23);
+            this.label4.Size = new System.Drawing.Size(56, 18);
             this.label4.TabIndex = 35;
             this.label4.Text = "Correo:";
             // 
@@ -355,10 +340,9 @@
             this.label3.BackColor = System.Drawing.Color.Honeydew;
             this.label3.Font = new System.Drawing.Font("Candara", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Teal;
-            this.label3.Location = new System.Drawing.Point(33, 289);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(25, 235);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(169, 23);
+            this.label3.Size = new System.Drawing.Size(128, 18);
             this.label3.TabIndex = 34;
             this.label3.Text = "Nombre Completo:";
             // 
@@ -368,10 +352,9 @@
             this.label2.BackColor = System.Drawing.Color.Honeydew;
             this.label2.Font = new System.Drawing.Font("Candara", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Teal;
-            this.label2.Location = new System.Drawing.Point(36, 215);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(27, 175);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(143, 23);
+            this.label2.Size = new System.Drawing.Size(111, 18);
             this.label2.TabIndex = 33;
             this.label2.Text = "No. Documento:";
             // 
@@ -384,19 +367,17 @@
             this.label1.Font = new System.Drawing.Font("Candara", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(397, 654);
+            this.label1.Size = new System.Drawing.Size(298, 531);
             this.label1.TabIndex = 32;
             // 
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Azure;
             this.pictureBox2.Image = global::CapaPresentacion.Properties.Resources.lista_de_verificacion;
-            this.pictureBox2.Location = new System.Drawing.Point(117, 15);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Location = new System.Drawing.Point(88, 12);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(160, 127);
+            this.pictureBox2.Size = new System.Drawing.Size(120, 103);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 61;
             this.pictureBox2.TabStop = false;
@@ -405,10 +386,9 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.LightCyan;
             this.pictureBox1.Image = global::CapaPresentacion.Properties.Resources._2820137;
-            this.pictureBox1.Location = new System.Drawing.Point(753, 14);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(565, 11);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(140, 98);
+            this.pictureBox1.Size = new System.Drawing.Size(105, 80);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 59;
             this.pictureBox1.TabStop = false;
@@ -422,10 +402,9 @@
             this.btnlimpiarbuscador.IconColor = System.Drawing.Color.Black;
             this.btnlimpiarbuscador.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnlimpiarbuscador.IconSize = 22;
-            this.btnlimpiarbuscador.Location = new System.Drawing.Point(1112, 129);
-            this.btnlimpiarbuscador.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnlimpiarbuscador.Location = new System.Drawing.Point(834, 105);
             this.btnlimpiarbuscador.Name = "btnlimpiarbuscador";
-            this.btnlimpiarbuscador.Size = new System.Drawing.Size(75, 37);
+            this.btnlimpiarbuscador.Size = new System.Drawing.Size(56, 30);
             this.btnlimpiarbuscador.TabIndex = 57;
             this.btnlimpiarbuscador.UseVisualStyleBackColor = false;
             this.btnlimpiarbuscador.Click += new System.EventHandler(this.btnlimpiarbuscador_Click);
@@ -439,10 +418,9 @@
             this.btnbuscar.IconColor = System.Drawing.Color.Black;
             this.btnbuscar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnbuscar.IconSize = 20;
-            this.btnbuscar.Location = new System.Drawing.Point(1029, 129);
-            this.btnbuscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnbuscar.Location = new System.Drawing.Point(772, 105);
             this.btnbuscar.Name = "btnbuscar";
-            this.btnbuscar.Size = new System.Drawing.Size(75, 37);
+            this.btnbuscar.Size = new System.Drawing.Size(56, 30);
             this.btnbuscar.TabIndex = 56;
             this.btnbuscar.UseVisualStyleBackColor = false;
             this.btnbuscar.Click += new System.EventHandler(this.btnbuscar_Click);
@@ -455,10 +433,9 @@
             this.btnguardar.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnguardar.IconColor = System.Drawing.Color.Black;
             this.btnguardar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnguardar.Location = new System.Drawing.Point(60, 587);
-            this.btnguardar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnguardar.Location = new System.Drawing.Point(27, 477);
             this.btnguardar.Name = "btnguardar";
-            this.btnguardar.Size = new System.Drawing.Size(127, 47);
+            this.btnguardar.Size = new System.Drawing.Size(82, 38);
             this.btnguardar.TabIndex = 47;
             this.btnguardar.Text = "Guardar";
             this.btnguardar.UseVisualStyleBackColor = false;
@@ -472,20 +449,36 @@
             this.btneliminar.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btneliminar.IconColor = System.Drawing.Color.Black;
             this.btneliminar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btneliminar.Location = new System.Drawing.Point(212, 587);
-            this.btneliminar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btneliminar.Location = new System.Drawing.Point(195, 477);
             this.btneliminar.Name = "btneliminar";
-            this.btneliminar.Size = new System.Drawing.Size(137, 47);
+            this.btneliminar.Size = new System.Drawing.Size(78, 38);
             this.btneliminar.TabIndex = 48;
             this.btneliminar.Text = "Eliminar";
             this.btneliminar.UseVisualStyleBackColor = false;
             this.btneliminar.Click += new System.EventHandler(this.btneliminar_Click);
             // 
+            // btnlimpiar
+            // 
+            this.btnlimpiar.BackColor = System.Drawing.Color.Khaki;
+            this.btnlimpiar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnlimpiar.Font = new System.Drawing.Font("Candara", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnlimpiar.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnlimpiar.IconColor = System.Drawing.Color.Black;
+            this.btnlimpiar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnlimpiar.Location = new System.Drawing.Point(126, 477);
+            this.btnlimpiar.Name = "btnlimpiar";
+            this.btnlimpiar.Size = new System.Drawing.Size(63, 38);
+            this.btnlimpiar.TabIndex = 62;
+            this.btnlimpiar.Text = "Limpiar";
+            this.btnlimpiar.UseVisualStyleBackColor = false;
+            this.btnlimpiar.Click += new System.EventHandler(this.btnlimpiar_Click);
+            // 
             // frmClientes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1484, 654);
+            this.ClientSize = new System.Drawing.Size(1113, 531);
+            this.Controls.Add(this.btnlimpiar);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtindice);
@@ -511,7 +504,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmClientes";
             this.Text = "frmClientes";
             this.Load += new System.EventHandler(this.frmClientes_Load);
@@ -557,5 +549,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Telefono;
         private System.Windows.Forms.DataGridViewTextBoxColumn EstadoValor;
         private System.Windows.Forms.DataGridViewTextBoxColumn Estado;
+        private FontAwesome.Sharp.IconButton btnlimpiar;
     }
 }

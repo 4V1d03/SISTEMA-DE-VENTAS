@@ -221,7 +221,7 @@ end
 GO
 
 /*----------- PROCEDIMIENTO PARA ACTUALIZAR PRODUCTO ------------*/
-alter procedure sp_ModificarProducto(
+create procedure sp_ModificarProducto(
 @IdProducto int,
 @Codigo varchar(20),
 @Nombre varchar(30),
@@ -305,3 +305,67 @@ Insert into PRODUCTO(Codigo,Nombre,Descripcion,IdCategoria)VALUES('101010','gase
 update PRODUCTO set Estado = 1
 
 DROP PROCEDURE SP_EliminarProducto;
+
+
+/* ---------------- PROCEDIMIENTOS PARA CLIENTE---------------------*/
+
+/* ---------------- PROCEDIMIENTOS PARA REGISTRAR CLIENTE---------------------*/
+create PROC sp_RegistrarCliente(
+@Documento varchar (50),
+@NombreCompleto varchar (50),
+@Correo varchar (50),
+@Telefono varchar(50),
+@Estado bit,
+@Resultado int output,
+@Mensaje varchar (500) output
+)
+as
+begin
+    SET @Resultado = 0
+    DECLARE @IDPERSONA INT
+    IF NOT EXISTS (SELECT * FROM CLIENTE WHERE Documento = @Documento)
+    BEGIN
+        insert into CLIENTE(Documento,NombreCompleto,Correo,Telefono,Estado) values (
+        @Documento,@NombreCompleto,@Correo,@Telefono,@Estado)
+
+        set @Resultado = SCOPE_IDENTITY()
+    end
+    else
+        set @Mensaje = 'El numero de documento ya existe'
+end
+
+go
+
+/*---------------- PROCEDIMIENTOS PARA MODIFICAR CLIENTE*/
+
+create PROC sp_ModificarCliente(
+@IdCliente int,
+@Documento varchar(50),
+@NombreCompleto varchar(50),
+@Correo varchar (50),
+@Telefono varchar(50),
+@Estado bit,
+@Resultado int output,
+@Mensaje varchar (500) output
+)as
+begin
+    SET @Resultado =1
+    DECLARE @IDPERSONA INT
+    IF NOT EXISTS (SELECT * FROM CLIENTE WHERE Documento = @Documento and IdCliente != @IdCliente)
+    begin
+        update CLIENTE set
+        Documento = @Documento,
+        NombreCompleto = @NombreCompleto,
+        Correo = @Correo,
+        Telefono = @Telefono,
+        Estado = @Estado
+        where IdCliente = @IdCliente
+    end
+    else
+    begin
+        SET @Resultado = 0
+        set @Mensaje = 'El numero de documento ya existe'
+    end
+end
+
+go

@@ -231,12 +231,16 @@ namespace CapaPresentacion
 
         private void btnlimpiarbuscador_Click(object sender, EventArgs e)
         {
-            Limpiar();
             txtbusqueda.Text = "";
             foreach (DataGridViewRow row in dgvdata.Rows)
             {
                 row.Visible = true;
             }
+        }
+
+        private void btnlimpiar_Click(object sender, EventArgs e)
+        {
+            Limpiar();
         }
     }
 }
