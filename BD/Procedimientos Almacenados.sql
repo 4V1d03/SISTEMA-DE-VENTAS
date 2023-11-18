@@ -221,7 +221,7 @@ end
 GO
 
 /*----------- PROCEDIMIENTO PARA ACTUALIZAR PRODUCTO ------------*/
-create procedure sp_ModificarProducto(
+alter procedure sp_ModificarProducto(
 @IdProducto int,
 @Codigo varchar(20),
 @Nombre varchar(30),
@@ -255,7 +255,7 @@ go
 
 /*---------- PROCEDIMIENTO PARA ELIMINAR PRODUCTO ------------*/
 
-create PROC SP_EliminarProducto(
+alter PROC SP_EliminarProducto(
 @IdProducto int,
 @Respuesta bit output,
 @Mensaje varchar(500) output
@@ -369,3 +369,94 @@ begin
 end
 
 go
+
+/*-----------------PROCEDIMIENTOS PARA PROVEEDOR -----------------------*/
+/*------- REGISTROS PROVEEDOR ---------------*/
+
+create PROC sp_RegistrarProveedor(
+@Documento varchar(50),
+@RazonSocial varchar(50),
+@Correo varchar(50),
+@Telefono varchar (50),
+@Estado bit,
+@Resultado bit output,
+@Mensaje varchar(500) output
+)
+as
+begin
+    SET @Resultado = 0
+	DECLARE @IDPERSONA INT
+	if not exists(SELECT * FROM PROVEEDOR WHERE Documento = @Documento)
+	begin
+	    insert into PROVEEDOR(Documento,RazonSocial,Correo,Telefono,Estado) values(
+		@Documento,@RazonSocial,@Correo,@Telefono,@Estado)
+
+		set @Resultado = SCOPE_IDENTITY()
+		 end
+    else
+        set @Mensaje = 'El numero de documento ya existe'
+end
+
+go
+
+/*----------- MODIFICAR PROVEEDOR ----------*/
+
+create PROC sp_ModificarProveedor(
+@IdProveedor int,
+@Documento varchar(50),
+@RazonSocial varchar(50),
+@Correo varchar(50),
+@Telefono varchar (50),
+@Estado bit,
+@Resultado bit output,
+@Mensaje varchar(500) output
+)
+as
+begin
+ SET @Resultado =1
+    DECLARE @IDPERSONA INT
+    IF NOT EXISTS (SELECT * FROM PROVEEDOR WHERE Documento = @Documento and IdProveedor != @IdProveedor)
+    begin
+        update PROVEEDOR set
+        Documento = @Documento,
+        RazonSocial = @RazonSocial,
+        Correo = @Correo,
+        Telefono = @Telefono,
+        Estado = @Estado
+        where IdProveedor = @IdProveedor
+    end
+    else
+    begin
+        SET @Resultado = 0
+        set @Mensaje = 'El numero de documento ya existe'
+    end
+end
+
+go
+
+/*--------- ELIMINAR PROVEEDOR------------------*/
+
+create PROC SP_EliminarProveedor(
+@IdProveedor int,
+@Resultado bit output,
+@Mensaje varchar(500) output
+)
+as
+begin
+	set @Resultado = 1
+	IF NOT EXISTS (SELECT * FROM PROVEEDOR p
+	INNER JOIN COMPRA c ON p.IdProveedor = c.IdProveedor
+	WHERE p.IdProveedor = @IdProveedor
+	)
+    begin
+	delete top (1) from PROVEEDOR where IdProveedor = @IdProveedor
+	end
+	ELSE
+	begin
+	SET @Resultado = 0
+        set @Mensaje = 'El proveedor se encuentra relacionado a una compra'
+	end
+
+end
+
+

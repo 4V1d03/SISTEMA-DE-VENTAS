@@ -423,3 +423,16 @@ C:\Users\DELL\Documents\GitHub\SISTEMA-DE-VENTAS\CapaPresentacion\obj\Debug\Capa
 C:\Users\DELL\Documents\GitHub\SISTEMA-DE-VENTAS\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CopyComplete
 C:\Users\DELL\Documents\GitHub\SISTEMA-DE-VENTAS\CapaPresentacion\obj\Debug\CapaPresentacion.exe
 C:\Users\DELL\Documents\GitHub\SISTEMA-DE-VENTAS\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+C:\Users\Usuario\OneDrive\Documentos\git\SISTEMA-DE-VENTAS\CapaPresentacion\bin\Debug\ClosedXML.dll
+C:\Users\Usuario\OneDrive\Documentos\git\SISTEMA-DE-VENTAS\CapaPresentacion\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\Usuario\OneDrive\Documentos\git\SISTEMA-DE-VENTAS\CapaPresentacion\bin\Debug\ExcelNumberFormat.dll
+C:\Users\Usuario\OneDrive\Documentos\git\SISTEMA-DE-VENTAS\CapaPresentacion\bin\Debug\Irony.dll
+C:\Users\Usuario\OneDrive\Documentos\git\SISTEMA-DE-VENTAS\CapaPresentacion\bin\Debug\SixLabors.Fonts.dll
+C:\Users\Usuario\OneDrive\Documentos\git\SISTEMA-DE-VENTAS\CapaPresentacion\bin\Debug\System.Buffers.dll
+C:\Users\Usuario\OneDrive\Documentos\git\SISTEMA-DE-VENTAS\CapaPresentacion\bin\Debug\System.IO.Packaging.dll
+C:\Users\Usuario\OneDrive\Documentos\git\SISTEMA-DE-VENTAS\CapaPresentacion\bin\Debug\System.Memory.dll
+C:\Users\Usuario\OneDrive\Documentos\git\SISTEMA-DE-VENTAS\CapaPresentacion\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Usuario\OneDrive\Documentos\git\SISTEMA-DE-VENTAS\CapaPresentacion\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Usuario\OneDrive\Documentos\git\SISTEMA-DE-VENTAS\CapaPresentacion\bin\Debug\XLParser.dll
+C:\Users\Usuario\OneDrive\Documentos\git\SISTEMA-DE-VENTAS\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.SuggestedBindingRedirects.cache
+C:\Users\Usuario\OneDrive\Documentos\git\SISTEMA-DE-VENTAS\CapaPresentacion\obj\Debug\CapaPresentacion.exe.config

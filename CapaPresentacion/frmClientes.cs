@@ -29,7 +29,7 @@ namespace CapaPresentacion
             cboestado.SelectedIndex = 0;
 
 
-            List<Rol> listaRol = new CN_Rol().Listar();
+        
 
             //llena el combobox  de buscar con opciones de las columnas que hay en datagrid
             foreach (DataGridViewColumn columna in dgvdata.Columns)
