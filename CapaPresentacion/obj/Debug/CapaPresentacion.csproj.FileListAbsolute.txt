@@ -436,3 +436,15 @@ C:\Users\Usuario\OneDrive\Documentos\git\SISTEMA-DE-VENTAS\CapaPresentacion\bin\
 C:\Users\Usuario\OneDrive\Documentos\git\SISTEMA-DE-VENTAS\CapaPresentacion\bin\Debug\XLParser.dll
 C:\Users\Usuario\OneDrive\Documentos\git\SISTEMA-DE-VENTAS\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.SuggestedBindingRedirects.cache
 C:\Users\Usuario\OneDrive\Documentos\git\SISTEMA-DE-VENTAS\CapaPresentacion\obj\Debug\CapaPresentacion.exe.config
+D:\Clases\github\SISTEMA-DE-VENTAS\CapaPresentacion\bin\Debug\ClosedXML.dll
+D:\Clases\github\SISTEMA-DE-VENTAS\CapaPresentacion\bin\Debug\DocumentFormat.OpenXml.dll
+D:\Clases\github\SISTEMA-DE-VENTAS\CapaPresentacion\bin\Debug\ExcelNumberFormat.dll
+D:\Clases\github\SISTEMA-DE-VENTAS\CapaPresentacion\bin\Debug\Irony.dll
+D:\Clases\github\SISTEMA-DE-VENTAS\CapaPresentacion\bin\Debug\SixLabors.Fonts.dll
+D:\Clases\github\SISTEMA-DE-VENTAS\CapaPresentacion\bin\Debug\System.Buffers.dll
+D:\Clases\github\SISTEMA-DE-VENTAS\CapaPresentacion\bin\Debug\System.IO.Packaging.dll
+D:\Clases\github\SISTEMA-DE-VENTAS\CapaPresentacion\bin\Debug\System.Memory.dll
+D:\Clases\github\SISTEMA-DE-VENTAS\CapaPresentacion\bin\Debug\System.Numerics.Vectors.dll
+D:\Clases\github\SISTEMA-DE-VENTAS\CapaPresentacion\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Clases\github\SISTEMA-DE-VENTAS\CapaPresentacion\bin\Debug\XLParser.dll
+D:\Clases\github\SISTEMA-DE-VENTAS\CapaPresentacion\obj\Debug\CapaPresentacion.exe.config

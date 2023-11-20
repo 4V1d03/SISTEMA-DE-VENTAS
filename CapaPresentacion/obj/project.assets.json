@@ -795,381 +795,6 @@
         }
       }
     },
-    ".NETFramework,Version=v4.8/win-arm64": {
-      "ClosedXML/0.102.1": {
-        "type": "package",
-        "dependencies": {
-          "DocumentFormat.OpenXml": "2.16.0",
-          "ExcelNumberFormat": "1.1.0",
-          "SixLabors.Fonts": "1.0.0",
-          "System.Buffers": "4.5.1",
-          "System.IO.Packaging": "6.0.0",
-          "System.Memory": "4.5.4",
-          "System.Net.Http": "4.3.4",
-          "System.Text.RegularExpressions": "4.3.1",
-          "XLParser": "1.5.2"
-        },
-        "compile": {
-          "lib/netstandard2.0/ClosedXML.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/ClosedXML.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "DocumentFormat.OpenXml/2.16.0": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System",
-          "System.Xml",
-          "WindowsBase"
-        ],
-        "compile": {
-          "lib/net46/DocumentFormat.OpenXml.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net46/DocumentFormat.OpenXml.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "EntityFramework/6.4.4": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System.ComponentModel.DataAnnotations"
-        ],
-        "compile": {
-          "lib/net45/EntityFramework.SqlServer.dll": {
-            "related": ".xml"
-          },
-          "lib/net45/EntityFramework.dll": {
-            "related": ".SqlServer.xml;.xml"
-          }
-        },
-        "runtime": {
-          "lib/net45/EntityFramework.SqlServer.dll": {
-            "related": ".xml"
-          },
-          "lib/net45/EntityFramework.dll": {
-            "related": ".SqlServer.xml;.xml"
-          }
-        },
-        "build": {
-          "buildTransitive/EntityFramework.props": {},
-          "buildTransitive/EntityFramework.targets": {}
-        }
-      },
-      "ExcelNumberFormat/1.1.0": {
-        "type": "package",
-        "compile": {
-          "lib/net20/ExcelNumberFormat.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net20/ExcelNumberFormat.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "FontAwesome.Sharp/5.15.3": {
-        "type": "package",
-        "compile": {
-          "lib/net48/FontAwesome.Sharp.dll": {}
-        },
-        "runtime": {
-          "lib/net48/FontAwesome.Sharp.dll": {}
-        }
-      },
-      "Irony.NetCore/1.0.11": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "Microsoft.CSharp",
-          "System",
-          "System.Numerics"
-        ],
-        "compile": {
-          "lib/net461/Irony.dll": {}
-        },
-        "runtime": {
-          "lib/net461/Irony.dll": {}
-        }
-      },
-      "SixLabors.Fonts/1.0.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Buffers": "4.5.1",
-          "System.Memory": "4.5.4",
-          "System.Numerics.Vectors": "4.5.0",
-          "System.Runtime.CompilerServices.Unsafe": "4.7.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/SixLabors.Fonts.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/SixLabors.Fonts.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "System.Buffers/4.5.1": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "mscorlib"
-        ],
-        "compile": {
-          "ref/net45/System.Buffers.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net461/System.Buffers.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "System.IO/4.3.0": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System",
-          "mscorlib"
-        ],
-        "compile": {
-          "ref/net462/System.IO.dll": {}
-        },
-        "runtime": {
-          "lib/net462/System.IO.dll": {}
-        }
-      },
-      "System.IO.Packaging/6.0.0": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "WindowsBase"
-        ],
-        "compile": {
-          "lib/net461/System.IO.Packaging.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net461/System.IO.Packaging.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "System.Memory/4.5.4": {
-        "type": "package",
-        "dependencies": {
-          "System.Buffers": "4.5.1",
-          "System.Numerics.Vectors": "4.5.0",
-          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
-        },
-        "frameworkAssemblies": [
-          "System",
-          "mscorlib"
-        ],
-        "compile": {
-          "lib/net461/System.Memory.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net461/System.Memory.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "System.Net.Http/4.3.4": {
-        "type": "package",
-        "dependencies": {
-          "System.Security.Cryptography.X509Certificates": "4.3.0"
-        },
-        "frameworkAssemblies": [
-          "System",
-          "System.Core",
-          "mscorlib"
-        ],
-        "compile": {
-          "ref/net46/System.Net.Http.dll": {}
-        },
-        "runtime": {
-          "lib/net46/System.Net.Http.dll": {}
-        }
-      },
-      "System.Numerics.Vectors/4.5.0": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System.Numerics",
-          "mscorlib"
-        ],
-        "compile": {
-          "ref/net46/System.Numerics.Vectors.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net46/System.Numerics.Vectors.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "System.Runtime/4.3.0": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System",
-          "System.ComponentModel.Composition",
-          "System.Core",
-          "mscorlib"
-        ],
-        "compile": {
-          "ref/net462/System.Runtime.dll": {}
-        },
-        "runtime": {
-          "lib/net462/System.Runtime.dll": {}
-        }
-      },
-      "System.Runtime.CompilerServices.Unsafe/4.7.0": {
-        "type": "package",
-        "compile": {
-          "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "System.Security.Cryptography.Algorithms/4.3.0": {
-        "type": "package",
-        "dependencies": {
-          "System.IO": "4.3.0",
-          "System.Runtime": "4.3.0",
-          "System.Security.Cryptography.Encoding": "4.3.0",
-          "System.Security.Cryptography.Primitives": "4.3.0"
-        },
-        "frameworkAssemblies": [
-          "System.Core",
-          "mscorlib"
-        ],
-        "compile": {
-          "ref/net463/System.Security.Cryptography.Algorithms.dll": {}
-        },
-        "runtime": {
-          "lib/net463/System.Security.Cryptography.Algorithms.dll": {}
-        }
-      },
-      "System.Security.Cryptography.Encoding/4.3.0": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System",
-          "mscorlib"
-        ],
-        "compile": {
-          "ref/net46/System.Security.Cryptography.Encoding.dll": {}
-        },
-        "runtime": {
-          "lib/net46/System.Security.Cryptography.Encoding.dll": {}
-        }
-      },
-      "System.Security.Cryptography.Primitives/4.3.0": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "mscorlib"
-        ],
-        "compile": {
-          "ref/net46/System.Security.Cryptography.Primitives.dll": {}
-        },
-        "runtime": {
-          "lib/net46/System.Security.Cryptography.Primitives.dll": {}
-        }
-      },
-      "System.Security.Cryptography.X509Certificates/4.3.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Security.Cryptography.Algorithms": "4.3.0",
-          "System.Security.Cryptography.Encoding": "4.3.0"
-        },
-        "frameworkAssemblies": [
-          "System",
-          "System.Core",
-          "mscorlib"
-        ],
-        "compile": {
-          "ref/net461/System.Security.Cryptography.X509Certificates.dll": {}
-        },
-        "runtime": {
-          "lib/net461/System.Security.Cryptography.X509Certificates.dll": {}
-        }
-      },
-      "System.Text.RegularExpressions/4.3.1": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System",
-          "mscorlib"
-        ],
-        "compile": {
-          "ref/net463/System.Text.RegularExpressions.dll": {}
-        },
-        "runtime": {
-          "lib/net463/System.Text.RegularExpressions.dll": {}
-        }
-      },
-      "XLParser/1.5.2": {
-        "type": "package",
-        "dependencies": {
-          "Irony.NetCore": "1.0.11"
-        },
-        "compile": {
-          "lib/net461/XLParser.dll": {}
-        },
-        "runtime": {
-          "lib/net461/XLParser.dll": {}
-        }
-      },
-      "CapaDatos/1.0.0": {
-        "type": "project",
-        "dependencies": {
-          "CapaEntidad": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/CapaDatos.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/CapaDatos.dll": {}
-        }
-      },
-      "CapaEntidad/1.0.0": {
-        "type": "project",
-        "compile": {
-          "bin/placeholder/CapaEntidad.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/CapaEntidad.dll": {}
-        }
-      },
-      "CapaNegocio/1.0.0": {
-        "type": "project",
-        "dependencies": {
-          "CapaDatos": "1.0.0",
-          "CapaEntidad": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/CapaNegocio.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/CapaNegocio.dll": {}
-        }
-      }
-    },
     ".NETFramework,Version=v4.8/win-x64": {
       "ClosedXML/0.102.1": {
         "type": "package",
@@ -2738,20 +2363,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Usuario\\.nuget\\packages\\": {}
+    "C:\\Users\\HP\\.nuget\\packages\\": {},
+    "D:\\cosas\\Visual Studio\\componentes\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuario\\OneDrive\\Documentos\\git\\SISTEMA-DE-VENTAS\\CapaPresentacion\\CapaPresentacion.csproj",
+      "projectUniqueName": "D:\\Clases\\github\\SISTEMA-DE-VENTAS\\CapaPresentacion\\CapaPresentacion.csproj",
       "projectName": "CapaPresentacion",
-      "projectPath": "C:\\Users\\Usuario\\OneDrive\\Documentos\\git\\SISTEMA-DE-VENTAS\\CapaPresentacion\\CapaPresentacion.csproj",
-      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario\\OneDrive\\Documentos\\git\\SISTEMA-DE-VENTAS\\CapaPresentacion\\obj\\",
+      "projectPath": "D:\\Clases\\github\\SISTEMA-DE-VENTAS\\CapaPresentacion\\CapaPresentacion.csproj",
+      "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+      "outputPath": "D:\\Clases\\github\\SISTEMA-DE-VENTAS\\CapaPresentacion\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
+      "fallbackFolders": [
+        "D:\\cosas\\Visual Studio\\componentes\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2764,11 +2394,11 @@
       "frameworks": {
         "net48": {
           "projectReferences": {
-            "C:\\Users\\Usuario\\OneDrive\\Documentos\\git\\SISTEMA-DE-VENTAS\\CapaEntidad\\CapaEntidad.csproj": {
-              "projectPath": "C:\\Users\\Usuario\\OneDrive\\Documentos\\git\\SISTEMA-DE-VENTAS\\CapaEntidad\\CapaEntidad.csproj"
+            "D:\\Clases\\github\\SISTEMA-DE-VENTAS\\CapaEntidad\\CapaEntidad.csproj": {
+              "projectPath": "D:\\Clases\\github\\SISTEMA-DE-VENTAS\\CapaEntidad\\CapaEntidad.csproj"
             },
-            "C:\\Users\\Usuario\\OneDrive\\Documentos\\git\\SISTEMA-DE-VENTAS\\CapaNegocio\\CapaNegocio.csproj": {
-              "projectPath": "C:\\Users\\Usuario\\OneDrive\\Documentos\\git\\SISTEMA-DE-VENTAS\\CapaNegocio\\CapaNegocio.csproj"
+            "D:\\Clases\\github\\SISTEMA-DE-VENTAS\\CapaNegocio\\CapaNegocio.csproj": {
+              "projectPath": "D:\\Clases\\github\\SISTEMA-DE-VENTAS\\CapaNegocio\\CapaNegocio.csproj"
             }
           }
         }
@@ -2794,9 +2424,6 @@
     },
     "runtimes": {
       "win": {
-        "#import": []
-      },
-      "win-arm64": {
         "#import": []
       },
       "win-x64": {
