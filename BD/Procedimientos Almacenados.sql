@@ -464,3 +464,10 @@ end
 
 insert into NEGOCIO(IdNegocio,Nombre,RUC,Direccion) values(1,'Plasticos Tonita','101010','av.Codigo 123')
 go
+
+
+
+
+/*---------------------------------------------------*/
+select * from USUARIO
+

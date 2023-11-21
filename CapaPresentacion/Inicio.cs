@@ -142,7 +142,7 @@ namespace CapaPresentacion
 
         private void submenuregistrarcompra_Click_1(object sender, EventArgs e)
         {
-            AbrirFormulario(menucompras, new frmCompras(/*usuarioActual*/));
+            AbrirFormulario(menucompras, new frmCompras(usuarioActual));
             FormularioActivo.BackColor = Color.LightBlue;
         }
 
@@ -182,6 +182,11 @@ namespace CapaPresentacion
         {
             mdAcercade md = new mdAcercade();
             md.ShowDialog();
+        }
+
+        private void Inicio_Load_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

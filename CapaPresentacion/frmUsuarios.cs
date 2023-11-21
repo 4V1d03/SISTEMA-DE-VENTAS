@@ -289,7 +289,9 @@ namespace CapaPresentacion
             }
         }
 
-        
-        
+        private void cboestado_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

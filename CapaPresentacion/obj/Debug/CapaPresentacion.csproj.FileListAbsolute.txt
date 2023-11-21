@@ -448,3 +448,4 @@ D:\Clases\github\SISTEMA-DE-VENTAS\CapaPresentacion\bin\Debug\System.Numerics.Ve
 D:\Clases\github\SISTEMA-DE-VENTAS\CapaPresentacion\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
 D:\Clases\github\SISTEMA-DE-VENTAS\CapaPresentacion\bin\Debug\XLParser.dll
 D:\Clases\github\SISTEMA-DE-VENTAS\CapaPresentacion\obj\Debug\CapaPresentacion.exe.config
+C:\Users\ASUS\Documents\github\SISTEMA-DE-VENTAS\CapaPresentacion\obj\Debug\CapaPresentacion.Modales.mdProducto.resources
