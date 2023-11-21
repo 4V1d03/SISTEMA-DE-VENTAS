@@ -1,8 +1,8 @@
 ﻿using CapaEntidad;
 using System;
 using System.Collections.Generic;
-using System.Data.SqlClient;
 using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,6 +11,7 @@ namespace CapaDatos
 {
     public class CD_Proveedor
     {
+
         public List<Proveedor> Listar()
         {
             List<Proveedor> lista = new List<Proveedor>();
@@ -20,11 +21,8 @@ namespace CapaDatos
 
                 try
                 {
-
                     StringBuilder query = new StringBuilder();
                     query.AppendLine("select IdProveedor,Documento,RazonSocial,Correo,Telefono,Estado from PROVEEDOR");
-                   
-
 
                     SqlCommand cmd = new SqlCommand(query.ToString(), oconexion);
                     cmd.CommandType = CommandType.Text;
@@ -41,11 +39,10 @@ namespace CapaDatos
                             {
                                 IdProveedor = Convert.ToInt32(dr["IdProveedor"]),
                                 Documento = dr["Documento"].ToString(),
-                                RazonSocial= dr["RazonSocial"].ToString(),
+                                RazonSocial = dr["RazonSocial"].ToString(),
                                 Correo = dr["Correo"].ToString(),
                                 Telefono = dr["Telefono"].ToString(),
                                 Estado = Convert.ToBoolean(dr["Estado"])
-                                
                             });
 
                         }
@@ -72,18 +69,15 @@ namespace CapaDatos
         {
             int idProveedorgenerado = 0;
             Mensaje = string.Empty;
-
-
             try
             {
-
                 using (SqlConnection oconexion = new SqlConnection(Conexion.cadena))
                 {
                     SqlCommand cmd = new SqlCommand("sp_RegistrarProveedor", oconexion);
                     cmd.Parameters.AddWithValue("Documento", obj.Documento);
                     cmd.Parameters.AddWithValue("RazonSocial", obj.RazonSocial);
                     cmd.Parameters.AddWithValue("Correo", obj.Correo);
-                    cmd.Parameters.AddWithValue("Telefono", obj.Telefono);                  
+                    cmd.Parameters.AddWithValue("Telefono", obj.Telefono);
                     cmd.Parameters.AddWithValue("Estado", obj.Estado);
                     cmd.Parameters.Add("Resultado", SqlDbType.Int).Direction = ParameterDirection.Output;
                     cmd.Parameters.Add("Mensaje", SqlDbType.VarChar, 500).Direction = ParameterDirection.Output;
@@ -116,12 +110,11 @@ namespace CapaDatos
         {
             bool respuesta = false;
             Mensaje = string.Empty;
-
             try
             {
-
                 using (SqlConnection oconexion = new SqlConnection(Conexion.cadena))
                 {
+
                     SqlCommand cmd = new SqlCommand("sp_ModificarProveedor", oconexion);
                     cmd.Parameters.AddWithValue("IdProveedor", obj.IdProveedor);
                     cmd.Parameters.AddWithValue("Documento", obj.Documento);
@@ -168,7 +161,7 @@ namespace CapaDatos
                 {
 
 
-                    SqlCommand cmd = new SqlCommand("SP_EliminarProveedor", oconexion);
+                    SqlCommand cmd = new SqlCommand("sp_EliminarProveedor", oconexion);
                     cmd.Parameters.AddWithValue("IdProveedor", obj.IdProveedor);
                     cmd.Parameters.Add("Resultado", SqlDbType.Int).Direction = ParameterDirection.Output;
                     cmd.Parameters.Add("Mensaje", SqlDbType.VarChar, 500).Direction = ParameterDirection.Output;
@@ -192,6 +185,7 @@ namespace CapaDatos
 
             return respuesta;
         }
+
 
 
     }

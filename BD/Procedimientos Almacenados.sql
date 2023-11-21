@@ -306,7 +306,7 @@ update PRODUCTO set Estado = 1
 
 DROP PROCEDURE SP_EliminarProducto;
 
-
+go
 /* ---------------- PROCEDIMIENTOS PARA CLIENTE---------------------*/
 
 /* ---------------- PROCEDIMIENTOS PARA REGISTRAR CLIENTE---------------------*/
@@ -377,28 +377,25 @@ create PROC sp_RegistrarProveedor(
 @Documento varchar(50),
 @RazonSocial varchar(50),
 @Correo varchar(50),
-@Telefono varchar (50),
+@Telefono varchar(50),
 @Estado bit,
-@Resultado bit output,
+@Resultado int output,
 @Mensaje varchar(500) output
-)
-as
+)as
 begin
-    SET @Resultado = 0
-	DECLARE @IDPERSONA INT
-	if not exists(SELECT * FROM PROVEEDOR WHERE Documento = @Documento)
+	SET @Resultado = 0
+	DECLARE @IDPERSONA INT 
+	IF NOT EXISTS (SELECT * FROM PROVEEDOR WHERE Documento = @Documento)
 	begin
-	    insert into PROVEEDOR(Documento,RazonSocial,Correo,Telefono,Estado) values(
+		insert into PROVEEDOR(Documento,RazonSocial,Correo,Telefono,Estado) values (
 		@Documento,@RazonSocial,@Correo,@Telefono,@Estado)
 
 		set @Resultado = SCOPE_IDENTITY()
-		 end
-    else
-        set @Mensaje = 'El numero de documento ya existe'
+	end
+	else
+		set @Mensaje = 'El numero de documento ya existe'
 end
-
 go
-
 /*----------- MODIFICAR PROVEEDOR ----------*/
 
 create PROC sp_ModificarProveedor(
@@ -406,58 +403,62 @@ create PROC sp_ModificarProveedor(
 @Documento varchar(50),
 @RazonSocial varchar(50),
 @Correo varchar(50),
-@Telefono varchar (50),
+@Telefono varchar(50),
 @Estado bit,
 @Resultado bit output,
 @Mensaje varchar(500) output
-)
-as
+)as
 begin
- SET @Resultado =1
-    DECLARE @IDPERSONA INT
-    IF NOT EXISTS (SELECT * FROM PROVEEDOR WHERE Documento = @Documento and IdProveedor != @IdProveedor)
-    begin
-        update PROVEEDOR set
-        Documento = @Documento,
-        RazonSocial = @RazonSocial,
-        Correo = @Correo,
-        Telefono = @Telefono,
-        Estado = @Estado
-        where IdProveedor = @IdProveedor
-    end
-    else
-    begin
-        SET @Resultado = 0
-        set @Mensaje = 'El numero de documento ya existe'
-    end
+	SET @Resultado = 1
+	DECLARE @IDPERSONA INT 
+	IF NOT EXISTS (SELECT * FROM PROVEEDOR WHERE Documento = @Documento and IdProveedor != @IdProveedor)
+	begin
+		update PROVEEDOR set
+		Documento = @Documento,
+		RazonSocial = @RazonSocial,
+		Correo = @Correo,
+		Telefono = @Telefono,
+		Estado = @Estado
+		where IdProveedor = @IdProveedor
+	end
+	else
+	begin
+		SET @Resultado = 0
+		set @Mensaje = 'El numero de documento ya existe'
+	end
 end
 
 go
 
 /*--------- ELIMINAR PROVEEDOR------------------*/
 
-create PROC SP_EliminarProveedor(
+create procedure sp_EliminarProveedor(
 @IdProveedor int,
 @Resultado bit output,
 @Mensaje varchar(500) output
 )
 as
 begin
-	set @Resultado = 1
-	IF NOT EXISTS (SELECT * FROM PROVEEDOR p
-	INNER JOIN COMPRA c ON p.IdProveedor = c.IdProveedor
-	WHERE p.IdProveedor = @IdProveedor
+	SET @Resultado = 1
+	IF NOT EXISTS (
+	 select *  from PROVEEDOR p
+	 inner join COMPRA c on p.IdProveedor = c.IdProveedor
+	 where p.IdProveedor = @IdProveedor
 	)
-    begin
-	delete top (1) from PROVEEDOR where IdProveedor = @IdProveedor
+	begin
+	 delete top(1) from PROVEEDOR where IdProveedor = @IdProveedor
 	end
 	ELSE
 	begin
-	SET @Resultado = 0
-        set @Mensaje = 'El proveedor se encuentra relacionado a una compra'
+		SET @Resultado = 0
+		set @Mensaje = 'El proveedor se encuentara relacionado a una compra'
 	end
 
 end
+
+go
+
+select * from PROVEEDOR
 
 
 /*-------------INSERTAR DATOS NEGOCIO-----------------*/
@@ -465,6 +466,7 @@ end
 insert into NEGOCIO(IdNegocio,Nombre,RUC,Direccion) values(1,'Plasticos Tonita','101010','av.Codigo 123')
 go
 
+select * from NEGOCIO
 
 
 

@@ -449,3 +449,16 @@ D:\Clases\github\SISTEMA-DE-VENTAS\CapaPresentacion\bin\Debug\System.Runtime.Com
 D:\Clases\github\SISTEMA-DE-VENTAS\CapaPresentacion\bin\Debug\XLParser.dll
 D:\Clases\github\SISTEMA-DE-VENTAS\CapaPresentacion\obj\Debug\CapaPresentacion.exe.config
 C:\Users\ASUS\Documents\github\SISTEMA-DE-VENTAS\CapaPresentacion\obj\Debug\CapaPresentacion.Modales.mdProducto.resources
+C:\Users\aguil\Documents\GITHUB\SISTEMA-DE-VENTAS\CapaPresentacion\bin\Debug\ClosedXML.dll
+C:\Users\aguil\Documents\GITHUB\SISTEMA-DE-VENTAS\CapaPresentacion\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\aguil\Documents\GITHUB\SISTEMA-DE-VENTAS\CapaPresentacion\bin\Debug\ExcelNumberFormat.dll
+C:\Users\aguil\Documents\GITHUB\SISTEMA-DE-VENTAS\CapaPresentacion\bin\Debug\Irony.dll
+C:\Users\aguil\Documents\GITHUB\SISTEMA-DE-VENTAS\CapaPresentacion\bin\Debug\SixLabors.Fonts.dll
+C:\Users\aguil\Documents\GITHUB\SISTEMA-DE-VENTAS\CapaPresentacion\bin\Debug\System.Buffers.dll
+C:\Users\aguil\Documents\GITHUB\SISTEMA-DE-VENTAS\CapaPresentacion\bin\Debug\System.IO.Packaging.dll
+C:\Users\aguil\Documents\GITHUB\SISTEMA-DE-VENTAS\CapaPresentacion\bin\Debug\System.Memory.dll
+C:\Users\aguil\Documents\GITHUB\SISTEMA-DE-VENTAS\CapaPresentacion\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\aguil\Documents\GITHUB\SISTEMA-DE-VENTAS\CapaPresentacion\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\aguil\Documents\GITHUB\SISTEMA-DE-VENTAS\CapaPresentacion\bin\Debug\XLParser.dll
+C:\Users\aguil\Documents\GITHUB\SISTEMA-DE-VENTAS\CapaPresentacion\obj\Debug\CapaPresentacion.exe.config
+C:\Users\aguil\Documents\GITHUB\SISTEMA-DE-VENTAS\CapaPresentacion\obj\Debug\CapaPresentacion.Modales.mdProducto.resources

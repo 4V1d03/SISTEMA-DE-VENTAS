@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    ".NETFramework,Version=v4.6.1": {
+    ".NETFramework,Version=v4.8": {
       "ClosedXML/0.102.1": {
         "type": "package",
         "dependencies": {
@@ -16,10 +16,14 @@
           "XLParser": "1.5.2"
         },
         "compile": {
-          "lib/netstandard2.0/ClosedXML.dll": {}
+          "lib/netstandard2.0/ClosedXML.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/ClosedXML.dll": {}
+          "lib/netstandard2.0/ClosedXML.dll": {
+            "related": ".xml"
+          }
         }
       },
       "DocumentFormat.OpenXml/2.16.0": {
@@ -30,10 +34,14 @@
           "WindowsBase"
         ],
         "compile": {
-          "lib/net46/DocumentFormat.OpenXml.dll": {}
+          "lib/net46/DocumentFormat.OpenXml.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net46/DocumentFormat.OpenXml.dll": {}
+          "lib/net46/DocumentFormat.OpenXml.dll": {
+            "related": ".xml"
+          }
         }
       },
       "EntityFramework/6.4.4": {
@@ -42,34 +50,46 @@
           "System.ComponentModel.DataAnnotations"
         ],
         "compile": {
-          "lib/net45/EntityFramework.SqlServer.dll": {},
-          "lib/net45/EntityFramework.dll": {}
+          "lib/net45/EntityFramework.SqlServer.dll": {
+            "related": ".xml"
+          },
+          "lib/net45/EntityFramework.dll": {
+            "related": ".SqlServer.xml;.xml"
+          }
         },
         "runtime": {
-          "lib/net45/EntityFramework.SqlServer.dll": {},
-          "lib/net45/EntityFramework.dll": {}
+          "lib/net45/EntityFramework.SqlServer.dll": {
+            "related": ".xml"
+          },
+          "lib/net45/EntityFramework.dll": {
+            "related": ".SqlServer.xml;.xml"
+          }
         },
         "build": {
-          "build/EntityFramework.props": {},
-          "build/EntityFramework.targets": {}
+          "buildTransitive/EntityFramework.props": {},
+          "buildTransitive/EntityFramework.targets": {}
         }
       },
       "ExcelNumberFormat/1.1.0": {
         "type": "package",
         "compile": {
-          "lib/net20/ExcelNumberFormat.dll": {}
+          "lib/net20/ExcelNumberFormat.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net20/ExcelNumberFormat.dll": {}
+          "lib/net20/ExcelNumberFormat.dll": {
+            "related": ".xml"
+          }
         }
       },
       "FontAwesome.Sharp/5.15.3": {
         "type": "package",
         "compile": {
-          "lib/net45/FontAwesome.Sharp.dll": {}
+          "lib/net48/FontAwesome.Sharp.dll": {}
         },
         "runtime": {
-          "lib/net45/FontAwesome.Sharp.dll": {}
+          "lib/net48/FontAwesome.Sharp.dll": {}
         }
       },
       "Irony.NetCore/1.0.11": {
@@ -95,10 +115,14 @@
           "System.Runtime.CompilerServices.Unsafe": "4.7.0"
         },
         "compile": {
-          "lib/netstandard2.0/SixLabors.Fonts.dll": {}
+          "lib/netstandard2.0/SixLabors.Fonts.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/SixLabors.Fonts.dll": {}
+          "lib/netstandard2.0/SixLabors.Fonts.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Buffers/4.5.1": {
@@ -107,22 +131,27 @@
           "mscorlib"
         ],
         "compile": {
-          "ref/net45/System.Buffers.dll": {}
+          "ref/net45/System.Buffers.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net461/System.Buffers.dll": {}
+          "lib/net461/System.Buffers.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.IO/4.3.0": {
         "type": "package",
         "frameworkAssemblies": [
-          "System"
+          "System",
+          "mscorlib"
         ],
         "compile": {
-          "ref/net45/_._": {}
+          "ref/net462/System.IO.dll": {}
         },
         "runtime": {
-          "lib/net45/_._": {}
+          "lib/net462/System.IO.dll": {}
         }
       },
       "System.IO.Packaging/6.0.0": {
@@ -131,10 +160,14 @@
           "WindowsBase"
         ],
         "compile": {
-          "lib/net461/System.IO.Packaging.dll": {}
+          "lib/net461/System.IO.Packaging.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net461/System.IO.Packaging.dll": {}
+          "lib/net461/System.IO.Packaging.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Memory/4.5.4": {
@@ -149,10 +182,14 @@
           "mscorlib"
         ],
         "compile": {
-          "lib/net461/System.Memory.dll": {}
+          "lib/net461/System.Memory.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net461/System.Memory.dll": {}
+          "lib/net461/System.Memory.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Net.Http/4.3.4": {
@@ -189,36 +226,63 @@
           "mscorlib"
         ],
         "compile": {
-          "ref/net46/System.Numerics.Vectors.dll": {}
+          "ref/net46/System.Numerics.Vectors.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net46/System.Numerics.Vectors.dll": {}
+          "lib/net46/System.Numerics.Vectors.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Runtime/4.3.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "System.ComponentModel.Composition",
+          "System.Core",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net462/System.Runtime.dll": {}
+        },
+        "runtime": {
+          "lib/net462/System.Runtime.dll": {}
         }
       },
       "System.Runtime.CompilerServices.Unsafe/4.7.0": {
         "type": "package",
         "compile": {
-          "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+          "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Runtime.Extensions/4.3.0": {
         "type": "package",
         "frameworkAssemblies": [
-          "System"
+          "System",
+          "mscorlib"
         ],
         "compile": {
-          "ref/net45/_._": {}
+          "ref/net462/System.Runtime.Extensions.dll": {}
         },
         "runtime": {
-          "lib/net45/_._": {}
+          "lib/net462/System.Runtime.Extensions.dll": {}
         }
       },
       "System.Security.Cryptography.Algorithms/4.3.0": {
         "type": "package",
         "dependencies": {
+          "System.IO": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Security.Cryptography.Encoding": "4.3.0",
           "System.Security.Cryptography.Primitives": "4.3.0"
         },
         "frameworkAssemblies": [
@@ -226,10 +290,10 @@
           "mscorlib"
         ],
         "compile": {
-          "ref/net461/System.Security.Cryptography.Algorithms.dll": {}
+          "ref/net463/System.Security.Cryptography.Algorithms.dll": {}
         },
         "runtime": {
-          "lib/net461/System.Security.Cryptography.Algorithms.dll": {}
+          "lib/net463/System.Security.Cryptography.Algorithms.dll": {}
         },
         "runtimeTargets": {
           "runtimes/osx/lib/netstandard1.6/System.Security.Cryptography.Algorithms.dll": {
@@ -240,7 +304,7 @@
             "assetType": "runtime",
             "rid": "unix"
           },
-          "runtimes/win/lib/net461/System.Security.Cryptography.Algorithms.dll": {
+          "runtimes/win/lib/net463/System.Security.Cryptography.Algorithms.dll": {
             "assetType": "runtime",
             "rid": "win"
           }
@@ -312,13 +376,14 @@
       "System.Text.RegularExpressions/4.3.1": {
         "type": "package",
         "frameworkAssemblies": [
-          "System"
+          "System",
+          "mscorlib"
         ],
         "compile": {
-          "ref/net45/_._": {}
+          "ref/net463/System.Text.RegularExpressions.dll": {}
         },
         "runtime": {
-          "lib/net45/_._": {}
+          "lib/net463/System.Text.RegularExpressions.dll": {}
         }
       },
       "XLParser/1.5.2": {
@@ -368,7 +433,7 @@
         }
       }
     },
-    ".NETFramework,Version=v4.6.1/win": {
+    ".NETFramework,Version=v4.8/win": {
       "ClosedXML/0.102.1": {
         "type": "package",
         "dependencies": {
@@ -383,10 +448,14 @@
           "XLParser": "1.5.2"
         },
         "compile": {
-          "lib/netstandard2.0/ClosedXML.dll": {}
+          "lib/netstandard2.0/ClosedXML.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/ClosedXML.dll": {}
+          "lib/netstandard2.0/ClosedXML.dll": {
+            "related": ".xml"
+          }
         }
       },
       "DocumentFormat.OpenXml/2.16.0": {
@@ -397,10 +466,14 @@
           "WindowsBase"
         ],
         "compile": {
-          "lib/net46/DocumentFormat.OpenXml.dll": {}
+          "lib/net46/DocumentFormat.OpenXml.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net46/DocumentFormat.OpenXml.dll": {}
+          "lib/net46/DocumentFormat.OpenXml.dll": {
+            "related": ".xml"
+          }
         }
       },
       "EntityFramework/6.4.4": {
@@ -409,34 +482,46 @@
           "System.ComponentModel.DataAnnotations"
         ],
         "compile": {
-          "lib/net45/EntityFramework.SqlServer.dll": {},
-          "lib/net45/EntityFramework.dll": {}
+          "lib/net45/EntityFramework.SqlServer.dll": {
+            "related": ".xml"
+          },
+          "lib/net45/EntityFramework.dll": {
+            "related": ".SqlServer.xml;.xml"
+          }
         },
         "runtime": {
-          "lib/net45/EntityFramework.SqlServer.dll": {},
-          "lib/net45/EntityFramework.dll": {}
+          "lib/net45/EntityFramework.SqlServer.dll": {
+            "related": ".xml"
+          },
+          "lib/net45/EntityFramework.dll": {
+            "related": ".SqlServer.xml;.xml"
+          }
         },
         "build": {
-          "build/EntityFramework.props": {},
-          "build/EntityFramework.targets": {}
+          "buildTransitive/EntityFramework.props": {},
+          "buildTransitive/EntityFramework.targets": {}
         }
       },
       "ExcelNumberFormat/1.1.0": {
         "type": "package",
         "compile": {
-          "lib/net20/ExcelNumberFormat.dll": {}
+          "lib/net20/ExcelNumberFormat.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net20/ExcelNumberFormat.dll": {}
+          "lib/net20/ExcelNumberFormat.dll": {
+            "related": ".xml"
+          }
         }
       },
       "FontAwesome.Sharp/5.15.3": {
         "type": "package",
         "compile": {
-          "lib/net45/FontAwesome.Sharp.dll": {}
+          "lib/net48/FontAwesome.Sharp.dll": {}
         },
         "runtime": {
-          "lib/net45/FontAwesome.Sharp.dll": {}
+          "lib/net48/FontAwesome.Sharp.dll": {}
         }
       },
       "Irony.NetCore/1.0.11": {
@@ -462,10 +547,14 @@
           "System.Runtime.CompilerServices.Unsafe": "4.7.0"
         },
         "compile": {
-          "lib/netstandard2.0/SixLabors.Fonts.dll": {}
+          "lib/netstandard2.0/SixLabors.Fonts.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/SixLabors.Fonts.dll": {}
+          "lib/netstandard2.0/SixLabors.Fonts.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Buffers/4.5.1": {
@@ -474,22 +563,27 @@
           "mscorlib"
         ],
         "compile": {
-          "ref/net45/System.Buffers.dll": {}
+          "ref/net45/System.Buffers.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net461/System.Buffers.dll": {}
+          "lib/net461/System.Buffers.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.IO/4.3.0": {
         "type": "package",
         "frameworkAssemblies": [
-          "System"
+          "System",
+          "mscorlib"
         ],
         "compile": {
-          "ref/net45/_._": {}
+          "ref/net462/System.IO.dll": {}
         },
         "runtime": {
-          "lib/net45/_._": {}
+          "lib/net462/System.IO.dll": {}
         }
       },
       "System.IO.Packaging/6.0.0": {
@@ -498,10 +592,14 @@
           "WindowsBase"
         ],
         "compile": {
-          "lib/net461/System.IO.Packaging.dll": {}
+          "lib/net461/System.IO.Packaging.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net461/System.IO.Packaging.dll": {}
+          "lib/net461/System.IO.Packaging.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Memory/4.5.4": {
@@ -516,10 +614,14 @@
           "mscorlib"
         ],
         "compile": {
-          "lib/net461/System.Memory.dll": {}
+          "lib/net461/System.Memory.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net461/System.Memory.dll": {}
+          "lib/net461/System.Memory.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Net.Http/4.3.4": {
@@ -546,36 +648,63 @@
           "mscorlib"
         ],
         "compile": {
-          "ref/net46/System.Numerics.Vectors.dll": {}
+          "ref/net46/System.Numerics.Vectors.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net46/System.Numerics.Vectors.dll": {}
+          "lib/net46/System.Numerics.Vectors.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Runtime/4.3.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "System.ComponentModel.Composition",
+          "System.Core",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net462/System.Runtime.dll": {}
+        },
+        "runtime": {
+          "lib/net462/System.Runtime.dll": {}
         }
       },
       "System.Runtime.CompilerServices.Unsafe/4.7.0": {
         "type": "package",
         "compile": {
-          "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+          "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Runtime.Extensions/4.3.0": {
         "type": "package",
         "frameworkAssemblies": [
-          "System"
+          "System",
+          "mscorlib"
         ],
         "compile": {
-          "ref/net45/_._": {}
+          "ref/net462/System.Runtime.Extensions.dll": {}
         },
         "runtime": {
-          "lib/net45/_._": {}
+          "lib/net462/System.Runtime.Extensions.dll": {}
         }
       },
       "System.Security.Cryptography.Algorithms/4.3.0": {
         "type": "package",
         "dependencies": {
+          "System.IO": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Security.Cryptography.Encoding": "4.3.0",
           "System.Security.Cryptography.Primitives": "4.3.0"
         },
         "frameworkAssemblies": [
@@ -583,10 +712,10 @@
           "mscorlib"
         ],
         "compile": {
-          "ref/net461/System.Security.Cryptography.Algorithms.dll": {}
+          "ref/net463/System.Security.Cryptography.Algorithms.dll": {}
         },
         "runtime": {
-          "runtimes/win/lib/net461/System.Security.Cryptography.Algorithms.dll": {}
+          "runtimes/win/lib/net463/System.Security.Cryptography.Algorithms.dll": {}
         }
       },
       "System.Security.Cryptography.Encoding/4.3.0": {
@@ -635,13 +764,14 @@
       "System.Text.RegularExpressions/4.3.1": {
         "type": "package",
         "frameworkAssemblies": [
-          "System"
+          "System",
+          "mscorlib"
         ],
         "compile": {
-          "ref/net45/_._": {}
+          "ref/net463/System.Text.RegularExpressions.dll": {}
         },
         "runtime": {
-          "lib/net45/_._": {}
+          "lib/net463/System.Text.RegularExpressions.dll": {}
         }
       },
       "XLParser/1.5.2": {
@@ -691,7 +821,7 @@
         }
       }
     },
-    ".NETFramework,Version=v4.6.1/win-x64": {
+    ".NETFramework,Version=v4.8/win-arm64": {
       "ClosedXML/0.102.1": {
         "type": "package",
         "dependencies": {
@@ -706,10 +836,14 @@
           "XLParser": "1.5.2"
         },
         "compile": {
-          "lib/netstandard2.0/ClosedXML.dll": {}
+          "lib/netstandard2.0/ClosedXML.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/ClosedXML.dll": {}
+          "lib/netstandard2.0/ClosedXML.dll": {
+            "related": ".xml"
+          }
         }
       },
       "DocumentFormat.OpenXml/2.16.0": {
@@ -720,10 +854,14 @@
           "WindowsBase"
         ],
         "compile": {
-          "lib/net46/DocumentFormat.OpenXml.dll": {}
+          "lib/net46/DocumentFormat.OpenXml.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net46/DocumentFormat.OpenXml.dll": {}
+          "lib/net46/DocumentFormat.OpenXml.dll": {
+            "related": ".xml"
+          }
         }
       },
       "EntityFramework/6.4.4": {
@@ -732,34 +870,46 @@
           "System.ComponentModel.DataAnnotations"
         ],
         "compile": {
-          "lib/net45/EntityFramework.SqlServer.dll": {},
-          "lib/net45/EntityFramework.dll": {}
+          "lib/net45/EntityFramework.SqlServer.dll": {
+            "related": ".xml"
+          },
+          "lib/net45/EntityFramework.dll": {
+            "related": ".SqlServer.xml;.xml"
+          }
         },
         "runtime": {
-          "lib/net45/EntityFramework.SqlServer.dll": {},
-          "lib/net45/EntityFramework.dll": {}
+          "lib/net45/EntityFramework.SqlServer.dll": {
+            "related": ".xml"
+          },
+          "lib/net45/EntityFramework.dll": {
+            "related": ".SqlServer.xml;.xml"
+          }
         },
         "build": {
-          "build/EntityFramework.props": {},
-          "build/EntityFramework.targets": {}
+          "buildTransitive/EntityFramework.props": {},
+          "buildTransitive/EntityFramework.targets": {}
         }
       },
       "ExcelNumberFormat/1.1.0": {
         "type": "package",
         "compile": {
-          "lib/net20/ExcelNumberFormat.dll": {}
+          "lib/net20/ExcelNumberFormat.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net20/ExcelNumberFormat.dll": {}
+          "lib/net20/ExcelNumberFormat.dll": {
+            "related": ".xml"
+          }
         }
       },
       "FontAwesome.Sharp/5.15.3": {
         "type": "package",
         "compile": {
-          "lib/net45/FontAwesome.Sharp.dll": {}
+          "lib/net48/FontAwesome.Sharp.dll": {}
         },
         "runtime": {
-          "lib/net45/FontAwesome.Sharp.dll": {}
+          "lib/net48/FontAwesome.Sharp.dll": {}
         }
       },
       "Irony.NetCore/1.0.11": {
@@ -785,10 +935,14 @@
           "System.Runtime.CompilerServices.Unsafe": "4.7.0"
         },
         "compile": {
-          "lib/netstandard2.0/SixLabors.Fonts.dll": {}
+          "lib/netstandard2.0/SixLabors.Fonts.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/SixLabors.Fonts.dll": {}
+          "lib/netstandard2.0/SixLabors.Fonts.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Buffers/4.5.1": {
@@ -797,22 +951,27 @@
           "mscorlib"
         ],
         "compile": {
-          "ref/net45/System.Buffers.dll": {}
+          "ref/net45/System.Buffers.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net461/System.Buffers.dll": {}
+          "lib/net461/System.Buffers.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.IO/4.3.0": {
         "type": "package",
         "frameworkAssemblies": [
-          "System"
+          "System",
+          "mscorlib"
         ],
         "compile": {
-          "ref/net45/_._": {}
+          "ref/net462/System.IO.dll": {}
         },
         "runtime": {
-          "lib/net45/_._": {}
+          "lib/net462/System.IO.dll": {}
         }
       },
       "System.IO.Packaging/6.0.0": {
@@ -821,10 +980,14 @@
           "WindowsBase"
         ],
         "compile": {
-          "lib/net461/System.IO.Packaging.dll": {}
+          "lib/net461/System.IO.Packaging.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net461/System.IO.Packaging.dll": {}
+          "lib/net461/System.IO.Packaging.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Memory/4.5.4": {
@@ -839,10 +1002,14 @@
           "mscorlib"
         ],
         "compile": {
-          "lib/net461/System.Memory.dll": {}
+          "lib/net461/System.Memory.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net461/System.Memory.dll": {}
+          "lib/net461/System.Memory.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Net.Http/4.3.4": {
@@ -869,36 +1036,63 @@
           "mscorlib"
         ],
         "compile": {
-          "ref/net46/System.Numerics.Vectors.dll": {}
+          "ref/net46/System.Numerics.Vectors.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net46/System.Numerics.Vectors.dll": {}
+          "lib/net46/System.Numerics.Vectors.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Runtime/4.3.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "System.ComponentModel.Composition",
+          "System.Core",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net462/System.Runtime.dll": {}
+        },
+        "runtime": {
+          "lib/net462/System.Runtime.dll": {}
         }
       },
       "System.Runtime.CompilerServices.Unsafe/4.7.0": {
         "type": "package",
         "compile": {
-          "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+          "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Runtime.Extensions/4.3.0": {
         "type": "package",
         "frameworkAssemblies": [
-          "System"
+          "System",
+          "mscorlib"
         ],
         "compile": {
-          "ref/net45/_._": {}
+          "ref/net462/System.Runtime.Extensions.dll": {}
         },
         "runtime": {
-          "lib/net45/_._": {}
+          "lib/net462/System.Runtime.Extensions.dll": {}
         }
       },
       "System.Security.Cryptography.Algorithms/4.3.0": {
         "type": "package",
         "dependencies": {
+          "System.IO": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Security.Cryptography.Encoding": "4.3.0",
           "System.Security.Cryptography.Primitives": "4.3.0"
         },
         "frameworkAssemblies": [
@@ -906,10 +1100,10 @@
           "mscorlib"
         ],
         "compile": {
-          "ref/net461/System.Security.Cryptography.Algorithms.dll": {}
+          "ref/net463/System.Security.Cryptography.Algorithms.dll": {}
         },
         "runtime": {
-          "lib/net461/System.Security.Cryptography.Algorithms.dll": {}
+          "lib/net463/System.Security.Cryptography.Algorithms.dll": {}
         }
       },
       "System.Security.Cryptography.Encoding/4.3.0": {
@@ -958,13 +1152,14 @@
       "System.Text.RegularExpressions/4.3.1": {
         "type": "package",
         "frameworkAssemblies": [
-          "System"
+          "System",
+          "mscorlib"
         ],
         "compile": {
-          "ref/net45/_._": {}
+          "ref/net463/System.Text.RegularExpressions.dll": {}
         },
         "runtime": {
-          "lib/net45/_._": {}
+          "lib/net463/System.Text.RegularExpressions.dll": {}
         }
       },
       "XLParser/1.5.2": {
@@ -1014,7 +1209,7 @@
         }
       }
     },
-    ".NETFramework,Version=v4.6.1/win-x86": {
+    ".NETFramework,Version=v4.8/win-x64": {
       "ClosedXML/0.102.1": {
         "type": "package",
         "dependencies": {
@@ -1029,10 +1224,14 @@
           "XLParser": "1.5.2"
         },
         "compile": {
-          "lib/netstandard2.0/ClosedXML.dll": {}
+          "lib/netstandard2.0/ClosedXML.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/ClosedXML.dll": {}
+          "lib/netstandard2.0/ClosedXML.dll": {
+            "related": ".xml"
+          }
         }
       },
       "DocumentFormat.OpenXml/2.16.0": {
@@ -1043,10 +1242,14 @@
           "WindowsBase"
         ],
         "compile": {
-          "lib/net46/DocumentFormat.OpenXml.dll": {}
+          "lib/net46/DocumentFormat.OpenXml.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net46/DocumentFormat.OpenXml.dll": {}
+          "lib/net46/DocumentFormat.OpenXml.dll": {
+            "related": ".xml"
+          }
         }
       },
       "EntityFramework/6.4.4": {
@@ -1055,34 +1258,46 @@
           "System.ComponentModel.DataAnnotations"
         ],
         "compile": {
-          "lib/net45/EntityFramework.SqlServer.dll": {},
-          "lib/net45/EntityFramework.dll": {}
+          "lib/net45/EntityFramework.SqlServer.dll": {
+            "related": ".xml"
+          },
+          "lib/net45/EntityFramework.dll": {
+            "related": ".SqlServer.xml;.xml"
+          }
         },
         "runtime": {
-          "lib/net45/EntityFramework.SqlServer.dll": {},
-          "lib/net45/EntityFramework.dll": {}
+          "lib/net45/EntityFramework.SqlServer.dll": {
+            "related": ".xml"
+          },
+          "lib/net45/EntityFramework.dll": {
+            "related": ".SqlServer.xml;.xml"
+          }
         },
         "build": {
-          "build/EntityFramework.props": {},
-          "build/EntityFramework.targets": {}
+          "buildTransitive/EntityFramework.props": {},
+          "buildTransitive/EntityFramework.targets": {}
         }
       },
       "ExcelNumberFormat/1.1.0": {
         "type": "package",
         "compile": {
-          "lib/net20/ExcelNumberFormat.dll": {}
+          "lib/net20/ExcelNumberFormat.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net20/ExcelNumberFormat.dll": {}
+          "lib/net20/ExcelNumberFormat.dll": {
+            "related": ".xml"
+          }
         }
       },
       "FontAwesome.Sharp/5.15.3": {
         "type": "package",
         "compile": {
-          "lib/net45/FontAwesome.Sharp.dll": {}
+          "lib/net48/FontAwesome.Sharp.dll": {}
         },
         "runtime": {
-          "lib/net45/FontAwesome.Sharp.dll": {}
+          "lib/net48/FontAwesome.Sharp.dll": {}
         }
       },
       "Irony.NetCore/1.0.11": {
@@ -1108,10 +1323,14 @@
           "System.Runtime.CompilerServices.Unsafe": "4.7.0"
         },
         "compile": {
-          "lib/netstandard2.0/SixLabors.Fonts.dll": {}
+          "lib/netstandard2.0/SixLabors.Fonts.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/SixLabors.Fonts.dll": {}
+          "lib/netstandard2.0/SixLabors.Fonts.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Buffers/4.5.1": {
@@ -1120,22 +1339,27 @@
           "mscorlib"
         ],
         "compile": {
-          "ref/net45/System.Buffers.dll": {}
+          "ref/net45/System.Buffers.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net461/System.Buffers.dll": {}
+          "lib/net461/System.Buffers.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.IO/4.3.0": {
         "type": "package",
         "frameworkAssemblies": [
-          "System"
+          "System",
+          "mscorlib"
         ],
         "compile": {
-          "ref/net45/_._": {}
+          "ref/net462/System.IO.dll": {}
         },
         "runtime": {
-          "lib/net45/_._": {}
+          "lib/net462/System.IO.dll": {}
         }
       },
       "System.IO.Packaging/6.0.0": {
@@ -1144,10 +1368,14 @@
           "WindowsBase"
         ],
         "compile": {
-          "lib/net461/System.IO.Packaging.dll": {}
+          "lib/net461/System.IO.Packaging.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net461/System.IO.Packaging.dll": {}
+          "lib/net461/System.IO.Packaging.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Memory/4.5.4": {
@@ -1162,10 +1390,14 @@
           "mscorlib"
         ],
         "compile": {
-          "lib/net461/System.Memory.dll": {}
+          "lib/net461/System.Memory.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net461/System.Memory.dll": {}
+          "lib/net461/System.Memory.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Net.Http/4.3.4": {
@@ -1192,36 +1424,63 @@
           "mscorlib"
         ],
         "compile": {
-          "ref/net46/System.Numerics.Vectors.dll": {}
+          "ref/net46/System.Numerics.Vectors.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net46/System.Numerics.Vectors.dll": {}
+          "lib/net46/System.Numerics.Vectors.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Runtime/4.3.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "System.ComponentModel.Composition",
+          "System.Core",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net462/System.Runtime.dll": {}
+        },
+        "runtime": {
+          "lib/net462/System.Runtime.dll": {}
         }
       },
       "System.Runtime.CompilerServices.Unsafe/4.7.0": {
         "type": "package",
         "compile": {
-          "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+          "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Runtime.Extensions/4.3.0": {
         "type": "package",
         "frameworkAssemblies": [
-          "System"
+          "System",
+          "mscorlib"
         ],
         "compile": {
-          "ref/net45/_._": {}
+          "ref/net462/System.Runtime.Extensions.dll": {}
         },
         "runtime": {
-          "lib/net45/_._": {}
+          "lib/net462/System.Runtime.Extensions.dll": {}
         }
       },
       "System.Security.Cryptography.Algorithms/4.3.0": {
         "type": "package",
         "dependencies": {
+          "System.IO": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Security.Cryptography.Encoding": "4.3.0",
           "System.Security.Cryptography.Primitives": "4.3.0"
         },
         "frameworkAssemblies": [
@@ -1229,10 +1488,10 @@
           "mscorlib"
         ],
         "compile": {
-          "ref/net461/System.Security.Cryptography.Algorithms.dll": {}
+          "ref/net463/System.Security.Cryptography.Algorithms.dll": {}
         },
         "runtime": {
-          "lib/net461/System.Security.Cryptography.Algorithms.dll": {}
+          "lib/net463/System.Security.Cryptography.Algorithms.dll": {}
         }
       },
       "System.Security.Cryptography.Encoding/4.3.0": {
@@ -1281,13 +1540,402 @@
       "System.Text.RegularExpressions/4.3.1": {
         "type": "package",
         "frameworkAssemblies": [
-          "System"
+          "System",
+          "mscorlib"
         ],
         "compile": {
-          "ref/net45/_._": {}
+          "ref/net463/System.Text.RegularExpressions.dll": {}
         },
         "runtime": {
-          "lib/net45/_._": {}
+          "lib/net463/System.Text.RegularExpressions.dll": {}
+        }
+      },
+      "XLParser/1.5.2": {
+        "type": "package",
+        "dependencies": {
+          "Irony.NetCore": "1.0.11"
+        },
+        "compile": {
+          "lib/net461/XLParser.dll": {}
+        },
+        "runtime": {
+          "lib/net461/XLParser.dll": {}
+        }
+      },
+      "CapaDatos/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "CapaEntidad": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CapaDatos.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CapaDatos.dll": {}
+        }
+      },
+      "CapaEntidad/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/CapaEntidad.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CapaEntidad.dll": {}
+        }
+      },
+      "CapaNegocio/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "CapaDatos": "1.0.0",
+          "CapaEntidad": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CapaNegocio.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CapaNegocio.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.8/win-x86": {
+      "ClosedXML/0.102.1": {
+        "type": "package",
+        "dependencies": {
+          "DocumentFormat.OpenXml": "2.16.0",
+          "ExcelNumberFormat": "1.1.0",
+          "SixLabors.Fonts": "1.0.0",
+          "System.Buffers": "4.5.1",
+          "System.IO.Packaging": "6.0.0",
+          "System.Memory": "4.5.4",
+          "System.Net.Http": "4.3.4",
+          "System.Text.RegularExpressions": "4.3.1",
+          "XLParser": "1.5.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/ClosedXML.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/ClosedXML.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "DocumentFormat.OpenXml/2.16.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "System.Xml",
+          "WindowsBase"
+        ],
+        "compile": {
+          "lib/net46/DocumentFormat.OpenXml.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net46/DocumentFormat.OpenXml.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "EntityFramework/6.4.4": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations"
+        ],
+        "compile": {
+          "lib/net45/EntityFramework.SqlServer.dll": {
+            "related": ".xml"
+          },
+          "lib/net45/EntityFramework.dll": {
+            "related": ".SqlServer.xml;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/EntityFramework.SqlServer.dll": {
+            "related": ".xml"
+          },
+          "lib/net45/EntityFramework.dll": {
+            "related": ".SqlServer.xml;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/EntityFramework.props": {},
+          "buildTransitive/EntityFramework.targets": {}
+        }
+      },
+      "ExcelNumberFormat/1.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net20/ExcelNumberFormat.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net20/ExcelNumberFormat.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "FontAwesome.Sharp/5.15.3": {
+        "type": "package",
+        "compile": {
+          "lib/net48/FontAwesome.Sharp.dll": {}
+        },
+        "runtime": {
+          "lib/net48/FontAwesome.Sharp.dll": {}
+        }
+      },
+      "Irony.NetCore/1.0.11": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "System",
+          "System.Numerics"
+        ],
+        "compile": {
+          "lib/net461/Irony.dll": {}
+        },
+        "runtime": {
+          "lib/net461/Irony.dll": {}
+        }
+      },
+      "SixLabors.Fonts/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.5.1",
+          "System.Memory": "4.5.4",
+          "System.Numerics.Vectors": "4.5.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.7.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/SixLabors.Fonts.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/SixLabors.Fonts.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Buffers/4.5.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net45/System.Buffers.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/System.Buffers.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.IO/4.3.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net462/System.IO.dll": {}
+        },
+        "runtime": {
+          "lib/net462/System.IO.dll": {}
+        }
+      },
+      "System.IO.Packaging/6.0.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "WindowsBase"
+        ],
+        "compile": {
+          "lib/net461/System.IO.Packaging.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/System.IO.Packaging.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Memory/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.5.1",
+          "System.Numerics.Vectors": "4.5.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/net461/System.Memory.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/System.Memory.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Net.Http/4.3.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Security.Cryptography.X509Certificates": "4.3.0"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "System.Core",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net46/System.Net.Http.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Net.Http.dll": {}
+        }
+      },
+      "System.Numerics.Vectors/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Numerics",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net46/System.Numerics.Vectors.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net46/System.Numerics.Vectors.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Runtime/4.3.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "System.ComponentModel.Composition",
+          "System.Core",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net462/System.Runtime.dll": {}
+        },
+        "runtime": {
+          "lib/net462/System.Runtime.dll": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.7.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Runtime.Extensions/4.3.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net462/System.Runtime.Extensions.dll": {}
+        },
+        "runtime": {
+          "lib/net462/System.Runtime.Extensions.dll": {}
+        }
+      },
+      "System.Security.Cryptography.Algorithms/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "System.IO": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Security.Cryptography.Encoding": "4.3.0",
+          "System.Security.Cryptography.Primitives": "4.3.0"
+        },
+        "frameworkAssemblies": [
+          "System.Core",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net463/System.Security.Cryptography.Algorithms.dll": {}
+        },
+        "runtime": {
+          "lib/net463/System.Security.Cryptography.Algorithms.dll": {}
+        }
+      },
+      "System.Security.Cryptography.Encoding/4.3.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net46/System.Security.Cryptography.Encoding.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Security.Cryptography.Encoding.dll": {}
+        }
+      },
+      "System.Security.Cryptography.Primitives/4.3.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net46/System.Security.Cryptography.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Security.Cryptography.Primitives.dll": {}
+        }
+      },
+      "System.Security.Cryptography.X509Certificates/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Security.Cryptography.Algorithms": "4.3.0",
+          "System.Security.Cryptography.Encoding": "4.3.0"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "System.Core",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Security.Cryptography.X509Certificates.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Security.Cryptography.X509Certificates.dll": {}
+        }
+      },
+      "System.Text.RegularExpressions/4.3.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net463/System.Text.RegularExpressions.dll": {}
+        },
+        "runtime": {
+          "lib/net463/System.Text.RegularExpressions.dll": {}
         }
       },
       "XLParser/1.5.2": {
@@ -1747,6 +2395,98 @@
         "version.txt"
       ]
     },
+    "System.Runtime/4.3.0": {
+      "sha512": "JufQi0vPQ0xGnAczR13AUFglDyVYt4Kqnz1AZaiKZ5+GICq0/1MH/mO/eAJHt/mHW1zjKBJd7kV26SrxddAhiw==",
+      "type": "package",
+      "path": "system.runtime/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/net462/System.Runtime.dll",
+        "lib/portable-net45+win8+wp80+wpa81/_._",
+        "lib/win8/_._",
+        "lib/wp80/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/net462/System.Runtime.dll",
+        "ref/netcore50/System.Runtime.dll",
+        "ref/netcore50/System.Runtime.xml",
+        "ref/netcore50/de/System.Runtime.xml",
+        "ref/netcore50/es/System.Runtime.xml",
+        "ref/netcore50/fr/System.Runtime.xml",
+        "ref/netcore50/it/System.Runtime.xml",
+        "ref/netcore50/ja/System.Runtime.xml",
+        "ref/netcore50/ko/System.Runtime.xml",
+        "ref/netcore50/ru/System.Runtime.xml",
+        "ref/netcore50/zh-hans/System.Runtime.xml",
+        "ref/netcore50/zh-hant/System.Runtime.xml",
+        "ref/netstandard1.0/System.Runtime.dll",
+        "ref/netstandard1.0/System.Runtime.xml",
+        "ref/netstandard1.0/de/System.Runtime.xml",
+        "ref/netstandard1.0/es/System.Runtime.xml",
+        "ref/netstandard1.0/fr/System.Runtime.xml",
+        "ref/netstandard1.0/it/System.Runtime.xml",
+        "ref/netstandard1.0/ja/System.Runtime.xml",
+        "ref/netstandard1.0/ko/System.Runtime.xml",
+        "ref/netstandard1.0/ru/System.Runtime.xml",
+        "ref/netstandard1.0/zh-hans/System.Runtime.xml",
+        "ref/netstandard1.0/zh-hant/System.Runtime.xml",
+        "ref/netstandard1.2/System.Runtime.dll",
+        "ref/netstandard1.2/System.Runtime.xml",
+        "ref/netstandard1.2/de/System.Runtime.xml",
+        "ref/netstandard1.2/es/System.Runtime.xml",
+        "ref/netstandard1.2/fr/System.Runtime.xml",
+        "ref/netstandard1.2/it/System.Runtime.xml",
+        "ref/netstandard1.2/ja/System.Runtime.xml",
+        "ref/netstandard1.2/ko/System.Runtime.xml",
+        "ref/netstandard1.2/ru/System.Runtime.xml",
+        "ref/netstandard1.2/zh-hans/System.Runtime.xml",
+        "ref/netstandard1.2/zh-hant/System.Runtime.xml",
+        "ref/netstandard1.3/System.Runtime.dll",
+        "ref/netstandard1.3/System.Runtime.xml",
+        "ref/netstandard1.3/de/System.Runtime.xml",
+        "ref/netstandard1.3/es/System.Runtime.xml",
+        "ref/netstandard1.3/fr/System.Runtime.xml",
+        "ref/netstandard1.3/it/System.Runtime.xml",
+        "ref/netstandard1.3/ja/System.Runtime.xml",
+        "ref/netstandard1.3/ko/System.Runtime.xml",
+        "ref/netstandard1.3/ru/System.Runtime.xml",
+        "ref/netstandard1.3/zh-hans/System.Runtime.xml",
+        "ref/netstandard1.3/zh-hant/System.Runtime.xml",
+        "ref/netstandard1.5/System.Runtime.dll",
+        "ref/netstandard1.5/System.Runtime.xml",
+        "ref/netstandard1.5/de/System.Runtime.xml",
+        "ref/netstandard1.5/es/System.Runtime.xml",
+        "ref/netstandard1.5/fr/System.Runtime.xml",
+        "ref/netstandard1.5/it/System.Runtime.xml",
+        "ref/netstandard1.5/ja/System.Runtime.xml",
+        "ref/netstandard1.5/ko/System.Runtime.xml",
+        "ref/netstandard1.5/ru/System.Runtime.xml",
+        "ref/netstandard1.5/zh-hans/System.Runtime.xml",
+        "ref/netstandard1.5/zh-hant/System.Runtime.xml",
+        "ref/portable-net45+win8+wp80+wpa81/_._",
+        "ref/win8/_._",
+        "ref/wp80/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.runtime.4.3.0.nupkg.sha512",
+        "system.runtime.nuspec"
+      ]
+    },
     "System.Runtime.CompilerServices.Unsafe/4.7.0": {
       "sha512": "IpU1lcHz8/09yDr9N+Juc7SCgNUz+RohkCQI+KsWKR67XxpFr8Z6c8t1iENCXZuRuNCc4HBwme/MDHNVCwyAKg==",
       "type": "package",
@@ -2135,7 +2875,7 @@
     }
   },
   "projectFileDependencyGroups": {
-    ".NETFramework,Version=v4.6.1": [
+    ".NETFramework,Version=v4.8": [
       "CapaEntidad >= 1.0.0",
       "CapaNegocio >= 1.0.0",
       "ClosedXML >= 0.102.1",
@@ -2146,44 +2886,44 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ASUS\\.nuget\\packages\\": {}
+    "C:\\Users\\aguil\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ASUS\\Documents\\github\\SISTEMA-DE-VENTAS\\CapaPresentacion\\CapaPresentacion.csproj",
+      "projectUniqueName": "C:\\Users\\aguil\\Documents\\GITHUB\\SISTEMA-DE-VENTAS\\CapaPresentacion\\CapaPresentacion.csproj",
       "projectName": "CapaPresentacion",
-      "projectPath": "C:\\Users\\ASUS\\Documents\\github\\SISTEMA-DE-VENTAS\\CapaPresentacion\\CapaPresentacion.csproj",
-      "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ASUS\\Documents\\github\\SISTEMA-DE-VENTAS\\CapaPresentacion\\obj\\",
+      "projectPath": "C:\\Users\\aguil\\Documents\\GITHUB\\SISTEMA-DE-VENTAS\\CapaPresentacion\\CapaPresentacion.csproj",
+      "packagesPath": "C:\\Users\\aguil\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\aguil\\Documents\\GITHUB\\SISTEMA-DE-VENTAS\\CapaPresentacion\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\aguil\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net461"
+        "net48"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net461": {
+        "net48": {
           "projectReferences": {
-            "C:\\Users\\ASUS\\Documents\\github\\SISTEMA-DE-VENTAS\\CapaEntidad\\CapaEntidad.csproj": {
-              "projectPath": "C:\\Users\\ASUS\\Documents\\github\\SISTEMA-DE-VENTAS\\CapaEntidad\\CapaEntidad.csproj"
+            "C:\\Users\\aguil\\Documents\\GITHUB\\SISTEMA-DE-VENTAS\\CapaEntidad\\CapaEntidad.csproj": {
+              "projectPath": "C:\\Users\\aguil\\Documents\\GITHUB\\SISTEMA-DE-VENTAS\\CapaEntidad\\CapaEntidad.csproj"
             },
-            "C:\\Users\\ASUS\\Documents\\github\\SISTEMA-DE-VENTAS\\CapaNegocio\\CapaNegocio.csproj": {
-              "projectPath": "C:\\Users\\ASUS\\Documents\\github\\SISTEMA-DE-VENTAS\\CapaNegocio\\CapaNegocio.csproj"
+            "C:\\Users\\aguil\\Documents\\GITHUB\\SISTEMA-DE-VENTAS\\CapaNegocio\\CapaNegocio.csproj": {
+              "projectPath": "C:\\Users\\aguil\\Documents\\GITHUB\\SISTEMA-DE-VENTAS\\CapaNegocio\\CapaNegocio.csproj"
             }
           }
         }
       }
     },
     "frameworks": {
-      "net461": {
+      "net48": {
         "dependencies": {
           "ClosedXML": {
             "target": "Package",
@@ -2210,6 +2950,9 @@
     },
     "runtimes": {
       "win": {
+        "#import": []
+      },
+      "win-arm64": {
         "#import": []
       },
       "win-x64": {

@@ -20,23 +20,18 @@ namespace CapaPresentacion
             InitializeComponent();
         }
 
-      
-
         private void frmProveedores_Load(object sender, EventArgs e)
         {
+
             cboestado.Items.Add(new OpcionCombo() { Valor = 1, Texto = "Activo" });
             cboestado.Items.Add(new OpcionCombo() { Valor = 0, Texto = "No Activo" });
             cboestado.DisplayMember = "Texto";
             cboestado.ValueMember = "Valor";
             cboestado.SelectedIndex = 0;
 
-
-           
-
             //llena el combobox  de buscar con opciones de las columnas que hay en datagrid
             foreach (DataGridViewColumn columna in dgvdata.Columns)
             {
-
                 if (columna.Visible == true && columna.Name != "btnseleccionar")
                 {
                     cbobusqueda.Items.Add(new OpcionCombo() { Valor = columna.Name, Texto = columna.HeaderText });
@@ -46,24 +41,23 @@ namespace CapaPresentacion
             cbobusqueda.ValueMember = "Valor";
             cbobusqueda.SelectedIndex = 0;
 
-            //MOSTRAR TODOS LOS USUARIOS
             List<Proveedor> lista = new CN_Proveedor().Listar();
 
             foreach (Proveedor item in lista)
             {
-
-                dgvdata.Rows.Add(new object[] {"",item.IdProveedor,item.Documento,item.RazonSocial,item.Correo,item.Telefono, //item es cada entidad de la clase usuario en la lsita
-                    item.Estado == true ? 1 : 0 , //si es true muestra 1 caso contrario muestra 0
+                dgvdata.Rows.Add(new object[] {"",item.IdProveedor,item.Documento,item.RazonSocial,item.Correo,item.Telefono,
+                    item.Estado == true ? 1 : 0 ,
                     item.Estado == true ? "Activo" : "No Activo"
                 });
             }
+
         }
 
         private void btnguardar_Click(object sender, EventArgs e)
         {
             string mensaje = string.Empty;
 
-            Proveedor obj = new Proveedor() //instancia de la clase usuario en capa entidad
+            Proveedor obj = new Proveedor()
             {
                 IdProveedor = Convert.ToInt32(txtid.Text),
                 Documento = txtdocumento.Text,
@@ -79,7 +73,7 @@ namespace CapaPresentacion
 
                 if (idgenerado != 0)
                 {
-                    //agrega todos los campos al DGV
+
                     dgvdata.Rows.Add(new object[] {"",idgenerado,txtdocumento.Text,txtrazonsocial.Text,txtcorreo.Text,txttelefono.Text,
                         ((OpcionCombo)cboestado.SelectedItem).Valor.ToString(),
                         ((OpcionCombo)cboestado.SelectedItem).Texto.ToString()
@@ -92,15 +86,15 @@ namespace CapaPresentacion
                     MessageBox.Show(mensaje);
                 }
 
-            }
 
+            }
             else
             {
-                bool resultado = new CN_Proveedor().Editar(obj, out mensaje);//si no es 0 va a editar
+                bool resultado = new CN_Proveedor().Editar(obj, out mensaje);
 
                 if (resultado)
                 {
-                    DataGridViewRow row = dgvdata.Rows[Convert.ToInt32(txtindice.Text)];//almacena el indice de la fila
+                    DataGridViewRow row = dgvdata.Rows[Convert.ToInt32(txtindice.Text)];
                     row.Cells["Id"].Value = txtid.Text;
                     row.Cells["Documento"].Value = txtdocumento.Text;
                     row.Cells["RazonSocial"].Value = txtrazonsocial.Text;
@@ -115,7 +109,11 @@ namespace CapaPresentacion
                     MessageBox.Show(mensaje);
                 }
             }
+
+
         }
+
+
         private void Limpiar()
         {
             txtindice.Text = "-1";
@@ -126,15 +124,15 @@ namespace CapaPresentacion
             txttelefono.Text = "";
             cboestado.SelectedIndex = 0;
             txtdocumento.Select();
-
         }
 
         private void dgvdata_CellPainting(object sender, DataGridViewCellPaintingEventArgs e)
         {
+
             if (e.RowIndex < 0)
                 return;
 
-            if (e.ColumnIndex == 0)// 0 = la primera columna
+            if (e.ColumnIndex == 0)
             {
 
                 e.Paint(e.CellBounds, DataGridViewPaintParts.All);
@@ -151,10 +149,11 @@ namespace CapaPresentacion
 
         private void dgvdata_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (dgvdata.Columns[e.ColumnIndex].Name == "btnseleccionar") // validacion -- solo si le ha hecho click a la primera columna va a ejecutar 
+
+            if (dgvdata.Columns[e.ColumnIndex].Name == "btnseleccionar")
             {
 
-                int indice = e.RowIndex; // almecana la fila seleccionada
+                int indice = e.RowIndex;
 
                 if (indice >= 0)
                 {
@@ -185,10 +184,11 @@ namespace CapaPresentacion
 
         private void btneliminar_Click(object sender, EventArgs e)
         {
-            if (Convert.ToInt32(txtid.Text) != 0) //si es diferente de 0 quiere decir que ha seleccionado un usuario
+            if (Convert.ToInt32(txtid.Text) != 0)
             {
                 if (MessageBox.Show("¿Desea eliminar el proveedor", "Mensaje", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
+
                     string mensaje = string.Empty;
                     Proveedor obj = new Proveedor()
                     {
@@ -213,6 +213,7 @@ namespace CapaPresentacion
 
         private void btnbuscar_Click(object sender, EventArgs e)
         {
+
             string columnaFiltro = ((OpcionCombo)cbobusqueda.SelectedItem).Valor.ToString();
 
             if (dgvdata.Rows.Count > 0)
@@ -242,5 +243,4 @@ namespace CapaPresentacion
             Limpiar();
         }
     }
-
 }

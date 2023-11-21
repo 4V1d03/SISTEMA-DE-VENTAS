@@ -10,7 +10,9 @@ namespace CapaNegocio
 {
     public class CN_Proveedor
     {
-        private CD_Proveedor objcd_Proveedor = new CD_Proveedor(); //instancia a la clase Proveedor
+
+        private CD_Proveedor objcd_Proveedor = new CD_Proveedor();
+
 
         public List<Proveedor> Listar()
         {
@@ -19,9 +21,8 @@ namespace CapaNegocio
 
         public int Registrar(Proveedor obj, out string Mensaje)
         {
-            Mensaje = string.Empty;//inicializa con el mensaje vacillo
+            Mensaje = string.Empty;
 
-            //validaciones 
             if (obj.Documento == "")
             {
                 Mensaje += "Es necesario el documento del Proveedor\n";
@@ -34,10 +35,10 @@ namespace CapaNegocio
 
             if (obj.Correo == "")
             {
-                Mensaje += "Es necesario el correo del Proveedor\n";
+                Mensaje += "Es necesario la correo del Proveedor\n";
             }
 
-            if (Mensaje != string.Empty)//hace que el metodo siempre pase por las validaciones
+            if (Mensaje != string.Empty)
             {
                 return 0;
             }
@@ -57,8 +58,9 @@ namespace CapaNegocio
 
             if (obj.Documento == "")
             {
-                Mensaje += "Es necesario la razon social del Proveedor\n";
+                Mensaje += "Es necesario el documento del Proveedor\n";
             }
+
             if (obj.RazonSocial == "")
             {
                 Mensaje += "Es necesario la razon social del Proveedor\n";
@@ -66,8 +68,10 @@ namespace CapaNegocio
 
             if (obj.Correo == "")
             {
-                Mensaje += "Es necesario el correo del Proveedor\n";
+                Mensaje += "Es necesario la correo del Proveedor\n";
             }
+
+
 
             if (Mensaje != string.Empty)
             {
@@ -78,13 +82,15 @@ namespace CapaNegocio
                 return objcd_Proveedor.Editar(obj, out Mensaje);
             }
 
-        }
 
+        }
 
 
         public bool Eliminar(Proveedor obj, out string Mensaje)
         {
             return objcd_Proveedor.Eliminar(obj, out Mensaje);
         }
+
+
     }
 }
