@@ -462,3 +462,4 @@ C:\Users\aguil\Documents\GITHUB\SISTEMA-DE-VENTAS\CapaPresentacion\bin\Debug\Sys
 C:\Users\aguil\Documents\GITHUB\SISTEMA-DE-VENTAS\CapaPresentacion\bin\Debug\XLParser.dll
 C:\Users\aguil\Documents\GITHUB\SISTEMA-DE-VENTAS\CapaPresentacion\obj\Debug\CapaPresentacion.exe.config
 C:\Users\aguil\Documents\GITHUB\SISTEMA-DE-VENTAS\CapaPresentacion\obj\Debug\CapaPresentacion.Modales.mdProducto.resources
+C:\Users\AstridGonzalez\Documents\GitHub\SISTEMA-DE-VENTAS\CapaPresentacion\obj\Debug\CapaPresentacion.Modales.mdProducto.resources
