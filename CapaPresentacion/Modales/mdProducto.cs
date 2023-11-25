@@ -52,12 +52,6 @@ namespace CapaPresentacion.Modales
                });
             }
         }
-
-        private void dgvdata_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         private void dgvdata_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             int iRow = e.RowIndex;

@@ -2886,24 +2886,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\AstridGonzalez\\.nuget\\packages\\": {},
+    "C:\\Users\\DELL\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\AstridGonzalez\\Documents\\GitHub\\SISTEMA-DE-VENTAS\\CapaPresentacion\\CapaPresentacion.csproj",
+      "projectUniqueName": "C:\\Users\\DELL\\Desktop\\sistema de venta\\CapaPresentacion\\CapaPresentacion.csproj",
       "projectName": "CapaPresentacion",
-      "projectPath": "C:\\Users\\AstridGonzalez\\Documents\\GitHub\\SISTEMA-DE-VENTAS\\CapaPresentacion\\CapaPresentacion.csproj",
-      "packagesPath": "C:\\Users\\AstridGonzalez\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\AstridGonzalez\\Documents\\GitHub\\SISTEMA-DE-VENTAS\\CapaPresentacion\\obj\\",
+      "projectPath": "C:\\Users\\DELL\\Desktop\\sistema de venta\\CapaPresentacion\\CapaPresentacion.csproj",
+      "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\DELL\\Desktop\\sistema de venta\\CapaPresentacion\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\AstridGonzalez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2917,11 +2917,11 @@
       "frameworks": {
         "net48": {
           "projectReferences": {
-            "C:\\Users\\AstridGonzalez\\Documents\\GitHub\\SISTEMA-DE-VENTAS\\CapaEntidad\\CapaEntidad.csproj": {
-              "projectPath": "C:\\Users\\AstridGonzalez\\Documents\\GitHub\\SISTEMA-DE-VENTAS\\CapaEntidad\\CapaEntidad.csproj"
+            "C:\\Users\\DELL\\Desktop\\sistema de venta\\CapaEntidad\\CapaEntidad.csproj": {
+              "projectPath": "C:\\Users\\DELL\\Desktop\\sistema de venta\\CapaEntidad\\CapaEntidad.csproj"
             },
-            "C:\\Users\\AstridGonzalez\\Documents\\GitHub\\SISTEMA-DE-VENTAS\\CapaNegocio\\CapaNegocio.csproj": {
-              "projectPath": "C:\\Users\\AstridGonzalez\\Documents\\GitHub\\SISTEMA-DE-VENTAS\\CapaNegocio\\CapaNegocio.csproj"
+            "C:\\Users\\DELL\\Desktop\\sistema de venta\\CapaNegocio\\CapaNegocio.csproj": {
+              "projectPath": "C:\\Users\\DELL\\Desktop\\sistema de venta\\CapaNegocio\\CapaNegocio.csproj"
             }
           }
         }

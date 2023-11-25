@@ -86,3 +86,14 @@ C:\Users\DELL\Documents\GitHub\SISTEMA-DE-VENTAS\CapaNegocio\obj\Debug\CapaNegoc
 C:\Users\DELL\Documents\GitHub\SISTEMA-DE-VENTAS\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
 C:\Users\DELL\Documents\GitHub\SISTEMA-DE-VENTAS\CapaNegocio\obj\Debug\CapaNegocio.dll
 C:\Users\DELL\Documents\GitHub\SISTEMA-DE-VENTAS\CapaNegocio\obj\Debug\CapaNegocio.pdb
+C:\Users\DELL\Desktop\sistema de venta\CapaNegocio\bin\Debug\CapaNegocio.dll
+C:\Users\DELL\Desktop\sistema de venta\CapaNegocio\bin\Debug\CapaNegocio.pdb
+C:\Users\DELL\Desktop\sistema de venta\CapaNegocio\bin\Debug\CapaDatos.dll
+C:\Users\DELL\Desktop\sistema de venta\CapaNegocio\bin\Debug\CapaEntidad.dll
+C:\Users\DELL\Desktop\sistema de venta\CapaNegocio\bin\Debug\CapaDatos.pdb
+C:\Users\DELL\Desktop\sistema de venta\CapaNegocio\bin\Debug\CapaEntidad.pdb
+C:\Users\DELL\Desktop\sistema de venta\CapaNegocio\obj\Debug\CapaNegocio.csproj.AssemblyReference.cache
+C:\Users\DELL\Desktop\sistema de venta\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\sistema de venta\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
+C:\Users\DELL\Desktop\sistema de venta\CapaNegocio\obj\Debug\CapaNegocio.dll
+C:\Users\DELL\Desktop\sistema de venta\CapaNegocio\obj\Debug\CapaNegocio.pdb

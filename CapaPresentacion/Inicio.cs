@@ -22,7 +22,7 @@ namespace CapaPresentacion
 
         //private static Size contenedorOriginalSize;
 
-        public Inicio(Usuario objusuario=null)
+        public Inicio(Usuario objusuario = null)
         {
             //para no estar logeando en cada momento
             if (objusuario == null)
@@ -32,9 +32,9 @@ namespace CapaPresentacion
 
             InitializeComponent();
         }
-
-        private void Inicio_Load(object sender, EventArgs e)
+        private void Inicio_Load_1(object sender, EventArgs e)
         {
+
             List<Permiso> ListaPermisos = new CN_Permiso().Listar(usuarioActual.IdUsuario);
 
             foreach (IconMenuItem iconmenu in menu.Items)
@@ -48,8 +48,9 @@ namespace CapaPresentacion
                 }
 
             }
-    
+
             lblusuario.Text = usuarioActual.NombreCompleto;
+
         }
 
         private void AbrirFormulario(IconMenuItem menu, Form formulario) //abre los formularios en el panel y pinta los menu seleccionados
@@ -95,7 +96,7 @@ namespace CapaPresentacion
 
         private void submenuapertura_Click(object sender, EventArgs e)
         {
-            AbrirFormulario(menucajaregistradora, new frmAperturacaja(/*usuarioActual*/));
+            AbrirFormulario(menucajaregistradora, new frmAperturacaja());
             FormularioActivo.BackColor = Color.LightCyan;
 
         }
@@ -184,9 +185,8 @@ namespace CapaPresentacion
             md.ShowDialog();
         }
 
-        private void Inicio_Load_1(object sender, EventArgs e)
-        {
+        
 
-        }
+      
     }
 }

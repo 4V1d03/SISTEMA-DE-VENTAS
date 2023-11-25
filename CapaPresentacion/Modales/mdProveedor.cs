@@ -23,7 +23,6 @@ namespace CapaPresentacion.Modales
 
         private void mdProveedor_Load(object sender, EventArgs e)
         {
-            //llena el combobox  de buscar con opciones de las columnas que hay en datagrid
             foreach (DataGridViewColumn columna in dgvdata.Columns)
             {
 
@@ -36,13 +35,12 @@ namespace CapaPresentacion.Modales
             cbobusqueda.ValueMember = "Valor";
             cbobusqueda.SelectedIndex = 0;
 
-            //MOSTRAR TODOS LOS USUARIOS
             List<Proveedor> lista = new CN_Proveedor().Listar();
 
             foreach (Proveedor item in lista)
             {
 
-                dgvdata.Rows.Add(new object[] {item.IdProveedor,item.Documento,item.RazonSocial,item.Correo,item.Telefono});
+                dgvdata.Rows.Add(new object[] {item.IdProveedor,item.Documento,item.RazonSocial});
             }
         }
 

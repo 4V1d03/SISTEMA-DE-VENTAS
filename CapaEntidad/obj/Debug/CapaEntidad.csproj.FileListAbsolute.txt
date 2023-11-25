@@ -34,3 +34,9 @@ C:\Users\DELL\Documents\GitHub\SISTEMA-DE-VENTAS\CapaEntidad\obj\Debug\CapaEntid
 C:\Users\DELL\Documents\GitHub\SISTEMA-DE-VENTAS\CapaEntidad\obj\Debug\CapaEntidad.csproj.CoreCompileInputs.cache
 C:\Users\DELL\Documents\GitHub\SISTEMA-DE-VENTAS\CapaEntidad\obj\Debug\CapaEntidad.dll
 C:\Users\DELL\Documents\GitHub\SISTEMA-DE-VENTAS\CapaEntidad\obj\Debug\CapaEntidad.pdb
+C:\Users\DELL\Desktop\sistema de venta\CapaEntidad\bin\Debug\CapaEntidad.dll
+C:\Users\DELL\Desktop\sistema de venta\CapaEntidad\bin\Debug\CapaEntidad.pdb
+C:\Users\DELL\Desktop\sistema de venta\CapaEntidad\obj\Debug\CapaEntidad.csproj.AssemblyReference.cache
+C:\Users\DELL\Desktop\sistema de venta\CapaEntidad\obj\Debug\CapaEntidad.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\sistema de venta\CapaEntidad\obj\Debug\CapaEntidad.dll
+C:\Users\DELL\Desktop\sistema de venta\CapaEntidad\obj\Debug\CapaEntidad.pdb

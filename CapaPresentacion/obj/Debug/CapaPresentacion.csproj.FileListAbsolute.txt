@@ -463,3 +463,54 @@ C:\Users\aguil\Documents\GITHUB\SISTEMA-DE-VENTAS\CapaPresentacion\bin\Debug\XLP
 C:\Users\aguil\Documents\GITHUB\SISTEMA-DE-VENTAS\CapaPresentacion\obj\Debug\CapaPresentacion.exe.config
 C:\Users\aguil\Documents\GITHUB\SISTEMA-DE-VENTAS\CapaPresentacion\obj\Debug\CapaPresentacion.Modales.mdProducto.resources
 C:\Users\AstridGonzalez\Documents\GitHub\SISTEMA-DE-VENTAS\CapaPresentacion\obj\Debug\CapaPresentacion.Modales.mdProducto.resources
+C:\Users\Usuario\OneDrive\Documentos\git\SISTEMA-DE-VENTAS\CapaPresentacion\obj\Debug\CapaPresentacion.Modales.mdProducto.resources
+C:\Users\DELL\Desktop\sistema de venta\CapaPresentacion\bin\Debug\CapaPresentacion.exe.config
+C:\Users\DELL\Desktop\sistema de venta\CapaPresentacion\bin\Debug\CapaPresentacion.exe
+C:\Users\DELL\Desktop\sistema de venta\CapaPresentacion\bin\Debug\CapaPresentacion.pdb
+C:\Users\DELL\Desktop\sistema de venta\CapaPresentacion\bin\Debug\ClosedXML.dll
+C:\Users\DELL\Desktop\sistema de venta\CapaPresentacion\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\DELL\Desktop\sistema de venta\CapaPresentacion\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\DELL\Desktop\sistema de venta\CapaPresentacion\bin\Debug\EntityFramework.dll
+C:\Users\DELL\Desktop\sistema de venta\CapaPresentacion\bin\Debug\ExcelNumberFormat.dll
+C:\Users\DELL\Desktop\sistema de venta\CapaPresentacion\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\DELL\Desktop\sistema de venta\CapaPresentacion\bin\Debug\Irony.dll
+C:\Users\DELL\Desktop\sistema de venta\CapaPresentacion\bin\Debug\SixLabors.Fonts.dll
+C:\Users\DELL\Desktop\sistema de venta\CapaPresentacion\bin\Debug\System.Buffers.dll
+C:\Users\DELL\Desktop\sistema de venta\CapaPresentacion\bin\Debug\System.IO.Packaging.dll
+C:\Users\DELL\Desktop\sistema de venta\CapaPresentacion\bin\Debug\System.Memory.dll
+C:\Users\DELL\Desktop\sistema de venta\CapaPresentacion\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\DELL\Desktop\sistema de venta\CapaPresentacion\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\DELL\Desktop\sistema de venta\CapaPresentacion\bin\Debug\XLParser.dll
+C:\Users\DELL\Desktop\sistema de venta\CapaPresentacion\bin\Debug\CapaEntidad.dll
+C:\Users\DELL\Desktop\sistema de venta\CapaPresentacion\bin\Debug\CapaNegocio.dll
+C:\Users\DELL\Desktop\sistema de venta\CapaPresentacion\bin\Debug\CapaDatos.dll
+C:\Users\DELL\Desktop\sistema de venta\CapaPresentacion\bin\Debug\CapaEntidad.pdb
+C:\Users\DELL\Desktop\sistema de venta\CapaPresentacion\bin\Debug\CapaNegocio.pdb
+C:\Users\DELL\Desktop\sistema de venta\CapaPresentacion\bin\Debug\CapaDatos.pdb
+C:\Users\DELL\Desktop\sistema de venta\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.AssemblyReference.cache
+C:\Users\DELL\Desktop\sistema de venta\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.SuggestedBindingRedirects.cache
+C:\Users\DELL\Desktop\sistema de venta\CapaPresentacion\obj\Debug\CapaPresentacion.exe.config
+C:\Users\DELL\Desktop\sistema de venta\CapaPresentacion\obj\Debug\CapaPresentacion.frmAperturacaja.resources
+C:\Users\DELL\Desktop\sistema de venta\CapaPresentacion\obj\Debug\CapaPresentacion.frmCategoria.resources
+C:\Users\DELL\Desktop\sistema de venta\CapaPresentacion\obj\Debug\CapaPresentacion.frmCierrecaja.resources
+C:\Users\DELL\Desktop\sistema de venta\CapaPresentacion\obj\Debug\CapaPresentacion.frmClientes.resources
+C:\Users\DELL\Desktop\sistema de venta\CapaPresentacion\obj\Debug\CapaPresentacion.frmCompras.resources
+C:\Users\DELL\Desktop\sistema de venta\CapaPresentacion\obj\Debug\CapaPresentacion.frmDetalleCompra.resources
+C:\Users\DELL\Desktop\sistema de venta\CapaPresentacion\obj\Debug\CapaPresentacion.frmDetalleVenta.resources
+C:\Users\DELL\Desktop\sistema de venta\CapaPresentacion\obj\Debug\CapaPresentacion.frmNegocio.resources
+C:\Users\DELL\Desktop\sistema de venta\CapaPresentacion\obj\Debug\CapaPresentacion.frmProducto.resources
+C:\Users\DELL\Desktop\sistema de venta\CapaPresentacion\obj\Debug\CapaPresentacion.frmProveedores.resources
+C:\Users\DELL\Desktop\sistema de venta\CapaPresentacion\obj\Debug\CapaPresentacion.frmReportes.resources
+C:\Users\DELL\Desktop\sistema de venta\CapaPresentacion\obj\Debug\CapaPresentacion.frmUsuarios.resources
+C:\Users\DELL\Desktop\sistema de venta\CapaPresentacion\obj\Debug\CapaPresentacion.frmVentas.resources
+C:\Users\DELL\Desktop\sistema de venta\CapaPresentacion\obj\Debug\CapaPresentacion.Inicio.resources
+C:\Users\DELL\Desktop\sistema de venta\CapaPresentacion\obj\Debug\CapaPresentacion.Login.resources
+C:\Users\DELL\Desktop\sistema de venta\CapaPresentacion\obj\Debug\CapaPresentacion.Modales.mdAcercade.resources
+C:\Users\DELL\Desktop\sistema de venta\CapaPresentacion\obj\Debug\CapaPresentacion.Modales.mdProducto.resources
+C:\Users\DELL\Desktop\sistema de venta\CapaPresentacion\obj\Debug\CapaPresentacion.Modales.mdProveedor.resources
+C:\Users\DELL\Desktop\sistema de venta\CapaPresentacion\obj\Debug\CapaPresentacion.Properties.Resources.resources
+C:\Users\DELL\Desktop\sistema de venta\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.cache
+C:\Users\DELL\Desktop\sistema de venta\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\sistema de venta\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CopyComplete
+C:\Users\DELL\Desktop\sistema de venta\CapaPresentacion\obj\Debug\CapaPresentacion.exe
+C:\Users\DELL\Desktop\sistema de venta\CapaPresentacion\obj\Debug\CapaPresentacion.pdb

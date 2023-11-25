@@ -27,7 +27,7 @@ namespace CapaPresentacion
 
         private void btningresar_Click(object sender, EventArgs e)
         {
-            List<Usuario> TEST = new CN_Usuario().Listar();
+
 
             Usuario ousuario = new CN_Usuario().Listar().Where(u => u.Documento == txtdocumento.Text && u.Clave == txtclave.Text).FirstOrDefault();
            
@@ -55,6 +55,6 @@ namespace CapaPresentacion
             this.Show();
         }
 
-
+       
     }
 }

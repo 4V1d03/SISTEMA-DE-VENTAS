@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CN_Compra.cs" />
     <Compile Include="CN_Categoria.cs" />
     <Compile Include="CN_Cliente.cs" />
     <Compile Include="CN_Negocio.cs" />
