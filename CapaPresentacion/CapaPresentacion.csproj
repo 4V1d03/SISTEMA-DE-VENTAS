@@ -110,6 +110,12 @@
     <Compile Include="frmProveedores.Designer.cs">
       <DependentUpon>frmProveedores.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmRegistrosCaja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegistrosCaja.Designer.cs">
+      <DependentUpon>frmRegistrosCaja.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmReportes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -140,12 +146,6 @@
     <Compile Include="Login.designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modales\mdAcercade.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Modales\mdAcercade.Designer.cs">
-      <DependentUpon>mdAcercade.cs</DependentUpon>
-    </Compile>
     <Compile Include="Modales\mdProducto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -160,6 +160,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Utilidades\OpcionCombo.cs" />
     <EmbeddedResource Include="frmAperturacaja.resx">
       <DependentUpon>frmAperturacaja.cs</DependentUpon>
@@ -191,6 +196,9 @@
     <EmbeddedResource Include="frmProveedores.resx">
       <DependentUpon>frmProveedores.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistrosCaja.resx">
+      <DependentUpon>frmRegistrosCaja.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmReportes.resx">
       <DependentUpon>frmReportes.cs</DependentUpon>
     </EmbeddedResource>
@@ -206,9 +214,6 @@
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Modales\mdAcercade.resx">
-      <DependentUpon>mdAcercade.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Modales\mdProducto.resx">
       <DependentUpon>mdProducto.cs</DependentUpon>
     </EmbeddedResource>
@@ -217,14 +222,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -247,6 +247,12 @@
     </PackageReference>
     <PackageReference Include="FontAwesome.Sharp">
       <Version>5.15.3</Version>
+    </PackageReference>
+    <PackageReference Include="iTextSharp">
+      <Version>5.5.13.3</Version>
+    </PackageReference>
+    <PackageReference Include="itextsharp.xmlworker">
+      <Version>5.5.13.3</Version>
     </PackageReference>
     <PackageReference Include="System.IO">
       <Version>4.3.0</Version>
@@ -312,6 +318,78 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\proveedores.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit_icon-icons.com_70975.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\advocacy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\banner.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\banner2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bannermenu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save-as_37111.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usertrashfull_92826.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tool-paintbrush_115145.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\select_all_on_regular_icon_204978.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-casilla-de-verificación-con-emoji-de-verificación-20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shop-icon_34368.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_icon-icons.com_52393.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\provedoricono.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\proveedor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\categ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\excel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconinvetario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono-PDF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PlantillaCompra.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-windows-10-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icontituloform.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\windows-square-shape-brand_icon-icons.com_59257.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

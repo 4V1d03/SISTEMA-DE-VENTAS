@@ -415,7 +415,6 @@ C:\Users\DELL\Documents\GitHub\SISTEMA-DE-VENTAS\CapaPresentacion\obj\Debug\Capa
 C:\Users\DELL\Documents\GitHub\SISTEMA-DE-VENTAS\CapaPresentacion\obj\Debug\CapaPresentacion.frmVentas.resources
 C:\Users\DELL\Documents\GitHub\SISTEMA-DE-VENTAS\CapaPresentacion\obj\Debug\CapaPresentacion.Inicio.resources
 C:\Users\DELL\Documents\GitHub\SISTEMA-DE-VENTAS\CapaPresentacion\obj\Debug\CapaPresentacion.Login.resources
-C:\Users\DELL\Documents\GitHub\SISTEMA-DE-VENTAS\CapaPresentacion\obj\Debug\CapaPresentacion.Modales.mdAcercade.resources
 C:\Users\DELL\Documents\GitHub\SISTEMA-DE-VENTAS\CapaPresentacion\obj\Debug\CapaPresentacion.Modales.mdProveedor.resources
 C:\Users\DELL\Documents\GitHub\SISTEMA-DE-VENTAS\CapaPresentacion\obj\Debug\CapaPresentacion.Properties.Resources.resources
 C:\Users\DELL\Documents\GitHub\SISTEMA-DE-VENTAS\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.cache
@@ -514,3 +513,8 @@ C:\Users\DELL\Desktop\sistema de venta\CapaPresentacion\obj\Debug\CapaPresentaci
 C:\Users\DELL\Desktop\sistema de venta\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CopyComplete
 C:\Users\DELL\Desktop\sistema de venta\CapaPresentacion\obj\Debug\CapaPresentacion.exe
 C:\Users\DELL\Desktop\sistema de venta\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+C:\Users\DELL\Documents\GitHub\SISTEMA-DE-VENTAS\CapaPresentacion\obj\Debug\CapaPresentacion.Modales.mdProducto.resources
+C:\Users\DELL\Documents\GitHub\SISTEMA-DE-VENTAS\CapaPresentacion\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\DELL\Documents\GitHub\SISTEMA-DE-VENTAS\CapaPresentacion\bin\Debug\itextsharp.dll
+C:\Users\DELL\Documents\GitHub\SISTEMA-DE-VENTAS\CapaPresentacion\bin\Debug\itextsharp.xmlworker.dll
+C:\Users\DELL\Documents\GitHub\SISTEMA-DE-VENTAS\CapaPresentacion\obj\Debug\CapaPresentacion.frmRegistrosCaja.resources

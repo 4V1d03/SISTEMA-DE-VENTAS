@@ -16,5 +16,10 @@ namespace CapaPresentacion
         {
             InitializeComponent();
         }
+
+        private void frmAperturacaja_Load(object sender, EventArgs e)
+        {
+            txtcantidadinicial.Select();
+        }
     }
 }

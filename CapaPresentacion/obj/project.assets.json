@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     ".NETFramework,Version=v4.8": {
+      "BouncyCastle/1.8.9": {
+        "type": "package",
+        "compile": {
+          "lib/BouncyCastle.Crypto.dll": {}
+        },
+        "runtime": {
+          "lib/BouncyCastle.Crypto.dll": {}
+        }
+      },
       "ClosedXML/0.102.1": {
         "type": "package",
         "dependencies": {
@@ -104,6 +113,30 @@
         },
         "runtime": {
           "lib/net461/Irony.dll": {}
+        }
+      },
+      "iTextSharp/5.5.13.3": {
+        "type": "package",
+        "dependencies": {
+          "BouncyCastle": "1.8.9"
+        },
+        "compile": {
+          "lib/itextsharp.dll": {}
+        },
+        "runtime": {
+          "lib/itextsharp.dll": {}
+        }
+      },
+      "itextsharp.xmlworker/5.5.13.3": {
+        "type": "package",
+        "dependencies": {
+          "iTextSharp": "5.5.13.3"
+        },
+        "compile": {
+          "lib/itextsharp.xmlworker.dll": {}
+        },
+        "runtime": {
+          "lib/itextsharp.xmlworker.dll": {}
         }
       },
       "SixLabors.Fonts/1.0.0": {
@@ -434,6 +467,15 @@
       }
     },
     ".NETFramework,Version=v4.8/win": {
+      "BouncyCastle/1.8.9": {
+        "type": "package",
+        "compile": {
+          "lib/BouncyCastle.Crypto.dll": {}
+        },
+        "runtime": {
+          "lib/BouncyCastle.Crypto.dll": {}
+        }
+      },
       "ClosedXML/0.102.1": {
         "type": "package",
         "dependencies": {
@@ -536,6 +578,30 @@
         },
         "runtime": {
           "lib/net461/Irony.dll": {}
+        }
+      },
+      "iTextSharp/5.5.13.3": {
+        "type": "package",
+        "dependencies": {
+          "BouncyCastle": "1.8.9"
+        },
+        "compile": {
+          "lib/itextsharp.dll": {}
+        },
+        "runtime": {
+          "lib/itextsharp.dll": {}
+        }
+      },
+      "itextsharp.xmlworker/5.5.13.3": {
+        "type": "package",
+        "dependencies": {
+          "iTextSharp": "5.5.13.3"
+        },
+        "compile": {
+          "lib/itextsharp.xmlworker.dll": {}
+        },
+        "runtime": {
+          "lib/itextsharp.xmlworker.dll": {}
         }
       },
       "SixLabors.Fonts/1.0.0": {
@@ -822,6 +888,15 @@
       }
     },
     ".NETFramework,Version=v4.8/win-arm64": {
+      "BouncyCastle/1.8.9": {
+        "type": "package",
+        "compile": {
+          "lib/BouncyCastle.Crypto.dll": {}
+        },
+        "runtime": {
+          "lib/BouncyCastle.Crypto.dll": {}
+        }
+      },
       "ClosedXML/0.102.1": {
         "type": "package",
         "dependencies": {
@@ -924,6 +999,30 @@
         },
         "runtime": {
           "lib/net461/Irony.dll": {}
+        }
+      },
+      "iTextSharp/5.5.13.3": {
+        "type": "package",
+        "dependencies": {
+          "BouncyCastle": "1.8.9"
+        },
+        "compile": {
+          "lib/itextsharp.dll": {}
+        },
+        "runtime": {
+          "lib/itextsharp.dll": {}
+        }
+      },
+      "itextsharp.xmlworker/5.5.13.3": {
+        "type": "package",
+        "dependencies": {
+          "iTextSharp": "5.5.13.3"
+        },
+        "compile": {
+          "lib/itextsharp.xmlworker.dll": {}
+        },
+        "runtime": {
+          "lib/itextsharp.xmlworker.dll": {}
         }
       },
       "SixLabors.Fonts/1.0.0": {
@@ -1210,6 +1309,15 @@
       }
     },
     ".NETFramework,Version=v4.8/win-x64": {
+      "BouncyCastle/1.8.9": {
+        "type": "package",
+        "compile": {
+          "lib/BouncyCastle.Crypto.dll": {}
+        },
+        "runtime": {
+          "lib/BouncyCastle.Crypto.dll": {}
+        }
+      },
       "ClosedXML/0.102.1": {
         "type": "package",
         "dependencies": {
@@ -1312,6 +1420,30 @@
         },
         "runtime": {
           "lib/net461/Irony.dll": {}
+        }
+      },
+      "iTextSharp/5.5.13.3": {
+        "type": "package",
+        "dependencies": {
+          "BouncyCastle": "1.8.9"
+        },
+        "compile": {
+          "lib/itextsharp.dll": {}
+        },
+        "runtime": {
+          "lib/itextsharp.dll": {}
+        }
+      },
+      "itextsharp.xmlworker/5.5.13.3": {
+        "type": "package",
+        "dependencies": {
+          "iTextSharp": "5.5.13.3"
+        },
+        "compile": {
+          "lib/itextsharp.xmlworker.dll": {}
+        },
+        "runtime": {
+          "lib/itextsharp.xmlworker.dll": {}
         }
       },
       "SixLabors.Fonts/1.0.0": {
@@ -1598,6 +1730,15 @@
       }
     },
     ".NETFramework,Version=v4.8/win-x86": {
+      "BouncyCastle/1.8.9": {
+        "type": "package",
+        "compile": {
+          "lib/BouncyCastle.Crypto.dll": {}
+        },
+        "runtime": {
+          "lib/BouncyCastle.Crypto.dll": {}
+        }
+      },
       "ClosedXML/0.102.1": {
         "type": "package",
         "dependencies": {
@@ -1700,6 +1841,30 @@
         },
         "runtime": {
           "lib/net461/Irony.dll": {}
+        }
+      },
+      "iTextSharp/5.5.13.3": {
+        "type": "package",
+        "dependencies": {
+          "BouncyCastle": "1.8.9"
+        },
+        "compile": {
+          "lib/itextsharp.dll": {}
+        },
+        "runtime": {
+          "lib/itextsharp.dll": {}
+        }
+      },
+      "itextsharp.xmlworker/5.5.13.3": {
+        "type": "package",
+        "dependencies": {
+          "iTextSharp": "5.5.13.3"
+        },
+        "compile": {
+          "lib/itextsharp.xmlworker.dll": {}
+        },
+        "runtime": {
+          "lib/itextsharp.xmlworker.dll": {}
         }
       },
       "SixLabors.Fonts/1.0.0": {
@@ -1987,6 +2152,19 @@
     }
   },
   "libraries": {
+    "BouncyCastle/1.8.9": {
+      "sha512": "axnBgvdD5n+FnEG6efk/tfKuMFru7R/EoISH9zjh319yb3HD24TEHSAbNN/lTRT2ulOGRxDgOsCjkuk08iwWPg==",
+      "type": "package",
+      "path": "bouncycastle/1.8.9",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "bouncycastle.1.8.9.nupkg.sha512",
+        "bouncycastle.nuspec",
+        "lib/BouncyCastle.Crypto.dll"
+      ]
+    },
     "ClosedXML/0.102.1": {
       "sha512": "Zb0/SgczPKLqlCHpSZzMG2qzaT3HpdkFrYJU8TTFRMfC0NLTSlp8gw26tZAtJp+Do0szAhPrWjkTp9flH9Or0A==",
       "type": "package",
@@ -2128,6 +2306,36 @@
         "lib/net452/Irony.dll",
         "lib/net461/Irony.dll",
         "lib/netstandard1.6/Irony.dll"
+      ]
+    },
+    "iTextSharp/5.5.13.3": {
+      "sha512": "vtnMhTEJdZFCkLqaQLjD8aqTBIVKHPrSFuSXnxbLEJlvE/j/l88fvG9wtsejXTmhtErMo0lA9T2LdfdfbwplYw==",
+      "type": "package",
+      "path": "itextsharp/5.5.13.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "gnu-agpl-v3.0.md",
+        "itextsharp.5.5.13.3.nupkg.sha512",
+        "itextsharp.nuspec",
+        "lib/iTextSharp.xml",
+        "lib/itextsharp.dll",
+        "notice.txt"
+      ]
+    },
+    "itextsharp.xmlworker/5.5.13.3": {
+      "sha512": "tRxeolUZl5863E/IHVb+5riZwsHw8uNiP0uku0gO1nktR2M9DCJS+U9EoLV3CFr0VuxoxQF/sLOffa8BP0hJzg==",
+      "type": "package",
+      "path": "itextsharp.xmlworker/5.5.13.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "gnu-agpl-v3.0.md",
+        "itextsharp.xmlworker.5.5.13.3.nupkg.sha512",
+        "itextsharp.xmlworker.nuspec",
+        "lib/itextsharp.xmlworker.dll"
       ]
     },
     "SixLabors.Fonts/1.0.0": {
@@ -2882,7 +3090,9 @@
       "EntityFramework >= 6.4.4",
       "FontAwesome.Sharp >= 5.15.3",
       "System.IO >= 4.3.0",
-      "System.Runtime.Extensions >= 4.3.0"
+      "System.Runtime.Extensions >= 4.3.0",
+      "iTextSharp >= 5.5.13.3",
+      "itextsharp.xmlworker >= 5.5.13.3"
     ]
   },
   "packageFolders": {
@@ -2892,11 +3102,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\DELL\\Desktop\\sistema de venta\\CapaPresentacion\\CapaPresentacion.csproj",
+      "projectUniqueName": "C:\\Users\\DELL\\Documents\\GitHub\\SISTEMA-DE-VENTAS\\CapaPresentacion\\CapaPresentacion.csproj",
       "projectName": "CapaPresentacion",
-      "projectPath": "C:\\Users\\DELL\\Desktop\\sistema de venta\\CapaPresentacion\\CapaPresentacion.csproj",
+      "projectPath": "C:\\Users\\DELL\\Documents\\GitHub\\SISTEMA-DE-VENTAS\\CapaPresentacion\\CapaPresentacion.csproj",
       "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\DELL\\Desktop\\sistema de venta\\CapaPresentacion\\obj\\",
+      "outputPath": "C:\\Users\\DELL\\Documents\\GitHub\\SISTEMA-DE-VENTAS\\CapaPresentacion\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -2917,11 +3127,11 @@
       "frameworks": {
         "net48": {
           "projectReferences": {
-            "C:\\Users\\DELL\\Desktop\\sistema de venta\\CapaEntidad\\CapaEntidad.csproj": {
-              "projectPath": "C:\\Users\\DELL\\Desktop\\sistema de venta\\CapaEntidad\\CapaEntidad.csproj"
+            "C:\\Users\\DELL\\Documents\\GitHub\\SISTEMA-DE-VENTAS\\CapaEntidad\\CapaEntidad.csproj": {
+              "projectPath": "C:\\Users\\DELL\\Documents\\GitHub\\SISTEMA-DE-VENTAS\\CapaEntidad\\CapaEntidad.csproj"
             },
-            "C:\\Users\\DELL\\Desktop\\sistema de venta\\CapaNegocio\\CapaNegocio.csproj": {
-              "projectPath": "C:\\Users\\DELL\\Desktop\\sistema de venta\\CapaNegocio\\CapaNegocio.csproj"
+            "C:\\Users\\DELL\\Documents\\GitHub\\SISTEMA-DE-VENTAS\\CapaNegocio\\CapaNegocio.csproj": {
+              "projectPath": "C:\\Users\\DELL\\Documents\\GitHub\\SISTEMA-DE-VENTAS\\CapaNegocio\\CapaNegocio.csproj"
             }
           }
         }
@@ -2949,6 +3159,14 @@
           "System.Runtime.Extensions": {
             "target": "Package",
             "version": "[4.3.0, )"
+          },
+          "iTextSharp": {
+            "target": "Package",
+            "version": "[5.5.13.3, )"
+          },
+          "itextsharp.xmlworker": {
+            "target": "Package",
+            "version": "[5.5.13.3, )"
           }
         }
       }

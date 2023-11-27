@@ -1,19 +1,19 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DELL\\Desktop\\sistema de venta\\CapaPresentacion\\CapaPresentacion.csproj": {}
+    "C:\\Users\\DELL\\Documents\\GitHub\\SISTEMA-DE-VENTAS\\CapaPresentacion\\CapaPresentacion.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DELL\\Desktop\\sistema de venta\\CapaDatos\\CapaDatos.csproj": {
+    "C:\\Users\\DELL\\Documents\\GitHub\\SISTEMA-DE-VENTAS\\CapaDatos\\CapaDatos.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\DELL\\Desktop\\sistema de venta\\CapaDatos\\CapaDatos.csproj",
+        "projectUniqueName": "C:\\Users\\DELL\\Documents\\GitHub\\SISTEMA-DE-VENTAS\\CapaDatos\\CapaDatos.csproj",
         "projectName": "CapaDatos",
-        "projectPath": "C:\\Users\\DELL\\Desktop\\sistema de venta\\CapaDatos\\CapaDatos.csproj",
+        "projectPath": "C:\\Users\\DELL\\Documents\\GitHub\\SISTEMA-DE-VENTAS\\CapaDatos\\CapaDatos.csproj",
         "frameworks": {
           "net48": {
             "projectReferences": {
-              "C:\\Users\\DELL\\Desktop\\sistema de venta\\CapaEntidad\\CapaEntidad.csproj": {
-                "projectPath": "C:\\Users\\DELL\\Desktop\\sistema de venta\\CapaEntidad\\CapaEntidad.csproj"
+              "C:\\Users\\DELL\\Documents\\GitHub\\SISTEMA-DE-VENTAS\\CapaEntidad\\CapaEntidad.csproj": {
+                "projectPath": "C:\\Users\\DELL\\Documents\\GitHub\\SISTEMA-DE-VENTAS\\CapaEntidad\\CapaEntidad.csproj"
               }
             }
           }
@@ -23,11 +23,11 @@
         "net48": {}
       }
     },
-    "C:\\Users\\DELL\\Desktop\\sistema de venta\\CapaEntidad\\CapaEntidad.csproj": {
+    "C:\\Users\\DELL\\Documents\\GitHub\\SISTEMA-DE-VENTAS\\CapaEntidad\\CapaEntidad.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\DELL\\Desktop\\sistema de venta\\CapaEntidad\\CapaEntidad.csproj",
+        "projectUniqueName": "C:\\Users\\DELL\\Documents\\GitHub\\SISTEMA-DE-VENTAS\\CapaEntidad\\CapaEntidad.csproj",
         "projectName": "CapaEntidad",
-        "projectPath": "C:\\Users\\DELL\\Desktop\\sistema de venta\\CapaEntidad\\CapaEntidad.csproj",
+        "projectPath": "C:\\Users\\DELL\\Documents\\GitHub\\SISTEMA-DE-VENTAS\\CapaEntidad\\CapaEntidad.csproj",
         "frameworks": {
           "net48": {
             "projectReferences": {}
@@ -38,19 +38,19 @@
         "net48": {}
       }
     },
-    "C:\\Users\\DELL\\Desktop\\sistema de venta\\CapaNegocio\\CapaNegocio.csproj": {
+    "C:\\Users\\DELL\\Documents\\GitHub\\SISTEMA-DE-VENTAS\\CapaNegocio\\CapaNegocio.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\DELL\\Desktop\\sistema de venta\\CapaNegocio\\CapaNegocio.csproj",
+        "projectUniqueName": "C:\\Users\\DELL\\Documents\\GitHub\\SISTEMA-DE-VENTAS\\CapaNegocio\\CapaNegocio.csproj",
         "projectName": "CapaNegocio",
-        "projectPath": "C:\\Users\\DELL\\Desktop\\sistema de venta\\CapaNegocio\\CapaNegocio.csproj",
+        "projectPath": "C:\\Users\\DELL\\Documents\\GitHub\\SISTEMA-DE-VENTAS\\CapaNegocio\\CapaNegocio.csproj",
         "frameworks": {
           "net48": {
             "projectReferences": {
-              "C:\\Users\\DELL\\Desktop\\sistema de venta\\CapaDatos\\CapaDatos.csproj": {
-                "projectPath": "C:\\Users\\DELL\\Desktop\\sistema de venta\\CapaDatos\\CapaDatos.csproj"
+              "C:\\Users\\DELL\\Documents\\GitHub\\SISTEMA-DE-VENTAS\\CapaDatos\\CapaDatos.csproj": {
+                "projectPath": "C:\\Users\\DELL\\Documents\\GitHub\\SISTEMA-DE-VENTAS\\CapaDatos\\CapaDatos.csproj"
               },
-              "C:\\Users\\DELL\\Desktop\\sistema de venta\\CapaEntidad\\CapaEntidad.csproj": {
-                "projectPath": "C:\\Users\\DELL\\Desktop\\sistema de venta\\CapaEntidad\\CapaEntidad.csproj"
+              "C:\\Users\\DELL\\Documents\\GitHub\\SISTEMA-DE-VENTAS\\CapaEntidad\\CapaEntidad.csproj": {
+                "projectPath": "C:\\Users\\DELL\\Documents\\GitHub\\SISTEMA-DE-VENTAS\\CapaEntidad\\CapaEntidad.csproj"
               }
             }
           }
@@ -60,14 +60,14 @@
         "net48": {}
       }
     },
-    "C:\\Users\\DELL\\Desktop\\sistema de venta\\CapaPresentacion\\CapaPresentacion.csproj": {
+    "C:\\Users\\DELL\\Documents\\GitHub\\SISTEMA-DE-VENTAS\\CapaPresentacion\\CapaPresentacion.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DELL\\Desktop\\sistema de venta\\CapaPresentacion\\CapaPresentacion.csproj",
+        "projectUniqueName": "C:\\Users\\DELL\\Documents\\GitHub\\SISTEMA-DE-VENTAS\\CapaPresentacion\\CapaPresentacion.csproj",
         "projectName": "CapaPresentacion",
-        "projectPath": "C:\\Users\\DELL\\Desktop\\sistema de venta\\CapaPresentacion\\CapaPresentacion.csproj",
+        "projectPath": "C:\\Users\\DELL\\Documents\\GitHub\\SISTEMA-DE-VENTAS\\CapaPresentacion\\CapaPresentacion.csproj",
         "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DELL\\Desktop\\sistema de venta\\CapaPresentacion\\obj\\",
+        "outputPath": "C:\\Users\\DELL\\Documents\\GitHub\\SISTEMA-DE-VENTAS\\CapaPresentacion\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -88,11 +88,11 @@
         "frameworks": {
           "net48": {
             "projectReferences": {
-              "C:\\Users\\DELL\\Desktop\\sistema de venta\\CapaEntidad\\CapaEntidad.csproj": {
-                "projectPath": "C:\\Users\\DELL\\Desktop\\sistema de venta\\CapaEntidad\\CapaEntidad.csproj"
+              "C:\\Users\\DELL\\Documents\\GitHub\\SISTEMA-DE-VENTAS\\CapaEntidad\\CapaEntidad.csproj": {
+                "projectPath": "C:\\Users\\DELL\\Documents\\GitHub\\SISTEMA-DE-VENTAS\\CapaEntidad\\CapaEntidad.csproj"
               },
-              "C:\\Users\\DELL\\Desktop\\sistema de venta\\CapaNegocio\\CapaNegocio.csproj": {
-                "projectPath": "C:\\Users\\DELL\\Desktop\\sistema de venta\\CapaNegocio\\CapaNegocio.csproj"
+              "C:\\Users\\DELL\\Documents\\GitHub\\SISTEMA-DE-VENTAS\\CapaNegocio\\CapaNegocio.csproj": {
+                "projectPath": "C:\\Users\\DELL\\Documents\\GitHub\\SISTEMA-DE-VENTAS\\CapaNegocio\\CapaNegocio.csproj"
               }
             }
           }
@@ -120,6 +120,14 @@
             "System.Runtime.Extensions": {
               "target": "Package",
               "version": "[4.3.0, )"
+            },
+            "iTextSharp": {
+              "target": "Package",
+              "version": "[5.5.13.3, )"
+            },
+            "itextsharp.xmlworker": {
+              "target": "Package",
+              "version": "[5.5.13.3, )"
             }
           }
         }

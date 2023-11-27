@@ -23,6 +23,7 @@ namespace CapaPresentacion
 
         private void frmUsuarios_Load(object sender, EventArgs e)
         {
+            txtdocumento.Select();
             cboestado.Items.Add(new OpcionCombo() { Valor = 1, Texto = "Activo" });
             cboestado.Items.Add(new OpcionCombo() { Valor = 0, Texto = "No Activo" });
             cboestado.DisplayMember = "Texto";
@@ -75,8 +76,8 @@ namespace CapaPresentacion
 
         }
 
-
-        private void btnguardar_Click(object sender, EventArgs e)
+        //guardar
+        private void btnguardarusuario_Click(object sender, EventArgs e)
         {
             string mensaje = string.Empty;
 
@@ -111,7 +112,7 @@ namespace CapaPresentacion
                 {
                     MessageBox.Show(mensaje);
                 }
-            
+
             }
 
             else
@@ -147,6 +148,7 @@ namespace CapaPresentacion
             //    });
 
             //Limpiar();
+
         }
 
         private void Limpiar()
@@ -177,12 +179,12 @@ namespace CapaPresentacion
 
                 e.Paint(e.CellBounds, DataGridViewPaintParts.All);
 
-                var w = Properties.Resources.check20.Width;
-                var h = Properties.Resources.check20.Height;
+                var w = Properties.Resources.icons8_casilla_de_verificación_con_emoji_de_verificación_20.Width;
+                var h = Properties.Resources.icons8_casilla_de_verificación_con_emoji_de_verificación_20.Height;
                 var x = e.CellBounds.Left + (e.CellBounds.Width - w) / 2;
                 var y = e.CellBounds.Top + (e.CellBounds.Height - h) / 2;
 
-                e.Graphics.DrawImage(Properties.Resources.check20, new Rectangle(x, y, w, h));
+                e.Graphics.DrawImage(Properties.Resources.icons8_casilla_de_verificación_con_emoji_de_verificación_20, new Rectangle(x, y, w, h));
                 e.Handled = true;
             }
         }
@@ -234,8 +236,8 @@ namespace CapaPresentacion
 
             }
         }
-
-        private void btneliminar_Click(object sender, EventArgs e)
+        //eliminar
+        private void btneliminarusuario_Click(object sender, EventArgs e)
         {
             if (Convert.ToInt32(txtid.Text) != 0) //si es diferente de 0 quiere decir que ha seleccionado un usuario
             {
@@ -260,6 +262,7 @@ namespace CapaPresentacion
 
                 }
             }
+
         }
 
         private void btnbuscar_Click(object sender, EventArgs e)
@@ -281,7 +284,7 @@ namespace CapaPresentacion
 
         private void btnlimpiarbuscador_Click(object sender, EventArgs e)
         {
-            Limpiar();
+            
             txtbusqueda.Text = "";
             foreach (DataGridViewRow row in dgvdata.Rows)
             {
@@ -289,9 +292,11 @@ namespace CapaPresentacion
             }
         }
 
-        private void cboestado_SelectedIndexChanged(object sender, EventArgs e)
+        private void btnlimpiartxt_Click(object sender, EventArgs e)
         {
-
+            Limpiar();
         }
+
+        
     }
 }

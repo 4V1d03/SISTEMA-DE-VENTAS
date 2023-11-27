@@ -25,6 +25,7 @@ namespace CapaPresentacion
 
         private void frmProducto_Load(object sender, EventArgs e)
         {
+            txtcodigo.Select();
             cboestado.Items.Add(new OpcionCombo() { Valor = 1, Texto = "Activo" });
             cboestado.Items.Add(new OpcionCombo() { Valor = 0, Texto = "No Activo" });
             cboestado.DisplayMember = "Texto";
@@ -78,10 +79,9 @@ namespace CapaPresentacion
                });
             }
         }
-
-        private void btnguardar_Click(object sender, EventArgs e)
+        //guardarproducto
+        private void btnguardarproduct_Click(object sender, EventArgs e)
         {
-
             string mensaje = string.Empty;
 
             Producto obj = new Producto()
@@ -148,8 +148,6 @@ namespace CapaPresentacion
                     MessageBox.Show(mensaje);
                 }
             }
-
-
         }
 
         private void Limpiar()
@@ -169,18 +167,20 @@ namespace CapaPresentacion
 
         private void dgvdata_CellPainting(object sender, DataGridViewCellPaintingEventArgs e)
         {
+            if (e.RowIndex < 0)
+                return;
 
             if (e.ColumnIndex == 0)// 0 = la primera columna
             {
 
                 e.Paint(e.CellBounds, DataGridViewPaintParts.All);
 
-                var w = Properties.Resources.check20.Width;
-                var h = Properties.Resources.check20.Height;
+                var w = Properties.Resources.icons8_casilla_de_verificación_con_emoji_de_verificación_20.Width;
+                var h = Properties.Resources.icons8_casilla_de_verificación_con_emoji_de_verificación_20.Height;
                 var x = e.CellBounds.Left + (e.CellBounds.Width - w) / 2;
                 var y = e.CellBounds.Top + (e.CellBounds.Height - h) / 2;
 
-                e.Graphics.DrawImage(Properties.Resources.check20, new Rectangle(x, y, w, h));
+                e.Graphics.DrawImage(Properties.Resources.icons8_casilla_de_verificación_con_emoji_de_verificación_20, new Rectangle(x, y, w, h));
                 e.Handled = true;
             }
         }
@@ -232,8 +232,8 @@ namespace CapaPresentacion
 
 
         }
-
-        private void btneliminar_Click(object sender, EventArgs e)
+        //Eliminar
+        private void btneliminarproducto_Click(object sender, EventArgs e)
         {
             if (Convert.ToInt32(txtid.Text) != 0)
             {
@@ -257,7 +257,6 @@ namespace CapaPresentacion
                     {
                         MessageBox.Show(mensaje, "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     }
-
                 }
             }
         }
@@ -289,28 +288,30 @@ namespace CapaPresentacion
             }
 
         }
-
-        private void btnlimpiar_Click(object sender, EventArgs e)
+        //limpiar
+        private void btnlimpiartxtproduct_Click(object sender, EventArgs e)
         {
             Limpiar();
+
         }
 
-        private void btnexportar_Click(object sender, EventArgs e)
+        //exportar a excel
+        private void button1_Click(object sender, EventArgs e)
         {
-            if (dgvdata.Rows.Count < 1) 
+            if (dgvdata.Rows.Count < 1)
             {
                 MessageBox.Show("No hay datos para exportar", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
             else
             {
                 DataTable dt = new DataTable();
-                foreach(DataGridViewColumn columna in dgvdata.Columns)
+                foreach (DataGridViewColumn columna in dgvdata.Columns)
                 {
                     if (columna.HeaderText != "" && columna.Visible)
-                        dt.Columns.Add(columna.HeaderText,typeof(string));
+                        dt.Columns.Add(columna.HeaderText, typeof(string));
                 }
 
-                foreach(DataGridViewRow row in dgvdata.Rows)
+                foreach (DataGridViewRow row in dgvdata.Rows)
                 {
                     if (row.Visible)
                         dt.Rows.Add(new object[]
@@ -328,7 +329,7 @@ namespace CapaPresentacion
                 }
 
                 SaveFileDialog savefile = new SaveFileDialog();
-                savefile.FileName = String.Format("Reporte Producto_{0}.xlsx",DateTime.Now.ToString("ddMMyyyyyHHmmss"));
+                savefile.FileName = String.Format("Reporte Producto_{0}.xlsx", DateTime.Now.ToString("ddMMyyyyyHHmmss"));
                 savefile.Filter = "Excel Files | *.xlsx";
 
                 if (savefile.ShowDialog() == DialogResult.OK)
@@ -339,7 +340,7 @@ namespace CapaPresentacion
                         var hoja = wb.Worksheets.Add(dt, "Informe");
                         hoja.ColumnsUsed().AdjustToContents();
                         wb.SaveAs(savefile.FileName);
-                        MessageBox.Show("Reporte Generado","Mensaje",MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Reporte Generado con exito", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     catch
                     {
@@ -349,11 +350,9 @@ namespace CapaPresentacion
             }
         }
 
-        private void txtcodigo_TextChanged(object sender, EventArgs e)
+        private void label5_Click(object sender, EventArgs e)
         {
 
         }
     }
-
-
 }

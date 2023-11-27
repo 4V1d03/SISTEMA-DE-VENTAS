@@ -113,8 +113,8 @@ namespace CapaPresentacion
         {
 
         }
-
-        private void btnagregarproducto_Click(object sender, EventArgs e)
+        //
+        private void btnaggproducto_Click(object sender, EventArgs e)
         {
             decimal preciocompra = 0;
             decimal precioventa = 0;
@@ -142,7 +142,8 @@ namespace CapaPresentacion
 
             foreach (DataGridViewRow fila in dgvdata.Rows)
             {
-                if (fila.Cells["IdProducto"].Value != null && fila.Cells["IdProducto"].Value.ToString() == txtidproducto.Text){
+                if (fila.Cells["IdProducto"].Value != null && fila.Cells["IdProducto"].Value.ToString() == txtidproducto.Text)
+                {
                     producto_existe = true;
                     break;
                 }
@@ -348,6 +349,140 @@ namespace CapaPresentacion
 
         }
 
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbotipodocumento_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtfecha_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtidproveedor_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtnombreproveedor_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtdocproveedor_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox3_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtidproducto_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtcantidad_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtprecioventa_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtpreciocompra_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtcodproducto_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txttotalpagar_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label16_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
 

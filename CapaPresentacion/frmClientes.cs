@@ -22,14 +22,12 @@ namespace CapaPresentacion
 
         private void frmClientes_Load(object sender, EventArgs e)
         {
+            txtdocumento.Select();
             cboestado.Items.Add(new OpcionCombo() { Valor = 1, Texto = "Activo" });
             cboestado.Items.Add(new OpcionCombo() { Valor = 0, Texto = "No Activo" });
             cboestado.DisplayMember = "Texto";
             cboestado.ValueMember = "Valor";
             cboestado.SelectedIndex = 0;
-
-
-        
 
             //llena el combobox  de buscar con opciones de las columnas que hay en datagrid
             foreach (DataGridViewColumn columna in dgvdata.Columns)
@@ -55,10 +53,9 @@ namespace CapaPresentacion
                     item.Estado == true ? "Activo" : "No Activo"
                 });
             }
-
         }
-
-        private void btnguardar_Click(object sender, EventArgs e)
+        //guardar
+        private void btnguardcli_Click(object sender, EventArgs e)
         {
             string mensaje = string.Empty;
 
@@ -90,7 +87,6 @@ namespace CapaPresentacion
                 {
                     MessageBox.Show(mensaje);
                 }
-
             }
 
             else
@@ -114,7 +110,6 @@ namespace CapaPresentacion
                     MessageBox.Show(mensaje);
                 }
             }
-
         }
 
         private void Limpiar()
@@ -127,7 +122,6 @@ namespace CapaPresentacion
             txttelefono.Text = "";
             cboestado.SelectedIndex = 0;
             txtdocumento.Select();
-
         }
 
         private void dgvdata_CellPainting(object sender, DataGridViewCellPaintingEventArgs e)
@@ -140,12 +134,12 @@ namespace CapaPresentacion
 
                 e.Paint(e.CellBounds, DataGridViewPaintParts.All);
 
-                var w = Properties.Resources.check20.Width;
-                var h = Properties.Resources.check20.Height;
+                var w = Properties.Resources.icons8_casilla_de_verificación_con_emoji_de_verificación_20.Width;
+                var h = Properties.Resources.icons8_casilla_de_verificación_con_emoji_de_verificación_20.Height;
                 var x = e.CellBounds.Left + (e.CellBounds.Width - w) / 2;
                 var y = e.CellBounds.Top + (e.CellBounds.Height - h) / 2;
 
-                e.Graphics.DrawImage(Properties.Resources.check20, new Rectangle(x, y, w, h));
+                e.Graphics.DrawImage(Properties.Resources.icons8_casilla_de_verificación_con_emoji_de_verificación_20, new Rectangle(x, y, w, h));
                 e.Handled = true;
             }
         }
@@ -176,15 +170,11 @@ namespace CapaPresentacion
                             break;
                         }
                     }
-
-
                 }
-
-
             }
         }
-
-        private void btneliminar_Click(object sender, EventArgs e)
+        //eliminar
+        private void btneliminarcli_Click(object sender, EventArgs e)
         {
             if (Convert.ToInt32(txtid.Text) != 0) //si es diferente de 0 quiere decir que ha seleccionado un usuario
             {
@@ -207,10 +197,10 @@ namespace CapaPresentacion
                     {
                         MessageBox.Show(mensaje, "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     }
-
                 }
             }
         }
+
 
         private void btnbuscar_Click(object sender, EventArgs e)
         {
@@ -237,8 +227,7 @@ namespace CapaPresentacion
                 row.Visible = true;
             }
         }
-
-        private void btnlimpiar_Click(object sender, EventArgs e)
+        private void btnlimpiartxtcli_Click(object sender, EventArgs e)
         {
             Limpiar();
         }
