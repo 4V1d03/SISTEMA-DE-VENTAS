@@ -153,7 +153,7 @@ namespace CapaPresentacion
         //registroventas
         private void submenuregistrarventa_Click(object sender, EventArgs e)
         {
-            AbrirFormulario(menuventas, new frmVentas(/*usuarioActual*/));
+            AbrirFormulario(menuventas, new frmVentas(usuarioActual));
             FormularioActivo.BackColor = Color.Azure;
         }
 

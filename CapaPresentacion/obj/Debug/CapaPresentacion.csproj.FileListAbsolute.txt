@@ -63,7 +63,6 @@ C:\Users\aguil\Documents\GITHUB\SISTEMA-DE-VENTAS\CapaPresentacion\obj\Debug\Cap
 C:\Users\aguil\Documents\GITHUB\SISTEMA-DE-VENTAS\CapaPresentacion\obj\Debug\CapaPresentacion.frmVentas.resources
 C:\Users\aguil\Documents\GITHUB\SISTEMA-DE-VENTAS\CapaPresentacion\obj\Debug\CapaPresentacion.Inicio.resources
 C:\Users\aguil\Documents\GITHUB\SISTEMA-DE-VENTAS\CapaPresentacion\obj\Debug\CapaPresentacion.Login.resources
-C:\Users\aguil\Documents\GITHUB\SISTEMA-DE-VENTAS\CapaPresentacion\obj\Debug\CapaPresentacion.Modales.mdAcercade.resources
 C:\Users\aguil\Documents\GITHUB\SISTEMA-DE-VENTAS\CapaPresentacion\obj\Debug\CapaPresentacion.Modales.mdProveedor.resources
 C:\Users\aguil\Documents\GITHUB\SISTEMA-DE-VENTAS\CapaPresentacion\obj\Debug\CapaPresentacion.Properties.Resources.resources
 C:\Users\aguil\Documents\GITHUB\SISTEMA-DE-VENTAS\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.cache
@@ -518,3 +517,8 @@ C:\Users\DELL\Documents\GitHub\SISTEMA-DE-VENTAS\CapaPresentacion\bin\Debug\Boun
 C:\Users\DELL\Documents\GitHub\SISTEMA-DE-VENTAS\CapaPresentacion\bin\Debug\itextsharp.dll
 C:\Users\DELL\Documents\GitHub\SISTEMA-DE-VENTAS\CapaPresentacion\bin\Debug\itextsharp.xmlworker.dll
 C:\Users\DELL\Documents\GitHub\SISTEMA-DE-VENTAS\CapaPresentacion\obj\Debug\CapaPresentacion.frmRegistrosCaja.resources
+C:\Users\aguil\Documents\GITHUB\SISTEMA-DE-VENTAS\CapaPresentacion\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\aguil\Documents\GITHUB\SISTEMA-DE-VENTAS\CapaPresentacion\bin\Debug\itextsharp.dll
+C:\Users\aguil\Documents\GITHUB\SISTEMA-DE-VENTAS\CapaPresentacion\bin\Debug\itextsharp.xmlworker.dll
+C:\Users\aguil\Documents\GITHUB\SISTEMA-DE-VENTAS\CapaPresentacion\obj\Debug\CapaPresentacion.frmRegistrosCaja.resources
+C:\Users\aguil\Documents\GITHUB\SISTEMA-DE-VENTAS\CapaPresentacion\obj\Debug\CapaPresentacion.Modales.mdCliente.resources
