@@ -155,6 +155,13 @@ namespace CapaPresentacion
             if (!producto_existe)
             {
 
+                bool respuesta = new CN_Venta().RestarStock(
+                Convert.ToInt32(txtidproducto.Text),
+                Convert.ToInt32(txtcantidad.Value.ToString())
+                );
+
+                if (respuesta)
+                {
                     dgvdata.Rows.Add(new object[] {
                         txtidproducto.Text,
                         txtproducto.Text,
@@ -166,6 +173,8 @@ namespace CapaPresentacion
                     calcularTotal();
                     limpiarProducto();
                     txtcodproducto.Select();
+                }
+
             }
         }
 
@@ -216,9 +225,16 @@ namespace CapaPresentacion
                 int index = e.RowIndex;
                 if (index >= 0)
                 {
-                    dgvdata.Rows.RemoveAt(index);
-                    calcularTotal();
-                    
+                    bool respuesta = new CN_Venta().SumarStock(
+                        Convert.ToInt32(dgvdata.Rows[index].Cells["IdProducto"].Value.ToString()),
+                        Convert.ToInt32(dgvdata.Rows[index].Cells["Cantidad"].Value.ToString()));
+
+                    if (respuesta)
+                    {
+                        dgvdata.Rows.RemoveAt(index);
+                        calcularTotal();
+                    }
+
                 }
             }
         }
@@ -318,6 +334,88 @@ namespace CapaPresentacion
                 calcularcambio();
             }
         }
+
+        private void btnregistrar_Click(object sender, EventArgs e)
+        {
+            if(txtdocumentocliente.Text == "")
+            {
+                MessageBox.Show("Debe ingresar documento del cliente", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+
+
+            if (txtnombrecliente.Text == "")
+            {
+                MessageBox.Show("Debe ingresar nombre del cliente", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+
+            if (dgvdata.Rows.Count < 1)
+            {
+                MessageBox.Show("Debe ingresar productos en la venta", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+
+            DataTable detalle_venta = new DataTable();
+
+            detalle_venta.Columns.Add("IdProducto", typeof(int));
+            detalle_venta.Columns.Add("PrecioVenta", typeof(decimal));
+            detalle_venta.Columns.Add("Cantidad", typeof(int));
+            detalle_venta.Columns.Add("SubTotal", typeof(decimal));
+
+
+            foreach (DataGridViewRow row in dgvdata.Rows)
+            {
+                detalle_venta.Rows.Add(new object[] {
+                    row.Cells["IdProducto"].Value.ToString(),
+                    row.Cells["Precio"].Value.ToString(),
+                    row.Cells["Cantidad"].Value.ToString(),
+                    row.Cells["SubTotal"].Value.ToString()
+                });
+            }
+
+            int idcorrelativo = new CN_Venta().ObtenerCorrelativo();
+            string numeroDocumento = string.Format("{0:00000}", idcorrelativo);
+            calcularcambio();
+
+            Venta oVenta = new Venta()
+            {
+
+                oUsuario = new Usuario() { IdUsuario = _Usuario.IdUsuario },
+                TipoDocumento = ((OpcionCombo)cbotipodocumento.SelectedItem).Texto,
+                NumeroDocumento = numeroDocumento,
+                DocumentoCliente = txtdocumentocliente.Text,
+                NombreCliente = txtnombrecliente.Text,
+                MontoPago = Convert.ToDecimal(txtrecibo.Text),
+                MontoCambio = Convert.ToDecimal(txtcambio.Text),
+                MontoTotal = Convert.ToDecimal(txttotalpagar.Text)
+            };
+
+            string mensaje = string.Empty;
+            bool respuesta = new CN_Venta().Registrar(oVenta, detalle_venta, out mensaje);
+
+            if (respuesta)
+            {
+                var result = MessageBox.Show("Numero de venta generada:\n" + numeroDocumento + "\n\n¿Desea copiar al portapapeles?", "Mensaje", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+
+                if (result == DialogResult.Yes)
+                    Clipboard.SetText(numeroDocumento);
+
+                txtdocumentocliente.Text = "";
+                txtnombrecliente.Text = "";
+                dgvdata.Rows.Clear();
+                calcularTotal();
+                txtrecibo.Text = "";
+                txtcambio.Text = "";
+            }
+            else
+                MessageBox.Show(mensaje, "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
+
+
+        }
+
+
 
 
 

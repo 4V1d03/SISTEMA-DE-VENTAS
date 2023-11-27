@@ -542,7 +542,7 @@ GO
 
 Select count(*) + 1 from COMPRA
 
-
+go
 
 /*--------------------------- Consultas de guia NO AFECTA NADA---------------------------*/
 
@@ -550,7 +550,73 @@ Select c.IdCompra, u.NombreCompleto,pr.Documento,pr.RazonSocial,c.TipoDocumento,
 from COMPRA c inner join USUARIO u on u.IdUsuario = c.IdUsuario inner join PROVEEDOR pr on pr.IdProveedor =
 c.IdProveedor where c.NumeroDocumento = '00001'
 
-
+go
 
 Select p.Nombre,dc.PrecioCompra,dc.Cantidad,dc.MontoTotal from DETALLE_COMPRA dc inner join PRODUCTO p on P.IdProducto = dc.IdProducto
 where dc.IdCompra = 2
+
+go
+
+
+
+
+/*-------------PROCESOS PARA REGISTRAR UNA VENTA-----------------*/
+
+CREATE TYPE [dbo].[EDetalle_Venta] AS TABLE(
+	[IdProducto] int NULL,
+	[PrecioVenta] decimal(18,2) NULL,
+	[Cantidad] int NULL,
+	[SubTotal] decimal(18,2) NULL
+)
+go
+
+create procedure usp_RegistrarVenta(
+@IdUsuario int,
+@TipoDocumento varchar(500),
+@NumeroDocumento varchar(500),
+@DocumentoCliente varchar(500),
+@NombreCliente varchar(500),
+@MontoPago decimal(18,2),
+@MontoCambio decimal(18,2),
+@MontoTotal decimal(18,2),
+@DetalleVenta [EDetalle_Venta] READONLY,                                      
+@Resultado bit output,
+@Mensaje varchar(500) output
+)
+as
+begin
+	
+	begin try
+
+		declare @idventa int = 0
+		set @Resultado = 1
+		set @Mensaje = ''
+
+		begin  transaction registro
+
+		insert into VENTA(IdUsuario,TipoDocumento,NumeroDocumento,DocumentoCliente,NombreCliente,MontoPago,MontoCambio,MontoTotal)
+		values(@IdUsuario,@TipoDocumento,@NumeroDocumento,@DocumentoCliente,@NombreCliente,@MontoPago,@MontoCambio,@MontoTotal)
+
+		set @idventa = SCOPE_IDENTITY()
+
+		insert into DETALLE_VENTA(IdVenta,IdProducto,PrecioVenta,Cantidad,SubTotal)
+		select @idventa,IdProducto,PrecioVenta,Cantidad,SubTotal from @DetalleVenta
+
+		commit transaction registro
+
+	end try
+	begin catch
+		set @Resultado = 0
+		set @Mensaje = ERROR_MESSAGE()
+		rollback transaction registro
+	end catch
+
+end
+
+go
+
+/* CONSULTAS DE PRUEBA */
+select * from VENTA where NumeroDocumento = '00002'
+select * from DETALLE_VENTA where IdVenta = '2'
+
+go
