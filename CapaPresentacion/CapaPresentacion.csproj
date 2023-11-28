@@ -400,5 +400,8 @@
   <ItemGroup>
     <None Include="Resources\windows-square-shape-brand_icon-icons.com_59257.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PlantillaVenta.html" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
