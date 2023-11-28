@@ -189,11 +189,7 @@ namespace CapaPresentacion
             FormularioActivo.BackColor = Color.Azure;
         }
 
-        private void menureportes_Click_1(object sender, EventArgs e)
-        {
-            AbrirFormulario((IconMenuItem)sender, new frmReportes());
-            FormularioActivo.BackColor = Color.Azure;
-        }
+
 
         private void iconMenuItem2_Click(object sender, EventArgs e)
         {
@@ -219,6 +215,18 @@ namespace CapaPresentacion
 
                 }
             }
+        }
+
+        private void submenureporteCompras_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(menureportes, new frmReporteCompras());
+            FormularioActivo.BackColor = Color.Azure;
+        }
+
+        private void submenureporteVentas_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(menureportes, new frmReporteVentas());
+            FormularioActivo.BackColor = Color.Azure;
         }
     }
 }

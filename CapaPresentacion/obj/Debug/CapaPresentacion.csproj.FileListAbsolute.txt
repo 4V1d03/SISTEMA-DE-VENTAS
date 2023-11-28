@@ -522,3 +522,4 @@ C:\Users\aguil\Documents\GITHUB\SISTEMA-DE-VENTAS\CapaPresentacion\bin\Debug\ite
 C:\Users\aguil\Documents\GITHUB\SISTEMA-DE-VENTAS\CapaPresentacion\bin\Debug\itextsharp.xmlworker.dll
 C:\Users\aguil\Documents\GITHUB\SISTEMA-DE-VENTAS\CapaPresentacion\obj\Debug\CapaPresentacion.frmRegistrosCaja.resources
 C:\Users\aguil\Documents\GITHUB\SISTEMA-DE-VENTAS\CapaPresentacion\obj\Debug\CapaPresentacion.Modales.mdCliente.resources
+C:\Users\aguil\Documents\GITHUB\SISTEMA-DE-VENTAS\CapaPresentacion\obj\Debug\CapaPresentacion.frmReporteCompras.resources

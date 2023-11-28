@@ -116,11 +116,23 @@
     <Compile Include="frmRegistrosCaja.Designer.cs">
       <DependentUpon>frmRegistrosCaja.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmReporteCompras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReporteCompras.Designer.cs">
+      <DependentUpon>frmReporteCompras.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmReportes.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmReportes.Designer.cs">
       <DependentUpon>frmReportes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReporteVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReporteVentas.Designer.cs">
+      <DependentUpon>frmReporteVentas.cs</DependentUpon>
     </Compile>
     <Compile Include="frmUsuarios.cs">
       <SubType>Form</SubType>
@@ -204,6 +216,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmRegistrosCaja.resx">
       <DependentUpon>frmRegistrosCaja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReporteCompras.resx">
+      <DependentUpon>frmReporteCompras.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmReportes.resx">
       <DependentUpon>frmReportes.cs</DependentUpon>
