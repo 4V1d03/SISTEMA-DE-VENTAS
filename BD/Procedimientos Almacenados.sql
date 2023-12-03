@@ -1,3 +1,4 @@
+
 /*GUARDAR USUARIO*/
 create PROC SP_REGISTRARUSUARIO(
 @Documento varchar(50),
@@ -461,7 +462,7 @@ go
 select * from PROVEEDOR
 
 
-/*-------------INSERTAR DATOS NEGOCIO-----------------*/
+/*-------------INSERTAR DATOS DEL LOCAL-----------------*/
 
 insert into NEGOCIO(IdNegocio,Nombre,RUC,Direccion) values(1,'Plasticos Tonita','101010','av.Codigo 123')
 go
@@ -579,6 +580,7 @@ create procedure usp_RegistrarVenta(
 @MontoPago decimal(18,2),
 @MontoCambio decimal(18,2),
 @MontoTotal decimal(18,2),
+@CodigoCaja int,
 @DetalleVenta [EDetalle_Venta] READONLY,                                      
 @Resultado bit output,
 @Mensaje varchar(500) output
@@ -591,11 +593,12 @@ begin
 		declare @idventa int = 0
 		set @Resultado = 1
 		set @Mensaje = ''
+		
 
 		begin  transaction registro
-
-		insert into VENTA(IdUsuario,TipoDocumento,NumeroDocumento,DocumentoCliente,NombreCliente,MontoPago,MontoCambio,MontoTotal)
-		values(@IdUsuario,@TipoDocumento,@NumeroDocumento,@DocumentoCliente,@NombreCliente,@MontoPago,@MontoCambio,@MontoTotal)
+		set @CodigoCaja =(select Codigo from CAJA WHERE Codigo= IDENT_CURRENT('CAJA'))
+		insert into VENTA(IdUsuario,TipoDocumento,NumeroDocumento,DocumentoCliente,NombreCliente,MontoPago,MontoCambio,MontoTotal,CodigoCaja)
+		values(@IdUsuario,@TipoDocumento,@NumeroDocumento,@DocumentoCliente,@NombreCliente,@MontoPago,@MontoCambio,@MontoTotal,@CodigoCaja)
 
 		set @idventa = SCOPE_IDENTITY()
 
@@ -674,9 +677,6 @@ create PROC sp_ReporteCompras(
 end
 
 go
-
-
-
 
 
 

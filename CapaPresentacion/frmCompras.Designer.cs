@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.cbotipodocumento = new System.Windows.Forms.ComboBox();
@@ -199,6 +199,7 @@
             this.txtnombreproveedor.ForeColor = System.Drawing.Color.Teal;
             this.txtnombreproveedor.Location = new System.Drawing.Point(285, 50);
             this.txtnombreproveedor.Name = "txtnombreproveedor";
+            this.txtnombreproveedor.ReadOnly = true;
             this.txtnombreproveedor.Size = new System.Drawing.Size(184, 23);
             this.txtnombreproveedor.TabIndex = 4;
             this.txtnombreproveedor.TextChanged += new System.EventHandler(this.txtnombreproveedor_TextChanged);
@@ -233,6 +234,7 @@
             this.txtdocproveedor.Size = new System.Drawing.Size(183, 23);
             this.txtdocproveedor.TabIndex = 0;
             this.txtdocproveedor.TextChanged += new System.EventHandler(this.txtdocproveedor_TextChanged);
+            this.txtdocproveedor.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtdocproveedor_KeyPress);
             // 
             // groupBox3
             // 
@@ -397,6 +399,7 @@
             this.txtproducto.ForeColor = System.Drawing.Color.Teal;
             this.txtproducto.Location = new System.Drawing.Point(321, 58);
             this.txtproducto.Name = "txtproducto";
+            this.txtproducto.ReadOnly = true;
             this.txtproducto.Size = new System.Drawing.Size(252, 23);
             this.txtproducto.TabIndex = 32;
             this.txtproducto.TextChanged += new System.EventHandler(this.txtproducto_TextChanged);
@@ -431,7 +434,7 @@
             this.txtcodproducto.Size = new System.Drawing.Size(201, 23);
             this.txtcodproducto.TabIndex = 0;
             this.txtcodproducto.TextChanged += new System.EventHandler(this.txtcodproducto_TextChanged);
-            this.txtcodproducto.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtcodproducto_KeyDown);
+            this.txtcodproducto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtcodproducto_KeyPress);
             // 
             // label12
             // 
@@ -451,6 +454,7 @@
             this.txttotalpagar.ForeColor = System.Drawing.Color.Teal;
             this.txttotalpagar.Location = new System.Drawing.Point(949, 377);
             this.txttotalpagar.Name = "txttotalpagar";
+            this.txttotalpagar.ReadOnly = true;
             this.txttotalpagar.Size = new System.Drawing.Size(134, 23);
             this.txttotalpagar.TabIndex = 41;
             this.txttotalpagar.Text = "0";
@@ -460,15 +464,15 @@
             // 
             this.dgvdata.AllowUserToAddRows = false;
             this.dgvdata.BackgroundColor = System.Drawing.Color.Honeydew;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.Padding = new System.Windows.Forms.Padding(2);
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvdata.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvdata.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvdata.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvdata.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.IdProducto,
@@ -485,9 +489,9 @@
             this.dgvdata.ReadOnly = true;
             this.dgvdata.RowHeadersVisible = false;
             this.dgvdata.RowHeadersWidth = 51;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
-            this.dgvdata.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvdata.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvdata.RowTemplate.Height = 25;
             this.dgvdata.Size = new System.Drawing.Size(793, 207);
             this.dgvdata.TabIndex = 51;

@@ -188,6 +188,7 @@
             this.txtruc.Name = "txtruc";
             this.txtruc.Size = new System.Drawing.Size(308, 27);
             this.txtruc.TabIndex = 4;
+            this.txtruc.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtruc_KeyPress);
             // 
             // txtnombre
             // 
@@ -197,6 +198,7 @@
             this.txtnombre.Name = "txtnombre";
             this.txtnombre.Size = new System.Drawing.Size(308, 27);
             this.txtnombre.TabIndex = 3;
+            this.txtnombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtnombre_KeyPress);
             // 
             // btnSubir
             // 

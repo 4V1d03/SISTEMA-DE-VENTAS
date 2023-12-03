@@ -1,4 +1,5 @@
-﻿using CapaEntidad;
+﻿using CapaDatos;
+using CapaEntidad;
 using CapaNegocio;
 using CapaPresentacion.Modales;
 using CapaPresentacion.Utilidades;
@@ -6,8 +7,10 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices.WindowsRuntime;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -18,7 +21,7 @@ namespace CapaPresentacion
     {
 
         private Usuario _Usuario;
-
+        frmCierrecaja cc = new frmCierrecaja();
         public frmVentas(Usuario oUsuario = null)
         {
             _Usuario = oUsuario;
@@ -29,7 +32,7 @@ namespace CapaPresentacion
         {
 
         }
-
+        
         private void frmVentas_Load(object sender, EventArgs e)
         {
             cbotipodocumento.Items.Add(new OpcionCombo() { Valor = "Boleta", Texto = "Boleta" });
@@ -37,7 +40,6 @@ namespace CapaPresentacion
             cbotipodocumento.DisplayMember = "Texto";
             cbotipodocumento.ValueMember = "Valor";
             cbotipodocumento.SelectedIndex = 0;
-
             txtfecha.Text = DateTime.Now.ToString("dd/MM/yyyy");
             txtidproducto.Text = "0";
 
@@ -117,7 +119,7 @@ namespace CapaPresentacion
             }
      
         }
-
+        
         private void btnaggproducto_Click(object sender, EventArgs e)
         {
             decimal precio = 0;
@@ -141,6 +143,7 @@ namespace CapaPresentacion
                 MessageBox.Show("La cantidad no puede ser mayor al stock", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
             }
+
 
 
             foreach (DataGridViewRow fila in dgvdata.Rows)
@@ -178,6 +181,7 @@ namespace CapaPresentacion
             }
         }
 
+        //public decimal tt = 0;
         private void calcularTotal()
         {
             decimal total = 0;
@@ -187,7 +191,9 @@ namespace CapaPresentacion
                     total += Convert.ToDecimal(row.Cells["SubTotal"].Value.ToString());
             }
             txttotalpagar.Text = total.ToString("0.00");
+
         }
+
 
         private void limpiarProducto()
         {
@@ -337,7 +343,7 @@ namespace CapaPresentacion
 
         private void btnregistrar_Click(object sender, EventArgs e)
         {
-            if(txtdocumentocliente.Text == "")
+            if (txtdocumentocliente.Text == "")
             {
                 MessageBox.Show("Debe ingresar documento del cliente", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
@@ -380,7 +386,6 @@ namespace CapaPresentacion
 
             Venta oVenta = new Venta()
             {
-
                 oUsuario = new Usuario() { IdUsuario = _Usuario.IdUsuario },
                 TipoDocumento = ((OpcionCombo)cbotipodocumento.SelectedItem).Texto,
                 NumeroDocumento = numeroDocumento,
@@ -390,6 +395,7 @@ namespace CapaPresentacion
                 MontoCambio = Convert.ToDecimal(txtcambio.Text),
                 MontoTotal = Convert.ToDecimal(txttotalpagar.Text)
             };
+            
 
             string mensaje = string.Empty;
             bool respuesta = new CN_Venta().Registrar(oVenta, detalle_venta, out mensaje);
@@ -407,20 +413,28 @@ namespace CapaPresentacion
                 calcularTotal();
                 txtrecibo.Text = "";
                 txtcambio.Text = "";
+                
             }
+            
             else
                 MessageBox.Show(mensaje, "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 
-
-
+        }
+        private void txtdocumentocliente_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != '-' && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
 
-
-
-
-
-
-
-
+        private void txtrecibo_Validating(object sender, CancelEventArgs e)
+        {
+            TextBox textBox = (TextBox)sender;
+            if (textBox.Text.Trim() == "0")
+            {
+                textBox.Text = "1";
+            }
+        }
     }
 }

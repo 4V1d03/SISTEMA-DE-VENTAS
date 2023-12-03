@@ -16,15 +16,13 @@ namespace CapaPresentacion
 {
     public partial class Inicio : Form
     {
+       
         private static Usuario usuarioActual; //usuario que se a logeado
         private static IconMenuItem MenuActivo = null;
         private static Form FormularioActivo = null;
 
-        //private static Size contenedorOriginalSize;
-
         public Inicio(Usuario objusuario = null)
         {
-            //para no estar logeando en cada momento
             if (objusuario == null)
                 usuarioActual = new Usuario() { NombreCompleto = "Generico", IdUsuario = 1 };
             else
@@ -32,25 +30,13 @@ namespace CapaPresentacion
 
             InitializeComponent();
         }
-        private void Inicio_Load_1(object sender, EventArgs e)
+
+
+
+        private void Inicio_Load_1(object sender, EventArgs e, string lblusuario)
         {
-
-            List<Permiso> ListaPermisos = new CN_Permiso().Listar(usuarioActual.IdUsuario);
-
-            foreach (IconMenuItem iconmenu in menu.Items)
-            {
-
-                bool encontrado = ListaPermisos.Any(m => m.NombreMenu == iconmenu.Name);
-
-                if (encontrado == false)
-                {
-                    iconmenu.Visible = false;
-                }
-
-            }
-
-            lblusuario.Text = usuarioActual.NombreCompleto;
-
+            
+            
         }
 
         private void AbrirFormulario(IconMenuItem menu, Form formulario) //abre los formularios en el panel y pinta los menu seleccionados
@@ -107,9 +93,6 @@ namespace CapaPresentacion
                     
                 }
             }
-            //AbrirFormulario(menucajaregistradora, new mdfrmAperturaCaja());
-            //FormularioActivo.BackColor = Color.Azure;
-
         }
         
         private void submenucierre_Click(object sender, EventArgs e)
@@ -193,7 +176,7 @@ namespace CapaPresentacion
 
         private void iconMenuItem2_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("¿Desea salir del sistema?", "Mensaje", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            if (MessageBox.Show("¿Estas seguro que quieres cerrar sesión?", "Mensaje", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 this.Close();
             }
@@ -227,6 +210,30 @@ namespace CapaPresentacion
         {
             AbrirFormulario(menureportes, new frmReporteVentas());
             FormularioActivo.BackColor = Color.Azure;
+        }
+
+        private void Inicio_Load(object sender, EventArgs e)
+        {
+            List<Permiso> ListaPermisos = new CN_Permiso().Listar(usuarioActual.IdUsuario);
+
+            foreach (IconMenuItem iconmenu in menu.Items)
+            {
+
+                bool encontrado = ListaPermisos.Any(m => m.NombreMenu == iconmenu.Name);
+
+                if (encontrado == false)
+                {
+                    iconmenu.Visible = false;
+                }
+            }
+            //frmAperturacaja formapertura = new frmAperturacaja();
+            //formapertura.txtempleado.Text = usuarioActual.NombreCompleto;
+            frmCierrecaja cierre= new frmCierrecaja();
+            lblusuario.Text = usuarioActual.NombreCompleto;
+            //submenucierre.Enabled = false;
+            //submenucierre.Visible = false;
+            //submenuregistrarventa.Visible = false;
+
         }
     }
 }

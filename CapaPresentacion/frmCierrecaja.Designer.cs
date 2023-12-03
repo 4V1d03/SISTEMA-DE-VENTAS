@@ -41,6 +41,8 @@
             this.label6 = new System.Windows.Forms.Label();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
+            this.cboestadocaja = new System.Windows.Forms.ComboBox();
+            this.txtcodigocaja = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // txtcantidadinicial
@@ -71,7 +73,7 @@
             this.txtcantidadfinal.BackColor = System.Drawing.Color.White;
             this.txtcantidadfinal.Font = new System.Drawing.Font("Roboto Cn", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtcantidadfinal.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.txtcantidadfinal.Location = new System.Drawing.Point(302, 200);
+            this.txtcantidadfinal.Location = new System.Drawing.Point(35, 267);
             this.txtcantidadfinal.Name = "txtcantidadfinal";
             this.txtcantidadfinal.ReadOnly = true;
             this.txtcantidadfinal.Size = new System.Drawing.Size(244, 26);
@@ -83,7 +85,7 @@
             this.label3.BackColor = System.Drawing.Color.CadetBlue;
             this.label3.Font = new System.Drawing.Font("Roboto Bk", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Lavender;
-            this.label3.Location = new System.Drawing.Point(300, 178);
+            this.label3.Location = new System.Drawing.Point(33, 245);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(107, 18);
             this.label3.TabIndex = 37;
@@ -105,11 +107,12 @@
             this.txttotalventas.BackColor = System.Drawing.Color.White;
             this.txttotalventas.Font = new System.Drawing.Font("Roboto Cn", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txttotalventas.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.txttotalventas.Location = new System.Drawing.Point(37, 264);
+            this.txttotalventas.Location = new System.Drawing.Point(301, 200);
             this.txttotalventas.Name = "txttotalventas";
             this.txttotalventas.ReadOnly = true;
             this.txttotalventas.Size = new System.Drawing.Size(244, 26);
             this.txttotalventas.TabIndex = 43;
+            this.txttotalventas.Validating += new System.ComponentModel.CancelEventHandler(this.txttotalventas_Validating);
             // 
             // label4
             // 
@@ -117,7 +120,7 @@
             this.label4.BackColor = System.Drawing.Color.CadetBlue;
             this.label4.Font = new System.Drawing.Font("Roboto Bk", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Lavender;
-            this.label4.Location = new System.Drawing.Point(35, 242);
+            this.label4.Location = new System.Drawing.Point(299, 178);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(96, 18);
             this.label4.TabIndex = 42;
@@ -184,6 +187,7 @@
             this.iconButton1.TabIndex = 48;
             this.iconButton1.Text = "Calcular";
             this.iconButton1.UseVisualStyleBackColor = false;
+            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
             // 
             // iconButton2
             // 
@@ -200,6 +204,24 @@
             this.iconButton2.TabIndex = 49;
             this.iconButton2.Text = "Guardar Cierre";
             this.iconButton2.UseVisualStyleBackColor = false;
+            this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click);
+            // 
+            // cboestadocaja
+            // 
+            this.cboestadocaja.FormattingEnabled = true;
+            this.cboestadocaja.Location = new System.Drawing.Point(35, 78);
+            this.cboestadocaja.Name = "cboestadocaja";
+            this.cboestadocaja.Size = new System.Drawing.Size(84, 21);
+            this.cboestadocaja.TabIndex = 50;
+            this.cboestadocaja.Visible = false;
+            // 
+            // txtcodigocaja
+            // 
+            this.txtcodigocaja.Location = new System.Drawing.Point(35, 45);
+            this.txtcodigocaja.Name = "txtcodigocaja";
+            this.txtcodigocaja.Size = new System.Drawing.Size(37, 20);
+            this.txtcodigocaja.TabIndex = 51;
+            this.txtcodigocaja.Visible = false;
             // 
             // frmCierrecaja
             // 
@@ -207,6 +229,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CadetBlue;
             this.ClientSize = new System.Drawing.Size(575, 364);
+            this.Controls.Add(this.txtcodigocaja);
+            this.Controls.Add(this.cboestadocaja);
             this.Controls.Add(this.iconButton2);
             this.Controls.Add(this.iconButton1);
             this.Controls.Add(this.txtfechainicio);
@@ -224,6 +248,7 @@
             this.Name = "frmCierrecaja";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Módulo Caja";
+            this.Load += new System.EventHandler(this.frmCierrecaja_Load_1);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -244,5 +269,7 @@
         private System.Windows.Forms.Label label6;
         private FontAwesome.Sharp.IconButton iconButton1;
         private FontAwesome.Sharp.IconButton iconButton2;
+        private System.Windows.Forms.ComboBox cboestadocaja;
+        private System.Windows.Forms.TextBox txtcodigocaja;
     }
 }

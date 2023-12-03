@@ -111,6 +111,7 @@ namespace CapaDatos
                     cmd.Parameters.AddWithValue("MontoPago", obj.MontoPago);
                     cmd.Parameters.AddWithValue("MontoCambio", obj.MontoCambio);
                     cmd.Parameters.AddWithValue("MontoTotal", obj.MontoTotal);
+                    cmd.Parameters.AddWithValue("CodigoCaja", obj.CodigoCaja);
                     cmd.Parameters.AddWithValue("DetalleVenta", DetalleVenta);
                     cmd.Parameters.Add("Resultado", SqlDbType.Bit).Direction = ParameterDirection.Output;
                     cmd.Parameters.Add("Mensaje", SqlDbType.VarChar, 500).Direction = ParameterDirection.Output;
