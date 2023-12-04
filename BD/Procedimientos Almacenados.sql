@@ -1,5 +1,6 @@
 
-/*GUARDAR USUARIO*/
+/*-------------Registrar Usuarios------------*/
+
 create PROC SP_REGISTRARUSUARIO(
 @Documento varchar(50),
 @NombreCompleto varchar(100),
@@ -32,7 +33,8 @@ end
 
 GO
 
-/*EDITAR USUARIO*/
+/*-----------------Modificar Usuarios---------------*/
+
 create PROC SP_EDITARUSUARIO(
 @IdUsuario int,
 @Documento varchar(50),
@@ -72,7 +74,9 @@ end
 
 go
 
-/*eliminar usuario*/
+
+/*---------------Eliminar Usuarios-----------------*/
+
 create PROC SP_ELIMINARUSUARIO(
 @IdUsuario int,
 @Respuesta bit output,
@@ -114,8 +118,11 @@ end
 
 go
 
+
+
 /*-----------PROCEDIMIENTOS PARA CATEGORIA----------*/
 --PROCEDIMIENTO PAR GUARDAR CATEGORIA
+
 Create PROC SP_RegistrarCategoria(
 @Descripcion varchar(50),
 @Estado bit,
@@ -137,6 +144,7 @@ begin
 	go
 
 --PROCEDIMIENTO PARA MODIFICAR CATEGORIA 
+
 Create procedure sp_EditarCategoria(
 @IdCategoria int,
 @Descripcion varchar(50),
@@ -162,6 +170,7 @@ end
 go
 
 --PROCEDIMIENTO PARA ELIMINAR CATEGORIA 
+
 create procedure sp_EliminarCategoria(
 @IdCategoria int,
 @Resultado bit output,
@@ -187,13 +196,6 @@ end
 go
 
 
-Select *from CATEGORIA
-
-Insert into CATEGORIA(Descripcion,Estado)VALUES('Platos',1)
-Insert into CATEGORIA(Descripcion,Estado)VALUES('Vasos',1)
-Insert into CATEGORIA(Descripcion,Estado)VALUES('Utensilios de cocina',1)
-update CATEGORIA set Estado = 1
-go
 
 /*---------- PROCEDIMIENTO PARA PRODUCTO -------------*/
 --PROCEDIMIENTO PARA GUARDAR PRODUCTO
@@ -222,7 +224,8 @@ end
 GO
 
 /*----------- PROCEDIMIENTO PARA ACTUALIZAR PRODUCTO ------------*/
-alter procedure sp_ModificarProducto(
+
+create procedure sp_ModificarProducto(
 @IdProducto int,
 @Codigo varchar(20),
 @Nombre varchar(30),
@@ -256,7 +259,7 @@ go
 
 /*---------- PROCEDIMIENTO PARA ELIMINAR PRODUCTO ------------*/
 
-alter PROC SP_EliminarProducto(
+create PROC SP_EliminarProducto(
 @IdProducto int,
 @Respuesta bit output,
 @Mensaje varchar(500) output
@@ -295,22 +298,8 @@ begin
 
 end
 
-select p.IdProducto,p.Codigo,p.Nombre,p.Descripcion,c.IdCategoria,c.Descripcion[DescripcionCategoria],Stock,PrecioCompra,PrecioVenta,p.Estado from PRODUCTO p
-inner join CATEGORIA c on c.IdCategoria = p.IdCategoria
-
-
-Select *from PRODUCTO
-
-Insert into PRODUCTO(Codigo,Nombre,Descripcion,IdCategoria)VALUES('101010','gaseosa','1litro',1)
-
-update PRODUCTO set Estado = 1
-
-DROP PROCEDURE SP_EliminarProducto;
-
-go
-/* ---------------- PROCEDIMIENTOS PARA CLIENTE---------------------*/
-
 /* ---------------- PROCEDIMIENTOS PARA REGISTRAR CLIENTE---------------------*/
+
 create PROC sp_RegistrarCliente(
 @Documento varchar (50),
 @NombreCompleto varchar (50),
@@ -337,7 +326,7 @@ end
 
 go
 
-/*---------------- PROCEDIMIENTOS PARA MODIFICAR CLIENTE*/
+/*---------------- PROCEDIMIENTOS PARA MODIFICAR CLIENTE-------------*/
 
 create PROC sp_ModificarCliente(
 @IdCliente int,
@@ -371,8 +360,9 @@ end
 
 go
 
-/*-----------------PROCEDIMIENTOS PARA PROVEEDOR -----------------------*/
-/*------- REGISTROS PROVEEDOR ---------------*/
+
+
+/*-------------------- REGISTROS PROVEEDOR ---------------*/
 
 create PROC sp_RegistrarProveedor(
 @Documento varchar(50),
@@ -397,7 +387,7 @@ begin
 		set @Mensaje = 'El numero de documento ya existe'
 end
 go
-/*----------- MODIFICAR PROVEEDOR ----------*/
+/*----------------------- MODIFICAR PROVEEDOR ---------------------*/
 
 create PROC sp_ModificarProveedor(
 @IdProveedor int,
@@ -431,7 +421,7 @@ end
 
 go
 
-/*--------- ELIMINAR PROVEEDOR------------------*/
+/*-------------------------- ELIMINAR PROVEEDOR------------------*/
 
 create procedure sp_EliminarProveedor(
 @IdProveedor int,
@@ -459,24 +449,9 @@ end
 
 go
 
-select * from PROVEEDOR
 
 
-/*-------------INSERTAR DATOS DEL LOCAL-----------------*/
-
-insert into NEGOCIO(IdNegocio,Nombre,RUC,Direccion) values(1,'Plasticos Tonita','101010','av.Codigo 123')
-go
-
-select * from NEGOCIO
-
-
-
-/*---------------------------------------------------*/
-select * from USUARIO
-
-
-
-/*-------------PROCESOS PARA REGISTRAR UNA COMPRA-----------------*/
+/*---------------------- REGISTRAR COMPRA-----------------*/
 
 CREATE TYPE [dbo].[EDetalle_Compra] AS TABLE(
 	[IdProducto] int NULL,
@@ -537,31 +512,8 @@ end
 GO
 
 
-/*------------*/
---0001
---0002
 
-Select count(*) + 1 from COMPRA
-
-go
-
-/*--------------------------- Consultas de guia NO AFECTA NADA---------------------------*/
-
-Select c.IdCompra, u.NombreCompleto,pr.Documento,pr.RazonSocial,c.TipoDocumento,c.NumeroDocumento,c.MontoTotal,convert(char(10),c.FechaRegistro,103)[FechaRegistro]
-from COMPRA c inner join USUARIO u on u.IdUsuario = c.IdUsuario inner join PROVEEDOR pr on pr.IdProveedor =
-c.IdProveedor where c.NumeroDocumento = '00001'
-
-go
-
-Select p.Nombre,dc.PrecioCompra,dc.Cantidad,dc.MontoTotal from DETALLE_COMPRA dc inner join PRODUCTO p on P.IdProducto = dc.IdProducto
-where dc.IdCompra = 2
-
-go
-
-
-
-
-/*-------------PROCESOS PARA REGISTRAR UNA VENTA-----------------*/
+/*-------------------- REGISTRAR VENTA-----------------*/
 
 CREATE TYPE [dbo].[EDetalle_Venta] AS TABLE(
 	[IdProducto] int NULL,
@@ -618,14 +570,9 @@ end
 
 go
 
-/* CONSULTAS DE PRUEBA */
-select * from VENTA where NumeroDocumento = '00002'
-select * from DETALLE_VENTA where IdVenta = '2'
-
-go
 
 
-/*-------------REPORTES de compra--------------------*/
+/*--------------------REPORTES DE COMPRA--------------------*/
 
 create PROC sp_ReporteCompras(
  @fechainicio varchar(10),
@@ -654,7 +601,7 @@ create PROC sp_ReporteCompras(
  go
 
 
- /*-------------REPORTES de Venta--------------------*/
+ /*--------------------REPORTES DE VENTA--------------------*/
 
  CREATE PROC sp_ReporteVentas(
  @fechainicio varchar(10),

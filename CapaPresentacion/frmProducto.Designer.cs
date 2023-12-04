@@ -84,7 +84,6 @@
             this.txtindice.Size = new System.Drawing.Size(36, 21);
             this.txtindice.TabIndex = 58;
             this.txtindice.Text = "-1";
-            this.txtindice.Visible = false;
             // 
             // txtbusqueda
             // 
@@ -128,7 +127,6 @@
             this.txtid.Size = new System.Drawing.Size(36, 21);
             this.txtid.TabIndex = 52;
             this.txtid.Text = "0";
-            this.txtid.Visible = false;
             // 
             // label10
             // 

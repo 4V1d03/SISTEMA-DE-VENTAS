@@ -122,8 +122,6 @@ namespace CapaPresentacion
                 {
                     MessageBox.Show(mensaje);
                 }
-
-
             }
             else
             {
@@ -189,8 +187,8 @@ namespace CapaPresentacion
         {
             if (dgvdata.Columns[e.ColumnIndex].Name == "btnseleccionar")
             {
-
                 int indice = e.RowIndex;
+                
 
                 if (indice >= 0)
                 {

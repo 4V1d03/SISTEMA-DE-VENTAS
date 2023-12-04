@@ -246,14 +246,14 @@
             this.submenuapertura.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.submenuapertura.Name = "submenuapertura";
             this.submenuapertura.Padding = new System.Windows.Forms.Padding(0, 5, 0, 1);
-            this.submenuapertura.Size = new System.Drawing.Size(184, 30);
+            this.submenuapertura.Size = new System.Drawing.Size(163, 28);
             this.submenuapertura.Text = "Apertura";
             this.submenuapertura.Click += new System.EventHandler(this.submenuapertura_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(181, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(160, 6);
             // 
             // submenucierre
             // 
@@ -264,14 +264,14 @@
             this.submenucierre.IconColor = System.Drawing.Color.Black;
             this.submenucierre.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.submenucierre.Name = "submenucierre";
-            this.submenucierre.Size = new System.Drawing.Size(184, 26);
+            this.submenucierre.Size = new System.Drawing.Size(163, 24);
             this.submenucierre.Text = "Cierre";
             this.submenucierre.Click += new System.EventHandler(this.submenucierre_Click);
             // 
             // toolStripSeparator7
             // 
             this.toolStripSeparator7.Name = "toolStripSeparator7";
-            this.toolStripSeparator7.Size = new System.Drawing.Size(181, 6);
+            this.toolStripSeparator7.Size = new System.Drawing.Size(160, 6);
             // 
             // submenuverregistros
             // 
@@ -280,7 +280,7 @@
             this.submenuverregistros.IconColor = System.Drawing.Color.Black;
             this.submenuverregistros.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.submenuverregistros.Name = "submenuverregistros";
-            this.submenuverregistros.Size = new System.Drawing.Size(184, 26);
+            this.submenuverregistros.Size = new System.Drawing.Size(163, 24);
             this.submenuverregistros.Text = "Ver Registros";
             this.submenuverregistros.Click += new System.EventHandler(this.iconMenuItem3_Click);
             // 
@@ -313,14 +313,14 @@
             this.submenuregistrarventa.IconColor = System.Drawing.Color.Black;
             this.submenuregistrarventa.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.submenuregistrarventa.Name = "submenuregistrarventa";
-            this.submenuregistrarventa.Size = new System.Drawing.Size(209, 26);
+            this.submenuregistrarventa.Size = new System.Drawing.Size(205, 24);
             this.submenuregistrarventa.Text = "Registrar Venta";
             this.submenuregistrarventa.Click += new System.EventHandler(this.submenuregistrarventa_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(206, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(202, 6);
             // 
             // submenuverdetalleventa
             // 
@@ -331,7 +331,7 @@
             this.submenuverdetalleventa.IconColor = System.Drawing.Color.Black;
             this.submenuverdetalleventa.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.submenuverdetalleventa.Name = "submenuverdetalleventa";
-            this.submenuverdetalleventa.Size = new System.Drawing.Size(209, 26);
+            this.submenuverdetalleventa.Size = new System.Drawing.Size(205, 24);
             this.submenuverdetalleventa.Text = "Ver Detalle de Venta";
             this.submenuverdetalleventa.Click += new System.EventHandler(this.submenuverdetalleventa_Click);
             // 

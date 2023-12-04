@@ -93,32 +93,35 @@ namespace CapaPresentacion
 
         private void txtcodproducto_KeyDown(object sender, KeyEventArgs e)
         {
+           
             if (e.KeyData == Keys.Enter)
             {
-
                 Producto oProducto = new CN__Producto().Listar().Where(p => p.Codigo == txtcodproducto.Text && p.Estado == true).FirstOrDefault();
 
                 if (oProducto != null)
                 {
-                    txtcodproducto.BackColor = Color.Honeydew;
-                    txtidproducto.Text = oProducto.IdProducto.ToString();
-                    txtproducto.Text = oProducto.Nombre;
-                    txtprecio.Text = oProducto.PrecioVenta.ToString("0.00");
-                    txtstock.Text = oProducto.Stock.ToString();
-                    txtcantidad.Select();
+                    
+                txtcodproducto.BackColor = Color.Honeydew;
+                txtidproducto.Text = oProducto.IdProducto.ToString();
+                txtproducto.Text = oProducto.Nombre;
+                txtprecio.Text = oProducto.PrecioVenta.ToString("0.00");
+                txtstock.Text = oProducto.Stock.ToString();
+                txtcantidad.Select();
                 }
                 else
                 {
-                    txtcodproducto.BackColor = Color.MistyRose;
-                    txtidproducto.Text = "0";
-                    txtproducto.Text = "";
-                    txtprecio.Text = "";
-                    txtstock.Text = "";
-                    txtcantidad.Value = 1;
+                txtcodproducto.BackColor = Color.MistyRose;
+                txtidproducto.Text = "0";
+                txtproducto.Text = "";
+                txtprecio.Text = "";
+                txtstock.Text = "";
+                txtcantidad.Value = 1;
+
                 }
+                
             }
-     
         }
+        
         
         private void btnaggproducto_Click(object sender, EventArgs e)
         {
@@ -434,6 +437,13 @@ namespace CapaPresentacion
             if (textBox.Text.Trim() == "0")
             {
                 textBox.Text = "1";
+            }
+        }
+        private void txtcodproducto_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != '-' && !char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
             }
         }
     }

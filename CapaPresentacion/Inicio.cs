@@ -230,8 +230,8 @@ namespace CapaPresentacion
             //formapertura.txtempleado.Text = usuarioActual.NombreCompleto;
             frmCierrecaja cierre= new frmCierrecaja();
             lblusuario.Text = usuarioActual.NombreCompleto;
-            //submenucierre.Enabled = false;
-            //submenucierre.Visible = false;
+             //submenucierre.Enabled = false;
+             //submenucierre.Visible = false;
             //submenuregistrarventa.Visible = false;
 
         }
